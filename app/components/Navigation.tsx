@@ -12,7 +12,9 @@ export default function Navigation() {
 
   return (
     <header
-      className="w-full px-4 sm:px-8 py-4 sm:py-6"
+      className={`w-full px-4 sm:px-8 py-4 sm:py-6 ${
+        isMenuOpen ? "bg-black" : ""
+      }`}
       style={{ boxShadow: "0 10px 25px rgba(0, 0, 0, 0.5)" }}
     >
       <div className="px-4 sm:px-12">
@@ -33,17 +35,17 @@ export default function Navigation() {
             aria-label="Toggle menu"
           >
             <span
-              className={`block w-6 h-0.5 bg-black transition-all ${
+              className={`block w-6 h-0.5 bg-[#ada173] transition-all ${
                 isMenuOpen ? "rotate-45 translate-y-2" : ""
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-black transition-all ${
+              className={`block w-6 h-0.5 bg-[#ada173] transition-all ${
                 isMenuOpen ? "opacity-0" : ""
               }`}
             />
             <span
-              className={`block w-6 h-0.5 bg-black transition-all ${
+              className={`block w-6 h-0.5 bg-[#ada173] transition-all ${
                 isMenuOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             />
