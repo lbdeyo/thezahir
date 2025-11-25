@@ -32,7 +32,6 @@ export default function Home() {
                 width={384}
                 height={384}
                 className="w-full h-auto"
-                unoptimized
               />
             </div>
             <p className="text-black mb-6">
