@@ -28,7 +28,7 @@ export default function Home() {
             <div className="float-right ml-8 mb-6 w-96 rounded overflow-hidden border-4 border-black">
               <Image
                 src="/img/crazy-apprehension.jpg"
-                alt="Crazy Apprehension"
+                alt="Coin on stage"
                 width={384}
                 height={384}
                 className="w-full h-auto"
