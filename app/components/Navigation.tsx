@@ -52,7 +52,7 @@ export default function Navigation() {
           </button>
 
           {/* Desktop navigation */}
-          <nav className="hidden sm:flex gap-8 text-[#ada173] text-xl font-['Baskerville']">
+          <nav className="hidden sm:flex gap-8 text-[#ada173] text-xl font-semibold font-['Baskerville']">
             <a href="#" className="hover:underline">
               our work
             </a>
@@ -76,7 +76,7 @@ export default function Navigation() {
 
         {/* Mobile navigation menu */}
         {isMenuOpen && (
-          <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-[#ada173] text-xl font-['Baskerville']">
+          <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-[#ada173] text-xl font-semibold font-['Baskerville']">
             <a href="#" className="hover:underline" onClick={toggleMenu}>
               our work
             </a>
