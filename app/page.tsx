@@ -3,29 +3,20 @@ import Navigation from "./components/Navigation";
 
 export default function Home() {
   return (
-    <div
-      className="min-h-screen font-sans bg-attachment-responsive"
-      style={{
-        backgroundImage: "url('/img/blackhole-bg.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "scroll",
-      }}
-    >
-      <div
-        className="max-w-5xl mx-auto"
-        style={{
-          backgroundImage:
-            "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(193, 185, 139, 0.97), rgba(193, 185, 139, 0.97), rgba(150, 145, 108, 0.7))",
-        }}
-      >
+    <div className="min-h-screen font-sans bg-attachment-responsive bg-rotated">
+      <div className="max-w-5xl mx-auto">
         <Navigation />
 
         {/* Main Content */}
-        <main className="w-full px-4 sm:px-8 pt-4 pb-12">
-          <div className="px-4 sm:px-12 pt-0 pb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2">
+        <main className="w-full px-4 sm:px-8 pt-0 pb-12">
+          <div
+            className="px-4 sm:px-12 pt-4 pb-6"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
+            }}
+          >
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2 pt-4">
               A dramatic arts company
             </h1>
             <p className="text-lg sm:text-xl text-black mb-6 sm:mb-8">
@@ -49,20 +40,33 @@ export default function Home() {
               work invites audiences to pause, reflect, and speak with one
               another.
             </p>
-            <h2 className="text-xl sm:text-2xl font-bold text-black ">
+          </div>
+          <div
+            className="px-4 sm:px-12 py-6"
+            style={{ background: "rgba(0,0,0,0.8)" }}
+          >
+            <h2 className="text-xl sm:text-2xl font-bold text-[#ada173] mb-6">
               Our work
             </h2>
-            <p className="text-black mb-6">
+            <p className="text-[#ada173] mb-6">
               We make theater and media that challenges, provokes, and opens
               space for conversation. We focus on new stories told through
               theater, film, and other dramatic arts, with an emphasis on
               connection in an increasingly disconnected world.
             </p>
-            <p className="text-black mb-6">
+            <p className="text-[#ada173] mb-6">
               As a newly founded company, we are actively developing our
               inaugural projects and collaborations. Upcoming announcements will
               appear here. Learn more.
             </p>
+          </div>
+          <div
+            className="px-4 sm:px-12 py-6 pb-16"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
+            }}
+          >
             <h2 className="text-xl sm:text-2xl font-bold text-black ">
               About The Zahir
             </h2>

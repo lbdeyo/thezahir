@@ -31,3 +31,40 @@ body {
     background-attachment: fixed !important;
   }
 }
+
+/* Logo tinting */
+.logo-tint {
+  filter: brightness(0) saturate(100%) invert(68%) sepia(8%) saturate(1200%) hue-rotate(10deg) brightness(0.95);
+  transition: filter 0.2s ease;
+}
+
+.logo-tint:hover {
+  filter: brightness(0) invert(1);
+}
+
+/* Rotated background image */
+.bg-rotated {
+  position: relative;
+}
+
+.bg-rotated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/img/blackhole-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  transform: rotate(180deg);
+  z-index: -1;
+}
+
+@media (min-width: 640px) {
+  .bg-rotated::before {
+    background-attachment: fixed;
+  }
+}

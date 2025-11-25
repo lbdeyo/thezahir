@@ -11,18 +11,21 @@ export default function Navigation() {
   };
 
   return (
-    <header className="w-full px-4 sm:px-8 py-4 sm:py-6">
+    <header
+      className="w-full px-4 sm:px-8 py-4 sm:py-6"
+      style={{ boxShadow: "0 10px 25px rgba(0, 0, 0, 0.5)" }}
+    >
       <div className="px-4 sm:px-12">
         <div className="flex flex-row items-center justify-between sm:justify-start gap-4 sm:gap-8">
           <Image
-            className="brightness-0"
             src="/img/zahir-logo.svg"
             alt="The Zahir logo"
             width={130}
             height={30}
             priority
+            className="logo-tint cursor-pointer"
           />
-          
+
           {/* Hamburger button - mobile only */}
           <button
             onClick={toggleMenu}
@@ -47,7 +50,7 @@ export default function Navigation() {
           </button>
 
           {/* Desktop navigation */}
-          <nav className="hidden sm:flex gap-8 text-black text-base">
+          <nav className="hidden sm:flex gap-8 text-[#ada173] text-base">
             <a href="#" className="hover:underline">
               our work
             </a>
@@ -71,7 +74,7 @@ export default function Navigation() {
 
         {/* Mobile navigation menu */}
         {isMenuOpen && (
-          <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-black">
+          <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-[#ada173]">
             <a href="#" className="hover:underline" onClick={toggleMenu}>
               our work
             </a>
@@ -93,7 +96,7 @@ export default function Navigation() {
           </nav>
         )}
 
-        <div className="border-t-2 border-black mt-4"></div>
+        <div className="border-t-2 border-[#ada173] mt-4"></div>
       </div>
     </header>
   );
