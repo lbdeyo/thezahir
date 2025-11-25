@@ -4,28 +4,28 @@ import Navigation from "./components/Navigation";
 export default function Home() {
   return (
     <div
-      className="min-h-screen font-sans"
+      className="min-h-screen font-sans bg-attachment-responsive"
       style={{
         backgroundImage: "url('/img/blackhole-bg.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed",
+        backgroundAttachment: "scroll",
       }}
     >
       <div className="max-w-5xl mx-auto" style={{ backgroundColor: "#c5eae8" }}>
         <Navigation />
 
         {/* Main Content */}
-        <main className="w-full px-8 pt-4 pb-12">
-          <div className="px-12 pt-0 pb-16">
-            <h1 className="text-5xl font-bold text-black mb-2">
+        <main className="w-full px-4 sm:px-8 pt-4 pb-12">
+          <div className="px-4 sm:px-12 pt-0 pb-16">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2">
               A dramatic arts company
             </h1>
-            <p className="text-xl text-black mb-8">
+            <p className="text-lg sm:text-xl text-black mb-6 sm:mb-8">
               Promoting conversation in a disconnected age
             </p>
-            <div className="float-right ml-8 mb-6 w-96 rounded overflow-hidden border-4 border-black">
+            <div className="float-none sm:float-right ml-0 sm:ml-8 mb-6 w-full sm:w-96 rounded overflow-hidden border-4 border-black">
               <Image
                 src="/img/crazy-apprehension.jpg"
                 alt="Coin on stage"
@@ -43,7 +43,9 @@ export default function Home() {
               work invites audiences to pause, reflect, and speak with one
               another.
             </p>
-            <h2 className="text-2xl font-bold text-black ">Our work</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-black ">
+              Our work
+            </h2>
             <p className="text-black mb-6">
               We make theater and media that challenges, provokes, and opens
               space for conversation. We focus on new stories told through
@@ -55,7 +57,9 @@ export default function Home() {
               inaugural projects and collaborations. Upcoming announcements will
               appear here. Learn more.
             </p>
-            <h2 className="text-2xl font-bold text-black ">About The Zahir</h2>
+            <h2 className="text-xl sm:text-2xl font-bold text-black ">
+              About The Zahir
+            </h2>
             <p className="text-black mb-6">
               In Jorge Luis Borges’s short story of the same name, the Zahir is
               an object that consumes the mind. The more one contemplates it,
