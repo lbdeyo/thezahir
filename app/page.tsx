@@ -69,8 +69,14 @@ export default function Home() {
               About The Zahir
             </h2>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
-              In Jorge Luis Borges&apos;s short story of the same name, the
-              Zahir is an object that consumes the mind. The more one
+              In Jorge Luis Borges&apos;s{" "}
+              <a
+                href="https://sffaudiomediacan.s3.amazonaws.com/pdfs/TheZahirByJorgeLuisBorgesTranslatedByDudleyFitts.pdf"
+                className="font-semibold hover:underline transition-all"
+              >
+                short story of the same name
+              </a>
+              , the Zahir is an object that consumes the mind. The more one
               contemplates it, the smaller one&apos;s world becomes, until the
               universe has contracted to the size of a small coin. The Zahir is
               fascinating, dazzling, and a curse.
