@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Navigation from "./components/Navigation";
+import CoinVideo from "./components/CoinVideo";
 
 export default function Home() {
   return (
@@ -28,15 +28,7 @@ export default function Home() {
             <p className="text-xl sm:text-2xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
-            <div className="w-full mb-6 rounded overflow-hidden border-4 border-black">
-              <Image
-                src="/img/crazy-apprehension.jpg"
-                alt="Coin on stage"
-                width={768}
-                height={768}
-                className="w-full h-auto"
-              />
-            </div>
+            <CoinVideo />
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects that bring people together for meaningful conversation.
