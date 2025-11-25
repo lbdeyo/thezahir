@@ -16,10 +16,10 @@ export default function Home() {
                 "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
             }}
           >
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-2 pt-4">
+            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] font-semibold text-black mb-2 pt-4 font-['Baskerville']">
               A dramatic arts company
             </h1>
-            <p className="text-lg sm:text-xl text-black mb-6 sm:mb-8">
+            <p className="text-xl sm:text-2xl text-black mb-6 sm:mb-8 font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
             <div className="w-full mb-6 rounded overflow-hidden border-4 border-black">
@@ -31,11 +31,11 @@ export default function Home() {
                 className="w-full h-auto"
               />
             </div>
-            <p className="text-black mb-6">
+            <p className="text-xl text-black mb-6 font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects that bring people together for meaningful conversation.
             </p>
-            <p className="text-black mb-6">
+            <p className="text-xl text-black mb-6 font-['Baskerville']">
               At a time defined by noise, loneliness, and misinformation, our
               work invites audiences to pause, reflect, and speak with one
               another.
@@ -45,16 +45,16 @@ export default function Home() {
             className="px-4 sm:px-12 py-6"
             style={{ background: "rgba(0,0,0,0.8)" }}
           >
-            <h2 className="text-xl sm:text-2xl font-bold text-[#ada173] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
               Our work
             </h2>
-            <p className="text-[#ada173] mb-6">
+            <p className="text-xl text-[#ada173] mb-6 font-['Baskerville']">
               We make theater and media that challenges, provokes, and opens
               space for conversation. We focus on new stories told through
               theater, film, and other dramatic arts, with an emphasis on
               connection in an increasingly disconnected world.
             </p>
-            <p className="text-[#ada173] mb-6">
+            <p className="text-xl text-[#ada173] mb-6 font-['Baskerville']">
               As a newly founded company, we are actively developing our
               inaugural projects and collaborations. Upcoming announcements will
               appear here. Learn more.
@@ -67,17 +67,17 @@ export default function Home() {
                 "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
             }}
           >
-            <h2 className="text-xl sm:text-2xl font-bold text-black ">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-black font-['Baskerville']">
               About The Zahir
             </h2>
-            <p className="text-black mb-6">
-              In Jorge Luis Borges’s short story of the same name, the Zahir is
-              an object that consumes the mind. The more one contemplates it,
-              the smaller one’s world becomes, until the universe has contracted
-              to the size of a small coin. The Zahir is fascinating, dazzling,
-              and a curse.
+            <p className="text-xl text-black mb-6 font-['Baskerville']">
+              In Jorge Luis Borges&apos;s short story of the same name, the
+              Zahir is an object that consumes the mind. The more one
+              contemplates it, the smaller one&apos;s world becomes, until the
+              universe has contracted to the size of a small coin. The Zahir is
+              fascinating, dazzling, and a curse.
             </p>{" "}
-            <p className="text-black mb-6">
+            <p className="text-xl text-black mb-6 font-['Baskerville']">
               We chose the name because each of us confronts a modern Zahir:
               screens, feeds, and devices that capture attention but diminish
               connection. Through theater and storytelling, we strive to break
