@@ -34,7 +34,7 @@ export default function Navigation() {
             </a>
           </nav>
         </div>
-        <div className="border-t border-black mt-4"></div>
+        <div className="border-t-2 border-black mt-4"></div>
       </div>
     </header>
   );
