@@ -13,7 +13,7 @@ export default function Navigation() {
   return (
     <header
       className={`w-full px-4 sm:px-8 py-4 sm:py-6 ${
-        isMenuOpen ? "bg-black" : ""
+        isMenuOpen ? "bg-black" : "bg-black/60"
       }`}
       style={{ boxShadow: "0 10px 25px rgba(0, 0, 0, 0.5)" }}
     >
@@ -97,8 +97,6 @@ export default function Navigation() {
             </a>
           </nav>
         )}
-
-        <div className="border-t-2 border-[#ada173] mt-4"></div>
       </div>
     </header>
   );
