@@ -13,7 +13,13 @@ export default function Home() {
         backgroundAttachment: "scroll",
       }}
     >
-      <div className="max-w-5xl mx-auto" style={{ backgroundColor: "#c5eae8" }}>
+      <div
+        className="max-w-5xl mx-auto"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(193, 185, 139, 0.97), rgba(193, 185, 139, 0.97), rgba(150, 145, 108, 0.7))",
+        }}
+      >
         <Navigation />
 
         {/* Main Content */}
@@ -25,12 +31,12 @@ export default function Home() {
             <p className="text-lg sm:text-xl text-black mb-6 sm:mb-8">
               Promoting conversation in a disconnected age
             </p>
-            <div className="float-none sm:float-right ml-0 sm:ml-8 mb-6 w-full sm:w-96 rounded overflow-hidden border-4 border-black">
+            <div className="w-full mb-6 rounded overflow-hidden border-4 border-black">
               <Image
                 src="/img/crazy-apprehension.jpg"
                 alt="Coin on stage"
-                width={384}
-                height={384}
+                width={768}
+                height={768}
                 className="w-full h-auto"
               />
             </div>
