@@ -23,7 +23,7 @@ export default function Home() {
               A dramatic arts company
             </h1>
             <p className="text-xl text-black mb-8">
-              Promoting conversation in a disconnected age.
+              Promoting conversation in a disconnected age
             </p>
             <div className="float-right ml-8 mb-6 w-96 rounded overflow-hidden border-4 border-black">
               <Image
