@@ -1,5 +1,6 @@
 import Navigation from "./components/Navigation";
 import CoinVideo from "./components/CoinVideo";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -65,9 +66,18 @@ export default function Home() {
                 "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
             }}
           >
-            <h2 className="text-2xl sm:text-3xl font-semibold text-black font-['Baskerville']">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-black font-['Baskerville'] mb-6">
               About The Zahir
             </h2>
+            <div className="float-none sm:float-right ml-0 sm:ml-6 mb-6 w-full sm:w-auto">
+              <Image
+                src="/img/borges.jpg"
+                alt="Jorge Luis Borges"
+                width={240}
+                height={320}
+                className="w-full sm:max-w-[240px] sm:h-auto"
+              />
+            </div>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
               In Jorge Luis Borges&apos;s{" "}
               <a
@@ -80,7 +90,7 @@ export default function Home() {
               contemplates it, the smaller one&apos;s world becomes, until the
               universe has contracted to the size of a small coin. The Zahir is
               fascinating, dazzling, and a curse.
-            </p>{" "}
+            </p>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
               We chose the name because each of us confronts a modern Zahir:
               screens, feeds, and devices that capture attention but diminish
