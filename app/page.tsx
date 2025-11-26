@@ -18,8 +18,7 @@ export default function Home() {
           <div
             className="px-4 sm:px-12 pt-4 pb-6 relative"
             style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
+              background: "rgba(173, 161, 115, 0.90)",
             }}
             id="gradient-start"
           >
@@ -62,8 +61,7 @@ export default function Home() {
           <div
             className="px-4 sm:px-12 py-6 pb-16"
             style={{
-              backgroundImage:
-                "linear-gradient(to right, rgba(150, 145, 108, 0.7), rgba(173, 161, 115, 0.97), rgba(173, 161, 115, 0.97), rgba(150, 145, 108, 0.7))",
+              background: "rgba(173, 161, 115, 0.90)",
             }}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-black font-['Baskerville'] mb-6">
