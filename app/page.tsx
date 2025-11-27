@@ -82,7 +82,10 @@ export default function Home() {
             <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
               As a newly founded company, we are actively developing our
               inaugural projects and collaborations. Upcoming announcements will
-              appear here. Learn more.
+              appear here.{" "}
+              <a href="/our-work" className="hover:underline font-bold">
+                Learn more.
+              </a>
             </p>
           </div>
           <div
@@ -121,7 +124,10 @@ export default function Home() {
               screens, feeds, and devices that capture attention but diminish
               connection. Through theater and storytelling, we strive to break
               the curse through work that brings people back into the world,
-              toward each other, toward conversation. Read more.
+              toward each other, toward conversation.{" "}
+              <a href="/about" className="hover:underline font-bold">
+                Read more.
+              </a>
             </p>
           </div>
         </main>
