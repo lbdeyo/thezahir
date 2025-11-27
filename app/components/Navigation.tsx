@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function Navigation() {
@@ -19,14 +20,16 @@ export default function Navigation() {
     >
       <div className="px-4 sm:px-12">
         <div className="flex flex-row items-center justify-between sm:justify-start gap-4 sm:gap-8">
-          <Image
-            src="/img/zahir-logo.svg"
-            alt="The Zahir logo"
-            width={130}
-            height={30}
-            priority
-            className="logo-tint cursor-pointer"
-          />
+          <Link href="/">
+            <Image
+              src="/img/zahir-logo.svg"
+              alt="The Zahir logo"
+              width={130}
+              height={30}
+              priority
+              className="logo-tint cursor-pointer"
+            />
+          </Link>
 
           {/* Hamburger button - mobile only */}
           <button
@@ -53,48 +56,48 @@ export default function Navigation() {
 
           {/* Desktop navigation */}
           <nav className="hidden sm:flex gap-8 text-[#ada173] text-xl font-semibold font-['Baskerville']">
-            <a href="#" className="hover:underline">
+            <Link href="/our-work" className="hover:underline">
               our work
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link href="/about" className="hover:underline">
               about
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            {/* <a href="#" className="hover:underline">
               support
-            </a>
-            <a href="#" className="hover:underline">
+            </a> */}
+            <Link href="/contact" className="hover:underline">
               contact
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            <Link href="/team" className="hover:underline">
               team
-            </a>
-            <a href="#" className="hover:underline">
+            </Link>
+            {/* <a href="#" className="hover:underline">
               donate
-            </a>
+            </a> */}
           </nav>
         </div>
 
         {/* Mobile navigation menu */}
         {isMenuOpen && (
           <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-[#ada173] text-xl font-semibold font-['Baskerville']">
-            <a href="#" className="hover:underline" onClick={toggleMenu}>
+            <Link href="/our-work" className="hover:underline" onClick={toggleMenu}>
               our work
-            </a>
-            <a href="#" className="hover:underline" onClick={toggleMenu}>
+            </Link>
+            <Link href="/about" className="hover:underline" onClick={toggleMenu}>
               about
-            </a>
-            <a href="#" className="hover:underline" onClick={toggleMenu}>
+            </Link>
+            {/* <a href="#" className="hover:underline" onClick={toggleMenu}>
               support
-            </a>
-            <a href="#" className="hover:underline" onClick={toggleMenu}>
+            </a> */}
+            <Link href="/contact" className="hover:underline" onClick={toggleMenu}>
               contact
-            </a>
-            <a href="#" className="hover:underline" onClick={toggleMenu}>
+            </Link>
+            <Link href="/team" className="hover:underline" onClick={toggleMenu}>
               team
-            </a>
-            <a href="#" className="hover:underline" onClick={toggleMenu}>
+            </Link>
+            {/* <a href="#" className="hover:underline" onClick={toggleMenu}>
               donate
-            </a>
+            </a> */}
           </nav>
         )}
       </div>

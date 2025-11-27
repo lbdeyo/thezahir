@@ -5,12 +5,39 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen font-sans bg-attachment-responsive bg-rotated relative">
-      <div className="max-w-5xl mx-auto relative">
-        {/* Vertical border lines - aligned with gradient edges (px-4 sm:px-8) */}
-        <div className="absolute top-0 bottom-0 left-4 sm:left-8 right-4 sm:right-8 pointer-events-none z-0">
-          <div className="absolute top-0 bottom-0 left-0 w-px bg-[#ada173]"></div>
-          <div className="absolute top-0 bottom-0 right-0 w-px bg-[#ada173]"></div>
+      {/* Vertical border lines - extend full height of page including footer */}
+      <div
+        className="fixed top-0 left-0 right-0 bottom-0 pointer-events-none"
+        style={{ zIndex: 100 }}
+      >
+        <div className="max-w-5xl mx-auto h-full relative">
+          <div
+            className="absolute top-0 left-4 sm:left-8"
+            style={{
+              width: "1px",
+              height: "100vh",
+              backgroundColor: "#ada173",
+              transform: "translateZ(0)",
+              WebkitTransform: "translateZ(0)",
+              willChange: "transform",
+              imageRendering: "crisp-edges",
+            }}
+          ></div>
+          <div
+            className="absolute top-0 right-4 sm:right-8"
+            style={{
+              width: "1px",
+              height: "100vh",
+              backgroundColor: "#ada173",
+              transform: "translateZ(0)",
+              WebkitTransform: "translateZ(0)",
+              willChange: "transform",
+              imageRendering: "crisp-edges",
+            }}
+          ></div>
         </div>
+      </div>
+      <div className="max-w-5xl mx-auto relative z-10">
         <Navigation />
 
         {/* Main Content */}
