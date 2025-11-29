@@ -49,7 +49,10 @@ export default function Home() {
             }}
             id="gradient-start"
           >
-            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] font-semibold text-black mb-2 pt-4 font-['Baskerville']">
+            <h1
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']"
+              style={{ fontWeight: 800, fontStyle: "normal" }}
+            >
               A dramatic arts company
             </h1>
             <p className="text-xl sm:text-2xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">

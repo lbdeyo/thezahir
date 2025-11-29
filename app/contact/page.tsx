@@ -112,7 +112,7 @@ export default function Contact() {
               background: "rgba(173, 161, 115, 0.90)",
             }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] font-semibold text-black mb-6 pt-4 font-['Baskerville']">
+            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-6 pt-4 font-['thirsty-rough-two']" style={{ fontWeight: 800, fontStyle: 'normal' }}>
               Contact
             </h1>
 
