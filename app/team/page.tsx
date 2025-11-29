@@ -51,7 +51,10 @@ export default function Team() {
               background: "rgba(173, 161, 115, 0.90)",
             }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']" style={{ fontWeight: 800, fontStyle: 'normal' }}>
+            <h1
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']"
+              style={{ fontWeight: 800, fontStyle: "normal" }}
+            >
               The Team
             </h1>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
@@ -65,20 +68,20 @@ export default function Team() {
               Staff
             </h2>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
-              L.B. Deyo, Artistic Director
+              <strong>L.B. Deyo</strong>, Artistic Director
             </p>
 
             <h2 className="text-2xl sm:text-3xl font-semibold text-black mb-4 mt-8 font-['Baskerville']">
               Board of Directors
             </h2>
             <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-              L.B. Deyo, President
+              <strong>L.B. Deyo</strong>, President
             </p>
             <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-              Noah Masterson, Treasurer
+              <strong>Noah Masterson</strong>, Treasurer
             </p>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
-              Chad Nichols, Secretary
+              <strong>Chad Nichols</strong>, Secretary
             </p>
           </div>
         </main>
