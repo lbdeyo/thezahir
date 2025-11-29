@@ -86,7 +86,10 @@ export default function Home() {
               As a newly founded company, we are actively developing our
               inaugural projects and collaborations. Upcoming announcements will
               appear here.{" "}
-              <a href="/our-work" className="hover:underline font-bold">
+              <a
+                href="/our-work"
+                className="hover:underline font-bold text-[#E6AD06]"
+              >
                 Learn more.
               </a>
             </p>
@@ -113,7 +116,7 @@ export default function Home() {
               In Jorge Luis Borges&apos;s{" "}
               <a
                 href="https://sffaudiomediacan.s3.amazonaws.com/pdfs/TheZahirByJorgeLuisBorgesTranslatedByDudleyFitts.pdf"
-                className="font-semibold hover:underline transition-all"
+                className="font-bold hover:underline transition-all text-[#490f0f]"
               >
                 short story of the same name
               </a>
@@ -128,7 +131,10 @@ export default function Home() {
               connection. Through theater and storytelling, we strive to break
               the curse through work that brings people back into the world,
               toward each other, toward conversation.{" "}
-              <a href="/about" className="hover:underline font-bold">
+              <a
+                href="/about"
+                className="hover:underline font-bold text-[#490f0f]"
+              >
                 Read more.
               </a>
             </p>
