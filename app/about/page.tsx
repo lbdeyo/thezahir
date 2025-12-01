@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import Navigation from "../components/Navigation";
-
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "About | THE ZAHIR",
 };
@@ -51,12 +51,21 @@ export default function About() {
               background: "rgba(173, 161, 115, 0.90)",
             }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']" style={{ fontWeight: 800, fontStyle: 'normal' }}>
+            <h1
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']"
+              style={{ fontWeight: 800, fontStyle: "normal" }}
+            >
               About The Zahir
             </h1>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
-              In Jorge Luis Borges&apos;s short story &quot;The Zahir,&quot; an
-              ordinary object becomes an overwhelming force—captivating,
+              In Jorge Luis Borges&apos;s short story{" "}
+              <a
+                href="https://sffaudiomediacan.s3.amazonaws.com/pdfs/TheZahirByJorgeLuisBorgesTranslatedByDudleyFitts.pdf"
+                className="font-bold hover:underline transition-all text-[#490f0f]"
+              >
+                <i>The Zahir</i>
+              </a>
+              , an ordinary object becomes an overwhelming force—captivating,
               dazzling, and ultimately consuming. The more one contemplates it,
               the smaller the universe becomes. It is a metaphor for obsession,
               attention, and the narrowing of the human world.
@@ -86,10 +95,19 @@ export default function About() {
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
               This is the beginning of that work.
             </p>
+            <div className="w-full mb-6">
+              <Image
+                src="/img/borges.jpg"
+                alt="Jorge Luis Borges"
+                width={1200}
+                height={1200}
+                className="w-full h-auto object-cover rounded"
+                priority
+              />
+            </div>
           </div>
         </main>
       </div>
     </div>
   );
 }
-
