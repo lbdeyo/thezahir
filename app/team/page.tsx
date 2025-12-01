@@ -333,11 +333,11 @@ export default function Team() {
                     been featured on various Austin records over his tenure as a
                     bass player, songwriter and singer. As an actor
                     Justin&apos;s recent stage credits include Austin
-                    Shakespeare&apos;s Jane Eyre, Jarrot Productions&apos; Dial
-                    M for Murder and Ground Floor Theatre&apos;s Texas premier
-                    of Amy and The Orphans. He will next appear back at Ground
-                    Floor Theatre for their 10th Anniversary production of
-                    Parade.
+                    Shakespeare&apos;s <i>Jane Eyre</i>, Jarrot
+                    Productions&apos; <i>Dial M for Murder</i> and Ground Floor
+                    Theatre&apos;s Texas premier of <i>Amy and The Orphans</i>.
+                    He will next appear back at Ground Floor Theatre for their
+                    10th Anniversary production of <i>Parade</i>.
                   </p>
                 </div>
               </div>
