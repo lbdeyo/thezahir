@@ -71,9 +71,9 @@ export default function Navigation() {
             <Link href="/team" className="hover:underline">
               team
             </Link>
-            {/* <a href="#" className="hover:underline">
+            <Link href="/donate" className="hover:underline">
               donate
-            </a> */}
+            </Link>
           </nav>
         </div>
 
@@ -95,9 +95,9 @@ export default function Navigation() {
             <Link href="/team" className="hover:underline" onClick={toggleMenu}>
               team
             </Link>
-            {/* <a href="#" className="hover:underline" onClick={toggleMenu}>
+            <Link href="/donate" className="hover:underline" onClick={toggleMenu}>
               donate
-            </a> */}
+            </Link>
           </nav>
         )}
       </div>
