@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "| THE ZAHIR |",
   description: "A dramatic arts company",
+  icons: {
+    icon: "/favicon.ico",
+  },
   openGraph: {
     title: "| THE ZAHIR |",
     description: "A dramatic arts company",
