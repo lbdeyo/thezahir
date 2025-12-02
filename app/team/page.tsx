@@ -340,6 +340,45 @@ export default function Team() {
                     10th Anniversary production of <i>Parade</i>.
                   </p>
                 </div>
+                {/* Member 4 */}
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/img/company/werzner.jpg"
+                    alt="Brent Werzner"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                    Brent Werzner
+                  </h3>
+                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                    Actor
+                  </p>
+                  <p className="text-lg text-left text-black font-['Baskerville']">
+                    Brent Werzner is an actor who has worked and performed
+                    professionally with major motion picture, television, and
+                    interactive media studios, including A24, Netflix, NBC, CBS,
+                    Universal and Rockstar Games. Brent is an alumni of Saint
+                    Edward's University, in Austin, TX, and is a long-standing
+                    member of the Screen Actors Guild (SAG). He is known for his
+                    roles in critically acclaimed films <i>Green Room</i> (2015)
+                    and <i>Blue Ruin</i> (2013), as well as in CBS'{" "}
+                    <i>Blue Bloods</i>, and Netflix's episodic comedy,{" "}
+                    <i>On My Block</i>. Theatrically, he has worked with the
+                    renowned SITI Company and director Anne Bogart, debuting the
+                    role of Poseidon in the <i>Trojan Women</i> (After
+                    Euripides) at the Getty Villa in Los Angeles and the Harvey
+                    Theatre in New York City. Brent also performed the title
+                    role in Euripides' <i>Herakles</i>; touring internationally
+                    through Greece, and at BAM's Fisher Stage in Brooklyn, NY.
+                    Brent also works as an employment and civil rights paralegal
+                    for Kaplan Law Firm in Austin. Brent wishes to express his
+                    deepest gratitude to Elizabeth, his wife and partner, for
+                    her love and support.
+                  </p>
+                </div>
               </div>
             </section>
           </div>
