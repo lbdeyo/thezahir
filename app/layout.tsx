@@ -16,9 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "| THE ZAHIR |",
   description: "A dramatic arts company",
-  icons: {
-    icon: "/favicon.ico",
-  },
   openGraph: {
     title: "| THE ZAHIR |",
     description: "A dramatic arts company",
@@ -41,6 +38,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zgf1kpm.css" />
+        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
