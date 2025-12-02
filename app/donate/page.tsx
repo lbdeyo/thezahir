@@ -146,6 +146,13 @@ function DonateContent() {
             <p className="text-xl sm:text-2xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
               Help us create meaningful theater and storytelling
             </p>
+            <p className="text-base sm:text-lg text-black font-medium font-['Baskerville'] leading-relaxed">
+              The Zahir Productions, Inc. is a Texas not-for-profit corporation. 
+              Our application for 501(c)(3) tax-exempt status is pending with the 
+              Internal Revenue Service. If our application is approved, all donations 
+              made during the pendency period will be retroactively tax-deductible to 
+              the full extent permitted by law.
+            </p>
           </div>
 
           {/* Monthly Membership Tiers */}

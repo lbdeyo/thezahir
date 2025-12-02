@@ -122,15 +122,29 @@ export default function OurWork() {
                   <p className="text-xl text-white font-medium font-['Baskerville'] mt-4">
                     A surreal, darkly comic exploration of belief,
                     responsibility, and transformation.A reading is planned for
-                    2026.
+                    2026. Learn more at{" "}
+                    <i>
+                      <a
+                        href="https://theegg.noahmasterson.com"
+                        className="font-bold hover:underline transition-all text-[#E6AD06]"
+                      >
+                        The Egg's website.
+                      </a>
+                    </i>
                   </p>
                 </div>
               </div>
             </div>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
-              We also plan to bring <i>Apprehension</i>, the critically
-              acclaimed paranoid thriller, back to the stage within the next
-              twelve months.
+              We also plan to bring{" "}
+              <a
+                href="https://apprehensionplay.com"
+                className="font-bold hover:underline transition-all text-[#490f0f]"
+              >
+                <i>Apprehension</i>
+              </a>
+              , the critically acclaimed paranoid thriller, back to the stage
+              within the next twelve months.
             </p>
             <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
               Upcoming announcements will appear here as these projects move
