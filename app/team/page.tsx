@@ -151,8 +151,8 @@ export default function Team() {
                     Austin. He co-wrote the wildly popular{" "}
                     <i>Intergalactic Nemesis</i> series, which has played
                     off-Broadway and at the Kennedy Center and has been featured
-                    on TBS's <i>Conan</i>. Chad has worked with Rob Thomas (
-                    <i>Veronica Mars</i>, <i>Zombie</i>) and Scott Shepherd (
+                    on TBS&apos;s <i>Conan</i>. Chad has worked with Rob Thomas
+                    (<i>Veronica Mars</i>, <i>Zombie</i>) and Scott Shepherd (
                     <i>Haven</i>) on projects in development. Chad’s
                     professional screenwriting credits include scripts for the
                     horror-comedy <i>Precinct Five</i> (Kit Chemistry
