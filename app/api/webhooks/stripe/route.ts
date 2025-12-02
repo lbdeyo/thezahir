@@ -50,10 +50,13 @@ export async function POST(request: NextRequest) {
 
       case "invoice.payment_succeeded":
         const invoice = event.data.object as Stripe.Invoice;
+        const subscriptionId = (invoice as any).subscription && typeof (invoice as any).subscription === "string" 
+          ? (invoice as any).subscription 
+          : ((invoice as any).subscription as Stripe.Subscription | null)?.id || null;
         console.log("Invoice payment succeeded:", {
           invoiceId: invoice.id,
           customerId: invoice.customer,
-          subscriptionId: invoice.subscription,
+          subscriptionId: subscriptionId,
           amountPaid: invoice.amount_paid,
         });
         // TODO: Update subscription status, send receipt, etc.
@@ -70,10 +73,13 @@ export async function POST(request: NextRequest) {
 
       case "invoice.payment_failed":
         const failedInvoice = event.data.object as Stripe.Invoice;
+        const failedSubscriptionId = (failedInvoice as any).subscription && typeof (failedInvoice as any).subscription === "string"
+          ? (failedInvoice as any).subscription
+          : ((failedInvoice as any).subscription as Stripe.Subscription | null)?.id || null;
         console.log("Invoice payment failed:", {
           invoiceId: failedInvoice.id,
           customerId: failedInvoice.customer,
-          subscriptionId: failedInvoice.subscription,
+          subscriptionId: failedSubscriptionId,
           attemptCount: failedInvoice.attempt_count,
         });
         // TODO: Notify user, update subscription status, etc.
