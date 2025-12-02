@@ -1,7 +1,7 @@
 "use client";
 
 import Navigation from "../components/Navigation";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { startCheckout } from "../lib/startCheckout";
 import { useSearchParams } from "next/navigation";
 
@@ -58,7 +58,7 @@ const ONE_TIME_DONATIONS = [
 // Custom Donation Price ID (Live Mode)
 const CUSTOM_DONATION_PRICE_ID = "price_1Sa06yDPFz6EvGtXw9IY9cob";
 
-export default function DonatePage() {
+function DonateContent() {
   const searchParams = useSearchParams();
   const [customAmount, setCustomAmount] = useState("");
   const [isProcessing, setIsProcessing] = useState(false);
@@ -259,6 +259,39 @@ export default function DonatePage() {
         </main>
       </div>
     </div>
+  );
+}
+
+function LoadingFallback() {
+  return (
+    <div className="min-h-screen font-sans bg-attachment-responsive bg-rotated relative">
+      <div className="max-w-5xl mx-auto relative z-10">
+        <Navigation />
+        <main className="w-full px-4 sm:px-8 pt-0 pb-12 relative">
+          <div
+            className="px-4 sm:px-12 pt-4 pb-6 relative"
+            style={{
+              background: "rgba(173, 161, 115, 0.90)",
+            }}
+          >
+            <h1
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']"
+              style={{ fontWeight: 800, fontStyle: "normal" }}
+            >
+              Support The Zahir
+            </h1>
+          </div>
+        </main>
+      </div>
+    </div>
+  );
+}
+
+export default function DonatePage() {
+  return (
+    <Suspense fallback={<LoadingFallback />}>
+      <DonateContent />
+    </Suspense>
   );
 }
 
