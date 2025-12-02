@@ -1,0 +1,56 @@
+[
+  {
+    "name": "Friend of the Zahir",
+    "expectedId": "price_1SZzvIDPFz6EvGtXKVXKcEAv",
+    "actualId": "price_1Sa0jBDPFz6EvGtXjd7UpJ11",
+    "match": false
+  },
+  {
+    "name": "Supporter of The Zahir",
+    "expectedId": "price_1SZzvqDPFz6EvGtXUOcmWYxF",
+    "actualId": "price_1Sa0jCDPFz6EvGtXhUG1IQTh",
+    "match": false
+  },
+  {
+    "name": "Patron of The Zahir",
+    "expectedId": "price_1SZzwyDPFz6EvGtXv5CBvN42",
+    "actualId": "price_1Sa0jCDPFz6EvGtXtRKkxrBk",
+    "match": false
+  },
+  {
+    "name": "Champion of The Zahir",
+    "expectedId": "price_1SZzxDDPFz6EvGtXAqfq9pYX",
+    "actualId": "price_1Sa0jDDPFz6EvGtXJIegtQf2",
+    "match": false
+  },
+  {
+    "name": "Producer Circle",
+    "expectedId": "price_1SZzvpDPFz6EvGtXtxEB39Fo",
+    "actualId": "price_1Sa0jEDPFz6EvGtXS5dqh2M6",
+    "match": false
+  },
+  {
+    "name": "One-time Donation - $25",
+    "expectedId": "price_1Sa00IDPFz6EvGtXu5s0eTXy",
+    "actualId": "price_1Sa0jEDPFz6EvGtXp0hXK4M9",
+    "match": false
+  },
+  {
+    "name": "One-time Donation - $50",
+    "expectedId": "price_1Sa00vDPFz6EvGtX4rfNTebc",
+    "actualId": "price_1Sa0jFDPFz6EvGtXQWV55lan",
+    "match": false
+  },
+  {
+    "name": "One-time Donation - $100",
+    "expectedId": "price_1Sa01HDPFz6EvGtXJdOXyDsY",
+    "actualId": "price_1Sa0jGDPFz6EvGtX4RVDuyit",
+    "match": false
+  },
+  {
+    "name": "Custom One-time Donation",
+    "expectedId": "price_1Sa06yDPFz6EvGtXw9IY9cob",
+    "actualId": "price_1Sa0jHDPFz6EvGtXgQT92x7k",
+    "match": false
+  }
+]
