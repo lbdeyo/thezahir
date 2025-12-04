@@ -24,9 +24,6 @@ export const metadata: Metadata = {
       { url: "/img/zahir-logo.svg" },
     ],
   },
-  other: {
-    "typekit-link": "https://use.typekit.net/zgf1kpm.css",
-  },
 };
 
 export default function RootLayout({
@@ -38,7 +35,6 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zgf1kpm.css" />
-        <link rel="icon" href="/favicon.ico" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
