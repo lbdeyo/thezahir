@@ -143,7 +143,7 @@ function DonateContent() {
             >
               Support The Zahir
             </h1>
-            <p className="text-xl sm:text-2xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
+            <p className="text-2xl sm:text-3xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
               Help us create meaningful theater and storytelling
             </p>
             <p className="text-base sm:text-lg text-black font-medium font-['Baskerville'] leading-relaxed">
@@ -213,7 +213,7 @@ function DonateContent() {
                 <button
                   key={donation.priceId}
                   onClick={() => startCheckout(donation.priceId)}
-                  className="bg-black text-[#ada173] border-2 border-[#ada173] px-8 py-4 rounded font-semibold hover:bg-[#ada173] hover:text-black transition-colors font-['Baskerville']"
+                  className="bg-black text-[#ada173] border-2 border-[#ada173] px-8 py-4 rounded font-semibold hover:bg-white hover:text-black transition-colors font-['Baskerville']"
                 >
                   Donate {donation.amount}
                 </button>

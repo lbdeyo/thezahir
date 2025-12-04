@@ -58,7 +58,7 @@ export default function Team() {
             >
               The Team
             </h1>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir is a small company with an ambitious mission, guided by
               artists and collaborators who believe deeply in the power of live
               storytelling. Our team brings together creative, organizational,
@@ -87,7 +87,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Artistic Director & President
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     The Zahir founder L.B. Deyo is a playwright whose play{" "}
                     <i>Apprehension</i> premiered at Hyde Park Theatre in 2025.
                     He is the author, with David &quot;Lefty&quot; Leibowitz, of{" "}
@@ -117,7 +117,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Treasurer
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Noah Masterson is a playwright, musician, juggler, and
                     general creative rabble rouser. He was part of New York
                     City&apos;s Inverse Theater Company in the late 90s and
@@ -144,7 +144,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Secretary
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Chad Nichols is a writer and musician living in Austin,
                     Texas. In 2013, he received an MFA in Writing from the
                     Michener Center for Writers at the University of Texas at
@@ -184,7 +184,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Jessica Brynn Cohen is an actor, writer, musician,
                     filmmaker, and all-around storyteller and performer. She has
                     appeared in many theatrical productions in Austin and
@@ -230,7 +230,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Michelle is an actor, emcee, producer and writer with over
                     30 years of on-stage experience. Alongside various on-camera
                     and voice-over roles, she has worked with Hyde Park Theatre,
@@ -257,7 +257,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Danu Mara is a voice-over and on-camera actor with over 20
                     years of experience in commercials, animation, film, video
                     games, and eLearning. She voiced hundreds of characters for
@@ -291,7 +291,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Jeff Mills is an award winning theater artist who has
                     rambled across the Austin theatre scene for the last 25
                     years. He has worked with the Rude Mechs, SVT, Physical
@@ -326,7 +326,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Justin Smith is an actor and musician who&apos;s been a
                     member of Austin&apos;s creative community for 15(ish)
                     years. Justin moved to Austin from Memphis and since has
@@ -356,7 +356,7 @@ export default function Team() {
                   <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-lg text-left text-black font-['Baskerville']">
+                  <p className="text-xl text-left text-black font-['Baskerville']">
                     Brent Werzner is an actor who has worked and performed
                     professionally with major motion picture, television, and
                     interactive media studios, including A24, Netflix, NBC, CBS,

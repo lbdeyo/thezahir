@@ -112,18 +112,21 @@ export default function Contact() {
               background: "rgba(173, 161, 115, 0.90)",
             }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-6 pt-4 font-['thirsty-rough-two']" style={{ fontWeight: 800, fontStyle: 'normal' }}>
+            <h1
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-6 pt-4 font-['thirsty-rough-two']"
+              style={{ fontWeight: 800, fontStyle: "normal" }}
+            >
               Contact
             </h1>
 
             {status === "success" && (
-              <div className="mb-6 p-4 bg-black/20 rounded text-black text-xl font-medium font-['Baskerville']">
+              <div className="mb-6 p-4 bg-black/20 rounded text-black text-2xl font-medium font-['Baskerville']">
                 Thank you for your message. We&apos;ll get back to you soon.
               </div>
             )}
 
             {status === "error" && (
-              <div className="mb-6 p-4 bg-black/20 rounded text-black text-xl font-medium font-['Baskerville']">
+              <div className="mb-6 p-4 bg-black/20 rounded text-black text-2xl font-medium font-['Baskerville']">
                 Something went wrong. Please try again or email us directly.
               </div>
             )}

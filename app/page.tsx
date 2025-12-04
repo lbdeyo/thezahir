@@ -55,15 +55,15 @@ export default function Home() {
             >
               A dramatic arts company
             </h1>
-            <p className="text-xl sm:text-2xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
+            <p className="text-2xl sm:text-3xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
             <CoinVideo />
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects that bring people together for meaningful conversation.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               At a time defined by noise, loneliness, and misinformation, our
               work invites audiences to pause, reflect, and speak with one
               another.
@@ -76,13 +76,13 @@ export default function Home() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
               Our work
             </h2>
-            <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
               We make theater and media that challenges, provokes, and opens
               space for conversation. We focus on new stories told through
               theater, film, and other dramatic arts, with an emphasis on
               connection in an increasingly disconnected world.
             </p>
-            <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
               As a newly founded company, we are actively developing our
               inaugural projects and collaborations. Upcoming announcements will
               appear here.{" "}
@@ -112,7 +112,7 @@ export default function Home() {
                 className="w-full sm:max-w-[240px] sm:h-auto"
               />
             </div>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               In Jorge Luis Borges&apos;s{" "}
               <a
                 href="https://sffaudiomediacan.s3.amazonaws.com/pdfs/TheZahirByJorgeLuisBorgesTranslatedByDudleyFitts.pdf"
@@ -125,7 +125,7 @@ export default function Home() {
               universe has contracted to the size of a small coin. The Zahir is
               fascinating, dazzling, and a curse.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               We chose the name because each of us confronts a modern Zahir:
               screens, feeds, and devices that capture attention but diminish
               connection. Through theater and storytelling, we strive to break

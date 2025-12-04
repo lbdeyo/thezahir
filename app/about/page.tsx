@@ -57,7 +57,7 @@ export default function About() {
             >
               About The Zahir
             </h1>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               In Jorge Luis Borges&apos;s short story{" "}
               <a
                 href="https://sffaudiomediacan.s3.amazonaws.com/pdfs/TheZahirByJorgeLuisBorgesTranslatedByDudleyFitts.pdf"
@@ -70,14 +70,14 @@ export default function About() {
               the smaller the universe becomes. It is a metaphor for obsession,
               attention, and the narrowing of the human world.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               We chose the name because each of us confronts a modern Zahir: the
               screens, feeds, and digital currents that demand our attention
               while quietly shrinking our sense of one another. In an age
               defined by noise, loneliness, and misinformation, the act of
               gathering for a story has become radical.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir was founded to counter that contraction. Through
               theater, film, and other dramatic arts, we strive to break the
               spell—to create work that draws people back into the present, back
@@ -85,14 +85,14 @@ export default function About() {
               storytelling is still one of the most powerful tools for widening
               perception and renewing human connection.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               We are committed to producing original work, paying artists
               fairly, and building a sustainable creative home in Austin. Though
               newly formed, our vision is long-term: to become a place where
               artists can take risks, audiences can wrestle with new ideas, and
               everyone involved can feel a little less alone.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               This is the beginning of that work.
             </p>
             <div className="w-full mb-6">

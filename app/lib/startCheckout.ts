@@ -2,10 +2,14 @@
  * Helper function to initiate Stripe Checkout
  * @param priceId - The Stripe Price ID
  * @param metadata - Optional metadata to pass to the checkout session
+ * @param successUrl - Optional custom success URL (defaults to /donate)
+ * @param cancelUrl - Optional custom cancel URL (defaults to /donate)
  */
 export async function startCheckout(
   priceId: string,
-  metadata?: Record<string, any>
+  metadata?: Record<string, any>,
+  successUrl?: string,
+  cancelUrl?: string
 ) {
   try {
     const baseUrl = window.location.origin;
@@ -16,8 +20,8 @@ export async function startCheckout(
       },
       body: JSON.stringify({
         priceId,
-        successUrl: `${baseUrl}/donate?success=true`,
-        cancelUrl: `${baseUrl}/donate?canceled=true`,
+        successUrl: successUrl || `${baseUrl}/donate?success=true`,
+        cancelUrl: cancelUrl || `${baseUrl}/donate?canceled=true`,
         metadata: metadata || {},
       }),
     });

@@ -55,16 +55,19 @@ export default function Navigation() {
           </button>
 
           {/* Desktop navigation */}
-          <nav className="hidden sm:flex gap-8 text-[#ada173] text-xl font-semibold font-['Baskerville']">
+          <nav className="hidden sm:flex gap-8 text-[#ada173] text-lg font-semibold font-['Baskerville']">
             <Link href="/our-work" className="hover:underline">
               our work
             </Link>
             <Link href="/about" className="hover:underline">
               about
             </Link>
-            {/* <a href="#" className="hover:underline">
+            <Link href="/support" className="hover:underline">
               support
-            </a> */}
+            </Link>
+            <Link href="/founding-donors-circle" className="hover:underline">
+              founding donors
+            </Link>
             <Link href="/contact" className="hover:underline">
               contact
             </Link>
@@ -79,16 +82,19 @@ export default function Navigation() {
 
         {/* Mobile navigation menu */}
         {isMenuOpen && (
-          <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-[#ada173] text-xl font-semibold font-['Baskerville']">
+          <nav className="sm:hidden flex flex-col gap-4 mt-4 pb-4 text-[#ada173] text-lg font-semibold font-['Baskerville']">
             <Link href="/our-work" className="hover:underline" onClick={toggleMenu}>
               our work
             </Link>
             <Link href="/about" className="hover:underline" onClick={toggleMenu}>
               about
             </Link>
-            {/* <a href="#" className="hover:underline" onClick={toggleMenu}>
+            <Link href="/support" className="hover:underline" onClick={toggleMenu}>
               support
-            </a> */}
+            </Link>
+            <Link href="/founding-donors-circle" className="hover:underline" onClick={toggleMenu}>
+              founding donors
+            </Link>
             <Link href="/contact" className="hover:underline" onClick={toggleMenu}>
               contact
             </Link>

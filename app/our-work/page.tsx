@@ -58,13 +58,13 @@ export default function OurWork() {
             >
               Our Work
             </h1>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects designed to spark conversation in an age that often
               discourages it. We focus on new work—bold, intimate, and alive to
               the anxieties and possibilities of modern life.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Our projects begin with a simple belief: that stories can pull
               people back into the world. At a time when screens and feeds
               narrow our attention, we make work that widens it. Our productions
@@ -72,7 +72,7 @@ export default function OurWork() {
               experience something shared—something that lingers long after the
               final moment.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               As a newly founded company, we are building our first slate of
               productions. These include original plays, short films, and
               mixed-media storytelling experiments that explore connection,
@@ -95,7 +95,7 @@ export default function OurWork() {
                     className="w-full h-auto object-cover rounded border"
                     style={{ borderColor: "#ada173" }}
                   />
-                  <p className="text-xl text-white font-medium font-['Baskerville'] mt-4">
+                  <p className="text-2xl text-white font-medium font-['Baskerville'] mt-4">
                     A tense, fast-paced political and technological thriller
                     based on the{" "}
                     <a
@@ -119,7 +119,7 @@ export default function OurWork() {
                     className="w-full h-auto object-cover rounded border"
                     style={{ borderColor: "#ada173" }}
                   />
-                  <p className="text-xl text-white font-medium font-['Baskerville'] mt-4">
+                  <p className="text-2xl text-white font-medium font-['Baskerville'] mt-4">
                     A surreal, darkly comic exploration of belief,
                     responsibility, and transformation.A reading is planned for
                     2026. Learn more at{" "}
@@ -135,7 +135,7 @@ export default function OurWork() {
                 </div>
               </div>
             </div>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               We also plan to bring{" "}
               <a
                 href="https://apprehensionplay.com"
@@ -146,7 +146,7 @@ export default function OurWork() {
               , the critically acclaimed paranoid thriller, back to the stage
               within the next twelve months.
             </p>
-            <p className="text-xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Upcoming announcements will appear here as these projects move
               forward. We invite you to follow along as The Zahir’s inaugural
               work takes shape.
