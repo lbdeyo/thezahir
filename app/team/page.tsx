@@ -81,13 +81,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     L.B. Deyo
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Artistic Director & President
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     The Zahir founder L.B. Deyo is a playwright whose play{" "}
                     <i>Apprehension</i> premiered at Hyde Park Theatre in 2025.
                     He is the author, with David &quot;Lefty&quot; Leibowitz, of{" "}
@@ -111,13 +111,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Noah Masterson
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Treasurer
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Noah Masterson is a playwright, musician, juggler, and
                     general creative rabble rouser. He was part of New York
                     City&apos;s Inverse Theater Company in the late 90s and
@@ -138,13 +138,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Chad Nichols
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Secretary
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Chad Nichols is a writer and musician living in Austin,
                     Texas. In 2013, he received an MFA in Writing from the
                     Michener Center for Writers at the University of Texas at
@@ -178,13 +178,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Jessica Brynn Cohen
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Jessica Brynn Cohen is an actor, writer, musician,
                     filmmaker, and all-around storyteller and performer. She has
                     appeared in many theatrical productions in Austin and
@@ -217,6 +217,39 @@ export default function Team() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <Image
+                    src="/img/company/lauraderamo-headshot.jpg"
+                    alt="Laura D'Eramo"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Laura D&apos;Eramo
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor
+                  </p>
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                    Laura D&apos;Eramo is an Austin-based theatre and on-camera
+                    actor whose work spans classical, contemporary, and
+                    experimental performance. She received her B.A. from St.
+                    Edward’s University and continued her training at the
+                    Atlantic Acting School in NYC. After graduation, Laura moved
+                    to Japan, teaching English for two years and performing with
+                    the Tokyo International Players, an experience that
+                    broadened her artistic and global perspective. Since
+                    returning to Austin in 2024, she has worked with Austin
+                    Shakespeare, Walking Shadow Shakespeare Project, The
+                    Filigree Theatre, The Stage Austin, and The Vortex. Recent
+                    credits include <i>MotherTree</i> at The Vortex and{" "}
+                    <i>Caesar+Antony+Cleopatra</i> with Walking Shadow
+                    Shakespeare. She will next appear in The Stage Austin&apos;s{" "}
+                    <i>Titus Andronicus</i>.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
                     src="/img/company/michelle-keffer.jpg"
                     alt="Michelle Keffer"
                     width={144}
@@ -224,13 +257,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Michelle Keffer
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Michelle is an actor, emcee, producer and writer with over
                     30 years of on-stage experience. Alongside various on-camera
                     and voice-over roles, she has worked with Hyde Park Theatre,
@@ -251,13 +284,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Danu Mara
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Danu Mara is a voice-over and on-camera actor with over 20
                     years of experience in commercials, animation, film, video
                     games, and eLearning. She voiced hundreds of characters for
@@ -285,13 +318,13 @@ export default function Team() {
                       objectPosition: "center 55%",
                     }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Jeff Mills
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Jeff Mills is an award winning theater artist who has
                     rambled across the Austin theatre scene for the last 25
                     years. He has worked with the Rude Mechs, SVT, Physical
@@ -320,13 +353,13 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Justin Smith
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Justin Smith is an actor and musician who&apos;s been a
                     member of Austin&apos;s creative community for 15(ish)
                     years. Justin moved to Austin from Memphis and since has
@@ -350,33 +383,34 @@ export default function Team() {
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
                     style={{ background: "#ddd" }}
                   />
-                  <h3 className="text-xl font-bold text-black mb-1 font-['Baskerville']">
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
                     Brent Werzner
                   </h3>
-                  <p className="text-lg text-black mb-2 font-medium font-['Baskerville']">
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-xl text-left text-black font-['Baskerville']">
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
                     Brent Werzner is an actor who has worked and performed
                     professionally with major motion picture, television, and
                     interactive media studios, including A24, Netflix, NBC, CBS,
                     Universal and Rockstar Games. Brent is an alumni of Saint
-                    Edward's University, in Austin, TX, and is a long-standing
-                    member of the Screen Actors Guild (SAG). He is known for his
-                    roles in critically acclaimed films <i>Green Room</i> (2015)
-                    and <i>Blue Ruin</i> (2013), as well as in CBS'{" "}
-                    <i>Blue Bloods</i>, and Netflix's episodic comedy,{" "}
-                    <i>On My Block</i>. Theatrically, he has worked with the
-                    renowned SITI Company and director Anne Bogart, debuting the
-                    role of Poseidon in the <i>Trojan Women</i> (After
-                    Euripides) at the Getty Villa in Los Angeles and the Harvey
-                    Theatre in New York City. Brent also performed the title
-                    role in Euripides' <i>Herakles</i>; touring internationally
-                    through Greece, and at BAM's Fisher Stage in Brooklyn, NY.
-                    Brent also works as an employment and civil rights paralegal
-                    for Kaplan Law Firm in Austin. Brent wishes to express his
-                    deepest gratitude to Elizabeth, his wife and partner, for
-                    her love and support.
+                    Edward&apos;s University, in Austin, TX, and is a
+                    long-standing member of the Screen Actors Guild (SAG). He is
+                    known for his roles in critically acclaimed films{" "}
+                    <i>Green Room</i> (2015) and <i>Blue Ruin</i> (2013), as
+                    well as in CBS&apos; <i>Blue Bloods</i>, and Netflix&apos;s
+                    episodic comedy, <i>On My Block</i>. Theatrically, he has
+                    worked with the renowned SITI Company and director Anne
+                    Bogart, debuting the role of Poseidon in the{" "}
+                    <i>Trojan Women</i> (After Euripides) at the Getty Villa in
+                    Los Angeles and the Harvey Theatre in New York City. Brent
+                    also performed the title role in Euripides&apos;{" "}
+                    <i>Herakles</i>; touring internationally through Greece, and
+                    at BAM&apos;s Fisher Stage in Brooklyn, NY. Brent also works
+                    as an employment and civil rights paralegal for Kaplan Law
+                    Firm in Austin. Brent wishes to express his deepest
+                    gratitude to Elizabeth, his wife and partner, for her love
+                    and support.
                   </p>
                 </div>
               </div>

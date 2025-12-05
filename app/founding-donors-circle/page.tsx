@@ -153,8 +153,8 @@ function FoundingDonorsCircleContent() {
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir is a new Austin-based nonprofit dedicated to bold,
               conversation-driven storytelling. As we develop our next slate of
-              plays—including Oversight and a remount of Apprehension—Founding
-              Donors help us:
+              plays—including <i>Oversight</i> and a remount of{" "}
+              <i>Apprehension</i>—Founding Donors help us:
             </p>
             <ul className="text-2xl text-black mb-6 font-medium font-['Baskerville'] list-disc list-inside space-y-2">
               <li>Fund readings, workshops, and rehearsals</li>
