@@ -325,21 +325,13 @@ export default function Team() {
                     Actor
                   </p>
                   <p className="text-2xl text-left text-black font-['Baskerville']">
-                    Jeff Mills is an award winning theater artist who has
-                    rambled across the Austin theatre scene for the last 25
-                    years. He has worked with the Rude Mechs, SVT, Physical
-                    Plant, Fusebox, Zach Theater,, Refraction Arts, the Siti
-                    Company and many more. Out of St Edwards he cut his teeth in
-                    the improv/sketch scene as a founding member of Fatbuckle &
-                    Think Tank, moved to NYC to work with the Muppets, and then
-                    returned to Austin as a producer, director, actor and sound
-                    designer. Notable credits include <i>The Assumption</i>,{" "}
-                    <i>Fixing King John</i>, <i>Roe</i>,{" "}
-                    <i>Everything is Established</i>, <i>Three</i>,
-                    <i>Spacestation1985</i>, <i>Fixing Troilus and Cressida</i>,
-                    and <i>Hotel Vanya.</i> In 2018, Jeff received the
-                    distinguished John Bustin Award for Conspicuous Versatility
-                    from the Austin Critics Table.
+                    SHANNON is a thirty-year veteran of stage and screen, as
+                    well as a writer and director. He has appeared in films and
+                    TV shows such as <i>Breaking Bad</i>, <i>Les Misérables</i>,{" "}
+                    <i>Day 5</i>, <i>Red vs. Blue</i>, <i>RWBY</i>, and{" "}
+                    <i>Camp Camp</i>. He remains active in the local in the
+                    Austin improv community, with troupes Get Up and Just Be
+                    Sweet as well as many limited run improv productions.
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
