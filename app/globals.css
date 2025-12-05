@@ -68,3 +68,12 @@ body {
     background-attachment: fixed;
   }
 }
+
+/* Center last item in 2-column grid when it's alone (odd number of items) */
+@media (min-width: 640px) {
+  .grid.grid-cols-1 > *:last-child:nth-child(odd) {
+    grid-column: span 2;
+    justify-self: center;
+    max-width: 50%;
+  }
+}

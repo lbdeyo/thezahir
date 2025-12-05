@@ -310,7 +310,7 @@ export default function Team() {
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/shannon-mccormick.jpg"
-                    alt="Jeff Mills"
+                    alt="Shannon McCormick"
                     width={144}
                     height={144}
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
