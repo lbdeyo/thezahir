@@ -325,7 +325,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p className="text-2xl text-left text-black font-['Baskerville']">
-                    SHANNON is a thirty-year veteran of stage and screen, as
+                    Shannon is a thirty-year veteran of stage and screen, as
                     well as a writer and director. He has appeared in films and
                     TV shows such as <i>Breaking Bad</i>, <i>Les Misérables</i>,{" "}
                     <i>Day 5</i>, <i>Red vs. Blue</i>, <i>RWBY</i>, and{" "}
