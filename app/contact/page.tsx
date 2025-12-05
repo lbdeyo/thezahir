@@ -12,44 +12,34 @@ export default function Contact() {
     email: "",
     message: "",
   });
+  const [subscribeToMailingList, setSubscribeToMailingList] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus("submitting");
 
     try {
-      const formDataToSend = new FormData();
-      formDataToSend.append("name", formData.name);
-      formDataToSend.append("email", formData.email);
-      formDataToSend.append("message", formData.message);
-
-      const response = await fetch("https://formspree.io/f/mblvyvny", {
+      const response = await fetch("/api/contact", {
         method: "POST",
-        body: formDataToSend,
-        redirect: "manual",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subscribeToMailingList: subscribeToMailingList,
+        }),
       });
 
-      // Formspree redirects on success (status 302), so we treat redirects as success
-      if (
-        response.ok ||
-        response.status === 302 ||
-        response.type === "opaqueredirect"
-      ) {
+      const data = await response.json();
+
+      if (response.ok && data.success) {
         setStatus("success");
         setFormData({ name: "", email: "", message: "" });
+        setSubscribeToMailingList(false);
       } else {
-        // Try to get error details
-        try {
-          const errorData = await response.json();
-          console.error("Form submission error:", errorData);
-        } catch {
-          // If we can't parse JSON, just log the status
-          console.error(
-            "Form submission error:",
-            response.status,
-            response.statusText
-          );
-        }
+        console.error("Form submission error:", data);
         setStatus("error");
       }
     } catch (error) {
@@ -184,6 +174,22 @@ export default function Contact() {
                   rows={6}
                   className="w-full px-4 py-3 bg-[#eae5ca] text-black text-xl font-medium font-['Baskerville'] focus:outline-none transition-colors resize-vertical"
                 />
+              </div>
+
+              <div>
+                <label className="flex items-center gap-3 cursor-pointer">
+                  <input
+                    type="checkbox"
+                    checked={subscribeToMailingList}
+                    onChange={(e) =>
+                      setSubscribeToMailingList(e.target.checked)
+                    }
+                    className="w-5 h-5 text-black border-2 border-black rounded focus:ring-2 focus:ring-[#ada173] cursor-pointer"
+                  />
+                  <span className="text-black text-xl font-medium font-['Baskerville']">
+                    Add me to The Zahir&apos;s mailing list
+                  </span>
+                </label>
               </div>
 
               <button

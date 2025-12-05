@@ -146,7 +146,7 @@ function DonateContent() {
             <p className="text-2xl sm:text-3xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
               Help us create meaningful theater and storytelling
             </p>
-            <p className="text-base sm:text-lg text-black font-medium font-['Baskerville'] leading-relaxed">
+            <p className="text-xl sm:text-2xl text-black font-medium font-['Baskerville'] leading-relaxed">
               The Zahir Productions, Inc. is a Texas not-for-profit corporation. 
               Our application for 501(c)(3) tax-exempt status is pending with the 
               Internal Revenue Service. If our application is approved, all donations 
@@ -163,7 +163,7 @@ function DonateContent() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
               Monthly Membership Tiers
             </h2>
-            <p className="text-lg text-[#ada173] mb-8 font-medium font-['Baskerville']">
+            <p className="text-xl text-[#ada173] mb-8 font-medium font-['Baskerville']">
               Join our community of supporters with a recurring monthly donation
             </p>
 
@@ -180,7 +180,7 @@ function DonateContent() {
                     {tier.price}
                     <span className="text-lg font-normal">/month</span>
                   </p>
-                  <p className="text-sm text-[#ada173]/80 mb-4 font-['Baskerville']">
+                  <p className="text-base text-[#ada173]/80 mb-4 font-['Baskerville']">
                     {tier.description}
                   </p>
                   <button
@@ -204,7 +204,7 @@ function DonateContent() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-black mb-6 font-['Baskerville']">
               One-Time Donations
             </h2>
-            <p className="text-lg text-black mb-8 font-medium font-['Baskerville']">
+            <p className="text-xl text-black mb-8 font-medium font-['Baskerville']">
               Make a one-time contribution to support our work
             </p>
 
@@ -229,7 +229,7 @@ function DonateContent() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
               Custom Donation Amount
             </h2>
-            <p className="text-lg text-[#ada173] mb-6 font-medium font-['Baskerville']">
+            <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
               Enter any amount you&apos;d like to donate (minimum $5)
             </p>
 
