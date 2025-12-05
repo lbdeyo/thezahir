@@ -309,6 +309,41 @@ export default function Team() {
                 {/* Member 1 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
+                    src="/img/company/shannon-mccormick.jpg"
+                    alt="Jeff Mills"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{
+                      objectPosition: "center 55%",
+                    }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Shannon McCormick
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor
+                  </p>
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                    Jeff Mills is an award winning theater artist who has
+                    rambled across the Austin theatre scene for the last 25
+                    years. He has worked with the Rude Mechs, SVT, Physical
+                    Plant, Fusebox, Zach Theater,, Refraction Arts, the Siti
+                    Company and many more. Out of St Edwards he cut his teeth in
+                    the improv/sketch scene as a founding member of Fatbuckle &
+                    Think Tank, moved to NYC to work with the Muppets, and then
+                    returned to Austin as a producer, director, actor and sound
+                    designer. Notable credits include <i>The Assumption</i>,{" "}
+                    <i>Fixing King John</i>, <i>Roe</i>,{" "}
+                    <i>Everything is Established</i>, <i>Three</i>,
+                    <i>Spacestation1985</i>, <i>Fixing Troilus and Cressida</i>,
+                    and <i>Hotel Vanya.</i> In 2018, Jeff received the
+                    distinguished John Bustin Award for Conspicuous Versatility
+                    from the Austin Critics Table.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
                     src="/img/company/mills.jpeg"
                     alt="Jeff Mills"
                     width={144}
