@@ -182,7 +182,7 @@ function FoundingDonorsCircleContent() {
                 Custom Donation Amount
               </h2>
               <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
-                Enter any amount you&apos;d like to donate (minimum $250)
+                Enter any amount you&apos;d like to donate (minimum $250 for Founding Donor&apos;s Circle)
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 max-w-md">
@@ -209,7 +209,10 @@ function FoundingDonorsCircleContent() {
                 <button
                   onClick={handleCustomDonation}
                   disabled={isProcessing || !customAmount}
-                  className="bg-[#ada173] text-black px-8 py-4 rounded font-semibold hover:bg-[#ada173]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-['Baskerville']"
+                  style={{
+                    backgroundColor: "rgba(173, 161, 115, 1)",
+                  }}
+                  className="text-black px-8 py-4 rounded font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed font-['Baskerville']"
                 >
                   {isProcessing ? "Processing..." : "Donate"}
                 </button>
