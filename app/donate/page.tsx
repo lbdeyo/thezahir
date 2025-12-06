@@ -68,7 +68,9 @@ function DonateContent() {
     if (searchParams.get("success") === "true") {
       alert("Thank you for your donation! Your payment was successful.");
     } else if (searchParams.get("canceled") === "true") {
-      alert("Your donation was canceled. Please try again if you'd like to support us.");
+      alert(
+        "Your donation was canceled. Please try again if you'd like to support us."
+      );
     }
   }, [searchParams]);
 
@@ -147,11 +149,11 @@ function DonateContent() {
               Help us create meaningful theater and storytelling
             </p>
             <p className="text-xl sm:text-2xl text-black font-medium font-['Baskerville'] leading-relaxed">
-              The Zahir Productions, Inc. is a Texas not-for-profit corporation. 
-              Our application for 501(c)(3) tax-exempt status is pending with the 
-              Internal Revenue Service. If our application is approved, all donations 
-              made during the pendency period will be retroactively tax-deductible to 
-              the full extent permitted by law.
+              The Zahir Productions, Inc. is a Texas not-for-profit corporation.
+              Our application for 501(c)(3) tax-exempt status is pending with
+              the Internal Revenue Service. If our application is approved, all
+              donations made during the pendency period will be retroactively
+              tax-deductible to the full extent permitted by law.
             </p>
           </div>
 
@@ -301,4 +303,3 @@ export default function DonatePage() {
     </Suspense>
   );
 }
-

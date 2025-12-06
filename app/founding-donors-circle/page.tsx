@@ -1,7 +1,7 @@
 "use client";
 
 import Navigation from "../components/Navigation";
-import { useEffect, Suspense } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { startCheckout } from "../lib/startCheckout";
 import { useSearchParams } from "next/navigation";
 
@@ -37,6 +37,8 @@ const FOUNDING_DONOR_TIERS = [
 
 function FoundingDonorsCircleContent() {
   const searchParams = useSearchParams();
+  const [customAmount, setCustomAmount] = useState("");
+  const [isProcessing, setIsProcessing] = useState(false);
 
   useEffect(() => {
     // Show success or cancel message based on URL params
@@ -61,6 +63,33 @@ function FoundingDonorsCircleContent() {
       `${baseUrl}/founding-donors-circle?success=true`,
       `${baseUrl}/founding-donors-circle?canceled=true`
     );
+  };
+
+  const handleCustomDonation = async () => {
+    const amount = parseFloat(customAmount);
+    if (isNaN(amount) || amount < 250) {
+      alert(
+        "Please enter a minimum donation of $250 to join the Founding Donors Circle"
+      );
+      return;
+    }
+
+    setIsProcessing(true);
+    try {
+      const baseUrl = window.location.origin;
+      await startCheckout(
+        CUSTOM_DONATION_PRICE_ID,
+        {
+          customAmount: amount.toString(),
+        },
+        `${baseUrl}/founding-donors-circle?success=true`,
+        `${baseUrl}/founding-donors-circle?canceled=true`
+      );
+    } catch (error) {
+      console.error("Error starting custom donation:", error);
+    } finally {
+      setIsProcessing(false);
+    }
   };
 
   return (
@@ -142,6 +171,49 @@ function FoundingDonorsCircleContent() {
                   <div className="text-base font-bold">— {tier.tier}</div>
                 </button>
               ))}
+            </div>
+
+            {/* Custom Donation */}
+            <div
+              className="px-4 sm:px-12 py-6 mb-12"
+              style={{ background: "rgba(0,0,0,0.9)" }}
+            >
+              <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
+                Custom Donation Amount
+              </h2>
+              <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
+                Enter any amount you&apos;d like to donate (minimum $250)
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 max-w-md">
+                <div className="flex-1">
+                  <label htmlFor="customAmount" className="sr-only">
+                    Custom donation amount
+                  </label>
+                  <div className="relative">
+                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#ada173] font-semibold">
+                      $
+                    </span>
+                    <input
+                      id="customAmount"
+                      type="number"
+                      min="250"
+                      step="0.01"
+                      value={customAmount}
+                      onChange={(e) => setCustomAmount(e.target.value)}
+                      placeholder="Enter amount"
+                      className="w-full bg-black border-2 border-[#ada173] text-[#ada173] px-8 py-4 rounded font-semibold focus:outline-none focus:ring-2 focus:ring-[#ada173] font-['Baskerville']"
+                    />
+                  </div>
+                </div>
+                <button
+                  onClick={handleCustomDonation}
+                  disabled={isProcessing || !customAmount}
+                  className="bg-[#ada173] text-black px-8 py-4 rounded font-semibold hover:bg-[#ada173]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-['Baskerville']"
+                >
+                  {isProcessing ? "Processing..." : "Donate"}
+                </button>
+              </div>
             </div>
 
             <h2
