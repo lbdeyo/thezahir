@@ -417,7 +417,7 @@ export default function Team() {
                     className="text-2xl text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
-                    David Ritch received his BFA in Theatre in 2018 from Texas
+                    David Ritch received his BFA in Theatre in 2022 from Texas
                     State University, where he directed Ionesco&apos;s{" "}
                     <i>The Bald Soprano</i>. Recently, he directed in{" "}
                     <i>The Yolk</i> by Noah Masterson, a condensed version of{" "}
