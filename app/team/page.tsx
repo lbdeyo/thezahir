@@ -87,7 +87,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Artistic Director & President
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     The Zahir founder L.B. Deyo is a playwright whose play{" "}
                     <i>Apprehension</i> premiered at Hyde Park Theatre in 2025.
                     He is the author, with David &quot;Lefty&quot; Leibowitz, of{" "}
@@ -117,7 +120,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Treasurer
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Noah Masterson is a playwright, musician, juggler, and
                     general creative rabble rouser. He was part of New York
                     City&apos;s Inverse Theater Company in the late 90s and
@@ -144,7 +150,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Secretary
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Chad Nichols is a writer and musician living in Austin,
                     Texas. In 2013, he received an MFA in Writing from the
                     Michener Center for Writers at the University of Texas at
@@ -153,7 +162,7 @@ export default function Team() {
                     off-Broadway and at the Kennedy Center and has been featured
                     on TBS&apos;s <i>Conan</i>. Chad has worked with Rob Thomas
                     (<i>Veronica Mars</i>, <i>Zombie</i>) and Scott Shepherd (
-                    <i>Haven</i>) on projects in development. Chad’s
+                    <i>Haven</i>) on projects in development. Chad's
                     professional screenwriting credits include scripts for the
                     horror-comedy <i>Precinct Five</i> (Kit Chemistry
                     Productions) and the R-rated comedy <i>Boomerang Moon</i>.
@@ -184,13 +193,16 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Jessica Brynn Cohen is an actor, writer, musician,
                     filmmaker, and all-around storyteller and performer. She has
                     appeared in many theatrical productions in Austin and
                     beyond, having performed on stages such as The Vortex, City
                     Theatre Austin, and Hyde Park Theatre. She holds a B. Iden
-                    Payne for “Outstanding Featured Musical Performance” for her
+                    Payne for "Outstanding Featured Musical Performance" for her
                     work in the 2021 Vortex Summer Youth Theatre. Alongside her
                     theatrical work, she has worked on several films both in
                     front of and behind the camera, including acting in Richard
@@ -230,11 +242,14 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Laura D&apos;Eramo is an Austin-based theatre and on-camera
                     actor whose work spans classical, contemporary, and
                     experimental performance. She received her B.A. from St.
-                    Edward’s University and continued her training at the
+                    Edward's University and continued her training at the
                     Atlantic Acting School in NYC. After graduation, Laura moved
                     to Japan, teaching English for two years and performing with
                     the Tokyo International Players, an experience that
@@ -263,7 +278,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Michelle is an actor, emcee, producer and writer with over
                     30 years of on-stage experience. Alongside various on-camera
                     and voice-over roles, she has worked with Hyde Park Theatre,
@@ -290,7 +308,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Danu Mara is a voice-over and on-camera actor with over 20
                     years of experience in commercials, animation, film, video
                     games, and eLearning. She voiced hundreds of characters for
@@ -324,7 +345,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Shannon is a thirty-year veteran of stage and screen, as
                     well as a writer and director. He has appeared in films and
                     TV shows such as <i>Breaking Bad</i>, <i>Les Misérables</i>,{" "}
@@ -351,7 +375,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Jeff Mills is an award winning theater artist who has
                     rambled across the Austin theatre scene for the last 25
                     years. He has worked with the Rude Mechs, SVT, Physical
@@ -386,7 +413,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Director, Playwright, Designer
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     David Ritch received his BFA in Theatre in 2018 from Texas
                     State University, where he directed Ionesco&apos;s{" "}
                     <i>The Bald Soprano</i>. Recently, he directed in{" "}
@@ -414,7 +444,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Justin Smith is an actor and musician who&apos;s been a
                     member of Austin&apos;s creative community for 15(ish)
                     years. Justin moved to Austin from Memphis and since has
@@ -444,7 +477,10 @@ export default function Team() {
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
                     Actor
                   </p>
-                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
                     Brent Werzner is an actor who has worked and performed
                     professionally with major motion picture, television, and
                     interactive media studios, including A24, Netflix, NBC, CBS,
