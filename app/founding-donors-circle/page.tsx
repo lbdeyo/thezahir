@@ -182,7 +182,8 @@ function FoundingDonorsCircleContent() {
                 Custom Donation Amount
               </h2>
               <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
-                Enter any amount you&apos;d like to donate (minimum $250 for Founding Donor&apos;s Circle)
+                Enter any amount you&apos;d like to donate (minimum $250 for
+                Founding Donor&apos;s Circle)
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 max-w-md">

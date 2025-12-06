@@ -373,6 +373,34 @@ export default function Team() {
                 {/* Member 4 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
+                    src="/img/company/david-ritch.jpg"
+                    alt="David Ritch"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    David Ritch
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Director, Playwright, Designer
+                  </p>
+                  <p className="text-2xl text-left text-black font-['Baskerville']">
+                    David Ritch received his BFA in Theatre in 2018 from Texas
+                    State University, where he directed Ionesco&apos;s{" "}
+                    <i>The Bald Soprano</i>. Recently, he directed in{" "}
+                    <i>The Yolk</i> by Noah Masterson, a condensed version of{" "}
+                    <i>The Egg</i>, for Frontera Fest. He also had his
+                    ten-minute play <i>The Willow Tree</i> produced and
+                    published by Script Works in their annual Out of Ink
+                    showcase. He looks forward to pushing the boundaries of
+                    Theatre and connecting people through that shared
+                    experience.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
                     src="/img/company/justin-smith.jpg"
                     alt="Justin Smith"
                     width={144}
