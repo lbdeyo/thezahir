@@ -265,6 +265,35 @@ export default function Team() {
                 </div>
                 <div className="flex flex-col items-center text-center">
                   <Image
+                    src="/img/company/hope-irish.jpg"
+                    alt="Hope Irish"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Hope Irish
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor
+                  </p>
+                  <p
+                    className="text-2xl text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
+                    Hope Irish Buchanan is an Austin based musician and
+                    songwriter who studied both acting and costume design at St.
+                    Edward&apos;s University. She is originally from Salado,
+                    Texas, and was born second of three to Southern Californian
+                    and Northern Irish immigrants. Hope Irish has released a
+                    full body of musical work and a small human. H.I. performs
+                    regularly in central Texas and abroad, enjoys many mediums,
+                    and is a citizen of the world.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
                     src="/img/company/michelle-keffer.jpg"
                     alt="Michelle Keffer"
                     width={144}
