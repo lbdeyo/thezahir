@@ -282,14 +282,41 @@ export default function Team() {
                     className="text-2xl text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
-                    Hope Irish Buchanan is an Austin based musician and
-                    songwriter who studied both acting and costume design at St.
-                    Edward&apos;s University. She is originally from Salado,
-                    Texas, and was born second of three to Southern Californian
-                    and Northern Irish immigrants. Hope Irish has released a
-                    full body of musical work and a small human. H.I. performs
-                    regularly in central Texas and abroad, enjoys many mediums,
-                    and is a citizen of the world.
+                    Hope Irish Buchanan is an Austin musician and songwriter who
+                    studied acting and costume design at St. Edward&rsquo;s
+                    University. She is originally from Salado, Texas, and was
+                    born second of three to a Southern Californian and a
+                    Northern Irish immigrant. Hope Irish has released a full
+                    body of musical work and a small human. Personal Albums
+                    include <i>HopeIsh</i> (denton house productions by Jimmy
+                    Wildcat and Orville), <i>The Best of The Least</i> (Superpop
+                    Records), <i>Rejects</i> and <i>The Real thing</i>,{" "}
+                    <i>Pleasure Maps</i> (Cody Coppin/ Matt Howard/ Seth Gibbs
+                    w/Shine and Sweetheart Studios), <i>Laddie</i>,{" "}
+                    <i>The Bubble</i> single sessions (Chris Frenchie Smith and
+                    Messina), <i>Hand To Mouth</i>, and most recently,{" "}
+                    <i>Do No Harm</i>, recorded at Studios at Fischer with Jon
+                    Clover Brown and mixed by the infamous Jimmy Wildcat at
+                    Sweetheart Studios. Hope Irish is currently recording
+                    another full length concept album, to be released in 2026.
+                    HI most recently performed in Brently Heilbron&rsquo;s
+                    theatrical production of <i>FUGA</i> at a sold out Stateside
+                    Theatre run in Austin, is a member of the classic annual
+                    Austin production of <i>HONKYTONK HOLIDAZE</i>, and has
+                    historically smashed commercial spots for <i>THE CHIVE</i>.
+                    HI has contributed vox/synths/keys to nationally and
+                    internationally touring acts with bands including Radar
+                    Radar, A Sky Jet Black, Til&rsquo; We&rsquo;re Blue or
+                    Destroy, Maxx Cherry, Peckinpah, Brother Machine, Rooster,
+                    and has contributed vocals and keys to countless studio
+                    sessions including Superpop Records with Seth Gibbs (Brother
+                    Machine and The Reputations), Featured vox on{" "}
+                    <i>Razed By Rebels</i> (Blue Rock Studios) as well as BGVs
+                    on <i>Clear Heart Full Eyes</i>, by Craig Finn (of the hold
+                    steady) produced by the legendary Mike McCarthy (Spoon, And
+                    You Will Know Us By The Trail Of Dead.) H.I. performs
+                    regularly, enjoys many mediums, and is a citizen of the
+                    world.
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
