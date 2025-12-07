@@ -88,18 +88,19 @@ export default function Team() {
                     Artistic Director & President
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     The Zahir founder L.B. Deyo is a playwright whose play{" "}
                     <i>Apprehension</i> premiered at Hyde Park Theatre in 2025.
-                    He is the author, with David &quot;Lefty&quot; Leibowitz, of{" "}
+                    He is the author of several books, including, with David
+                    &quot;Lefty&quot; Leibowitz,{" "}
                     <i>
                       Invisible Frontier: Exploring the tunnels, ruins &
                       rooftops of hidden New York
                     </i>{" "}
-                    and several other books. He&apos;s acted in such Austin
-                    plays as <i>The Intergalactic Nemesis</i> and{" "}
+                    . He&apos;s acted in such Austin plays as{" "}
+                    <i>The Intergalactic Nemesis</i> and{" "}
                     <i>Dance, Cupcake, Dance.</i>
                   </p>
                 </div>
@@ -121,7 +122,7 @@ export default function Team() {
                     Treasurer
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Noah Masterson is a playwright, musician, juggler, and
@@ -151,7 +152,7 @@ export default function Team() {
                     Secretary
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Chad Nichols is a writer and musician living in Austin,
@@ -194,7 +195,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Jessica Brynn Cohen is an actor, writer, musician,
@@ -243,7 +244,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Laura D&apos;Eramo is an Austin-based theatre and on-camera
@@ -279,7 +280,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Hope Irish Buchanan is an Austin musician and songwriter who
@@ -335,7 +336,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Michelle is an actor, emcee, producer and writer with over
@@ -365,7 +366,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Danu Mara is a voice-over and on-camera actor with over 20
@@ -402,7 +403,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Shannon is a thirty-year veteran of stage and screen, as
@@ -432,7 +433,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Jeff Mills is an award winning theater artist who has
@@ -470,7 +471,7 @@ export default function Team() {
                     Director, Playwright, Designer
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     David Ritch received his BFA in Theatre in 2022 from Texas
@@ -501,7 +502,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Justin Smith is an actor and musician who&apos;s been a
@@ -534,7 +535,7 @@ export default function Team() {
                     Actor
                   </p>
                   <p
-                    className="text-2xl text-left text-black font-['Baskerville']"
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
                     Brent Werzner is an actor who has worked and performed
