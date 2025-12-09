@@ -74,7 +74,7 @@ export default function Support() {
               conversations.
             </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              We believe stories matter—especially now.
+              We believe stories matter. Especially now.
             </p>
 
             <h2
