@@ -114,8 +114,9 @@ export default function Support() {
               New Plays & Productions
             </h3>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              Including Oversight, a fast-paced political thriller about AI and
-              national security, and a full remount of Apprehension.
+              Including <i>Oversight</i>, a fast-paced political thriller about
+              AI and national security, and a full remount of{" "}
+              <i>Apprehension</i>.
             </p>
 
             <h3 className="text-2xl sm:text-3xl text-black mb-3 mt-6 font-semibold font-['Baskerville']">
@@ -157,7 +158,7 @@ export default function Support() {
               <li>$500 Pays for a week of rehearsal space</li>
               <li>$1,000 Supports a staged reading or workshop</li>
               <li>
-                $2,500+ — Helps produce a full production or develop a new play
+                $2,500+ Helps produce a full production or develop a new play
               </li>
             </ul>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
