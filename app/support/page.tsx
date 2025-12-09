@@ -151,11 +151,11 @@ export default function Support() {
               Every contribution makes a tangible difference.
             </p>
             <ul className="text-2xl text-black mb-6 font-medium font-['Baskerville'] list-disc list-inside space-y-2">
-              <li>$25 — Scripts, printing, production materials</li>
-              <li>$100 — Supports an actor for one rehearsal</li>
-              <li>$250 — Funds a table reading or development session</li>
-              <li>$500 — Pays for a week of rehearsal space</li>
-              <li>$1,000 — Supports a staged reading or workshop</li>
+              <li>$25 Scripts, printing, production materials</li>
+              <li>$100 Supports an actor for one rehearsal</li>
+              <li>$250 Funds a table reading or development session</li>
+              <li>$500 Pays for a week of rehearsal space</li>
+              <li>$1,000 Supports a staged reading or workshop</li>
               <li>
                 $2,500+ — Helps produce a full production or develop a new play
               </li>
