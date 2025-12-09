@@ -66,11 +66,12 @@ export default function Support() {
               the lights go down.
             </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              Zahir Artistic Director&apos;s debut play Apprehension premiered at
-              Hyde Park Theatre to sold-out audiences and critical praise.
-              Building on that momentum, we are developing a slate of new work
-              that includes Oversight, a remount of Apprehension, microdramas,
-              workshops, and public conversations.
+              Zahir Artistic Director L.B. Deyo&apos;s debut play{" "}
+              <i>Apprehension</i> premiered at Hyde Park Theatre to sold-out
+              audiences and critical praise. Building on that momentum, we are
+              developing a slate of new work that includes <i>Oversight</i>, a
+              remount of <i>Apprehension</i>, microdramas, workshops, and public
+              conversations.
             </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               We believe stories matter—especially now.
@@ -92,7 +93,9 @@ export default function Support() {
               <li>Pay actors and artists fairly</li>
               <li>Secure rehearsal and performance space</li>
               <li>Fund workshops and readings</li>
-              <li>Build the infrastructure of a sustainable arts organization</li>
+              <li>
+                Build the infrastructure of a sustainable arts organization
+              </li>
             </ul>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               This is the moment when a new company either takes root or fades
@@ -135,7 +138,7 @@ export default function Support() {
             </h3>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Talks, podcast episodes, and events that extend the ideas behind
-              our work and invite people               into the conversation.
+              our work and invite people into the conversation.
             </p>
 
             <h2
@@ -153,7 +156,9 @@ export default function Support() {
               <li>$250 — Funds a table reading or development session</li>
               <li>$500 — Pays for a week of rehearsal space</li>
               <li>$1,000 — Supports a staged reading or workshop</li>
-              <li>$2,500+ — Helps produce a full production or develop a new play</li>
+              <li>
+                $2,500+ — Helps produce a full production or develop a new play
+              </li>
             </ul>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Your support fuels bold new storytelling and strengthens
@@ -197,4 +202,3 @@ export default function Support() {
     </div>
   );
 }
-
