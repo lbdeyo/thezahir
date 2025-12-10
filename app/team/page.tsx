@@ -163,7 +163,7 @@ export default function Team() {
                     off-Broadway and at the Kennedy Center and has been featured
                     on TBS&apos;s <i>Conan</i>. Chad has worked with Rob Thomas
                     (<i>Veronica Mars</i>, <i>Zombie</i>) and Scott Shepherd (
-                    <i>Haven</i>) on projects in development. Chad's
+                    <i>Haven</i>) on projects in development. Chad&apos;s
                     professional screenwriting credits include scripts for the
                     horror-comedy <i>Precinct Five</i> (Kit Chemistry
                     Productions) and the R-rated comedy <i>Boomerang Moon</i>.
@@ -203,13 +203,13 @@ export default function Team() {
                     appeared in many theatrical productions in Austin and
                     beyond, having performed on stages such as The Vortex, City
                     Theatre Austin, and Hyde Park Theatre. She holds a B. Iden
-                    Payne for "Outstanding Featured Musical Performance" for her
-                    work in the 2021 Vortex Summer Youth Theatre. Alongside her
-                    theatrical work, she has worked on several films both in
-                    front of and behind the camera, including acting in Richard
-                    Linklater&apos;s Netflix original <i>Apollo 10½</i>, which
-                    was featured at SXSW 2022. She is an avid singer/songwriter
-                    and has released{" "}
+                    Payne for &quot;Outstanding Featured Musical
+                    Performance&quot; for her work in the 2021 Vortex Summer
+                    Youth Theatre. Alongside her theatrical work, she has worked
+                    on several films both in front of and behind the camera,
+                    including acting in Richard Linklater&apos;s Netflix
+                    original <i>Apollo 10½</i>, which was featured at SXSW 2022.
+                    She is an avid singer/songwriter and has released{" "}
                     <a
                       href="https://open.spotify.com/artist/7tIVqUPKlYQxlFXS4ka21x"
                       className="font-bold hover:underline transition-all text-[#490f0f]"
@@ -250,7 +250,7 @@ export default function Team() {
                     Laura D&apos;Eramo is an Austin-based theatre and on-camera
                     actor whose work spans classical, contemporary, and
                     experimental performance. She received her B.A. from St.
-                    Edward's University and continued her training at the
+                    Edward&apos;s University and continued her training at the
                     Atlantic Acting School in NYC. After graduation, Laura moved
                     to Japan, teaching English for two years and performing with
                     the Tokyo International Players, an experience that
@@ -559,6 +559,50 @@ export default function Team() {
                     Firm in Austin. Brent wishes to express his deepest
                     gratitude to Elizabeth, his wife and partner, for her love
                     and support.
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/img/company/RachelWestHeadshot.jpg"
+                    alt="Brent Werzner"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Rachel West
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor
+                  </p>
+                  <p
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
+                    Rachel West is a Chicago-born creative that now resides in
+                    Austin. By day, she&apos;s a Senior Writer at a marketing
+                    agency, crafting campaigns for major brands. By night,
+                    she&apos;s an actor and content creator who returned to
+                    performing in the summer of 2025, driven by a soul-deep need
+                    to reconnect with the art form that first captured her
+                    heart. Rachel&apos;s performance background spans public
+                    speaking, including two TEDx presentations, along with a
+                    foundation in classical vocal training across opera, musical
+                    theatre, and contemporary styles. Since relocating to
+                    Austin, she has appeared with Walking Shadow Shakespeare
+                    Project as in <i>Cleopatra in Caesar+Antony+Cleopatra</i>.
+                    With over 60,000 followers across social platforms, Rachel
+                    shares her creative journey and the courage it takes to
+                    return to what you love. You can connect with her on
+                    Instagram at{" "}
+                    <a
+                      href="https://www.instagram.com/diaryofaluckygirl/"
+                      className="font-bold hover:underline transition-all text-[#490f0f]"
+                    >
+                      @diaryofaluckygirl
+                    </a>
+                    .
                   </p>
                 </div>
               </div>

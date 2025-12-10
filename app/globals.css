@@ -66,6 +66,14 @@ body {
 @media (min-width: 640px) {
   .bg-rotated::before {
     background-attachment: fixed;
+    /* Constrain to viewport dimensions to prevent scaling degradation on long pages */
+    /* Since background-attachment is fixed, we only need to cover the viewport */
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    right: auto;
+    bottom: auto;
   }
 }
 
