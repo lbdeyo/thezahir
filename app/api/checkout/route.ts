@@ -97,7 +97,7 @@ export async function POST(request: NextRequest) {
           },
           type: "text",
           text: {
-            maximum_length: 300,
+            maximum_length: 255,
           },
           optional: true,
         },
