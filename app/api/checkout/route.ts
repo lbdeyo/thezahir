@@ -74,6 +74,36 @@ export async function POST(request: NextRequest) {
       }
     }
 
+    // Add custom fields for custom donations
+    if (isCustomDonation) {
+      sessionParams.custom_fields = [
+        {
+          key: "public_name",
+          label: {
+            type: "custom",
+            custom: "How shall we list your name(s)?",
+          },
+          type: "text",
+          text: {
+            maximum_length: 200,
+          },
+          optional: true,
+        },
+        {
+          key: "mailing_address",
+          label: {
+            type: "custom",
+            custom: "Mailing address (optional, for a thank-you card)",
+          },
+          type: "text",
+          text: {
+            maximum_length: 300,
+          },
+          optional: true,
+        },
+      ];
+    }
+
     // Create the Checkout Session
     const session = await stripe.checkout.sessions.create(sessionParams);
 

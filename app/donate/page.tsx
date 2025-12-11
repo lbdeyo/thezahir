@@ -6,52 +6,62 @@ import { startCheckout } from "../lib/startCheckout";
 import { useSearchParams } from "next/navigation";
 
 // Monthly Membership Tiers (Live Mode Price IDs)
+// If paymentLink is provided, it will be used instead of creating a Checkout Session
 const MEMBERSHIP_TIERS = [
   {
     name: "Friend of the Zahir",
     price: "$5",
     priceId: "price_1SZzqwDPFz6EvGtX59K3i39M",
     description: "Support our mission with a monthly contribution",
+    paymentLink: "https://buy.stripe.com/5kQ8wPdZu9OJ8XabCgg3607",
   },
   {
     name: "Supporter of The Zahir",
     price: "$10",
     priceId: "price_1SZztVDPFz6EvGtXpRo59YuH",
     description: "Help us create meaningful theater and storytelling",
+    paymentLink: "https://buy.stripe.com/5kQaEX4oUd0V0qE49Og3606",
   },
   {
     name: "Patron of The Zahir",
     price: "$25",
     priceId: "price_1SZzuiDPFz6EvGtXYESbd263",
     description: "Sustain our artistic endeavors with your generous support",
+    paymentLink: "https://buy.stripe.com/00w14ncVq7GB8XafSwg3605",
   },
   {
     name: "Champion of The Zahir",
     price: "$50",
     priceId: "price_1SZzvNDPFz6EvGtXP9Oj7yiW",
     description: "Make a significant impact on our creative projects",
+    paymentLink: "https://buy.stripe.com/eVq7sL4oUf931uI5dSg3604",
   },
   {
     name: "Producer Circle",
     price: "$100",
     priceId: "price_1SZzvpDPFz6EvGtXtxEB39Fo",
     description: "Join our exclusive circle of major supporters",
+    paymentLink: "https://buy.stripe.com/5kQ9AT4oUbWR5KY6hWg3603",
   },
 ];
 
 // Fixed One-Time Donations (Live Mode Price IDs)
+// If paymentLink is provided, it will be used instead of creating a Checkout Session
 const ONE_TIME_DONATIONS = [
   {
     amount: "$25",
     priceId: "price_1Sa00IDPFz6EvGtXu5s0eTXy",
+    paymentLink: "https://donate.stripe.com/28E8wP3kQ2mh7T6gWAg3602",
   },
   {
     amount: "$50",
     priceId: "price_1Sa00vDPFz6EvGtX4rfNTebc",
+    paymentLink: "https://donate.stripe.com/14A00j8Fa8KF0qEcGkg3601",
   },
   {
     amount: "$100",
     priceId: "price_1Sa01HDPFz6EvGtXJdOXyDsY",
+    paymentLink: "https://donate.stripe.com/5kQ28r8Fa4up0qE9u8g3600",
   },
 ];
 
@@ -186,7 +196,14 @@ function DonateContent() {
                     {tier.description}
                   </p>
                   <button
-                    onClick={() => startCheckout(tier.priceId)}
+                    onClick={() => {
+                      // Use Payment Link if available, otherwise use Checkout Session
+                      if (tier.paymentLink) {
+                        window.location.href = tier.paymentLink;
+                      } else {
+                        startCheckout(tier.priceId);
+                      }
+                    }}
                     className="w-full bg-[#ada173] text-black px-6 py-3 rounded font-semibold hover:bg-[#ada173]/80 transition-colors font-['Baskerville']"
                   >
                     Join
@@ -214,7 +231,14 @@ function DonateContent() {
               {ONE_TIME_DONATIONS.map((donation) => (
                 <button
                   key={donation.priceId}
-                  onClick={() => startCheckout(donation.priceId)}
+                  onClick={() => {
+                    // Use Payment Link if available, otherwise use Checkout Session
+                    if (donation.paymentLink) {
+                      window.location.href = donation.paymentLink;
+                    } else {
+                      startCheckout(donation.priceId);
+                    }
+                  }}
                   className="bg-black text-[#ada173] border-2 border-[#ada173] px-8 py-4 rounded font-semibold hover:bg-white hover:text-black transition-colors font-['Baskerville']"
                 >
                   Donate {donation.amount}
