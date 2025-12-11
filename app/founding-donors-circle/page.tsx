@@ -152,12 +152,12 @@ function FoundingDonorsCircleContent() {
               The Zahir&apos;s future.
             </p>
 
-            <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-6 font-['thirsty-rough-two']"
+            <h3
+              className="text-2xl sm:text-3xl md:text-2xl text-black mb-6 font-['Baskerville']"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Join the Circle
-            </h2>
+            </h3>
 
             {/* Donation Buttons */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
@@ -178,9 +178,9 @@ function FoundingDonorsCircleContent() {
               className="px-4 sm:px-12 py-6 mb-12"
               style={{ background: "rgba(0,0,0,0.9)" }}
             >
-              <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
+              <h3 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
                 Custom Donation Amount
-              </h2>
+              </h3>
               <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
                 Enter any amount you&apos;d like to donate (minimum $250 for
                 Founding Donor&apos;s Circle)
@@ -220,12 +220,12 @@ function FoundingDonorsCircleContent() {
               </div>
             </div>
 
-            <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+            <h3
+              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Why Your Gift Matters
-            </h2>
+            </h3>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir is a new Austin-based nonprofit dedicated to bold,
               conversation-driven storytelling. As we develop our next slate of
@@ -242,12 +242,12 @@ function FoundingDonorsCircleContent() {
               an institution at its very beginning.
             </p>
 
-            <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+            <h3
+              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Founding Donor Benefits
-            </h2>
+            </h3>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               All Founding Donors receive:
             </p>
@@ -261,12 +261,12 @@ function FoundingDonorsCircleContent() {
               Higher giving simply deepens your impact.
             </p>
 
-            <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+            <h3
+              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Be Part of the Beginning
-            </h2>
+            </h3>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir is built on the belief that stories matter: stories that
               challenge certainty, spark conversation, and bring people
@@ -285,12 +285,12 @@ function FoundingDonorsCircleContent() {
               className="px-4 sm:px-12 py-8 mt-12"
               style={{ background: "rgba(0,0,0,0.9)" }}
             >
-              <h2
-                className="text-3xl sm:text-4xl md:text-[2.5rem] text-[#ada173] mb-6 font-['thirsty-rough-two']"
+              <h3
+                className="text-2xl sm:text-3xl md:text-2xl text-[#ada173] mb-6 font-['Baskerville']"
                 style={{ fontWeight: 800, fontStyle: "normal" }}
               >
                 The Zahir&apos;s Founding Donors Circle
-              </h2>
+              </h3>
               <p className="text-2xl text-[#ada173] mb-8 font-medium font-['Baskerville']">
                 We offer our eternal thanks to the following supporters who have
                 helped launch The Zahir.
@@ -317,6 +317,17 @@ function FoundingDonorsCircleContent() {
                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                   </svg>
                   <span>Christina Howe</span>
+                </div>
+                <div className="flex items-center text-2xl text-[#ada173] font-medium font-['Baskerville']">
+                  <svg
+                    className="w-6 h-6 mr-3 shrink-0"
+                    fill="#ada173"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span>Noah and Jen Masterson</span>
                 </div>
               </div>
             </div>
