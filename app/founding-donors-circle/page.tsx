@@ -279,6 +279,36 @@ function FoundingDonorsCircleContent() {
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Thank you for helping us build The Zahir.
             </p>
+
+            {/* Founding Donors Section */}
+            <div
+              className="px-4 sm:px-12 py-8 mt-12"
+              style={{ background: "rgba(0,0,0,0.9)" }}
+            >
+              <h2
+                className="text-3xl sm:text-4xl md:text-[2.5rem] text-[#ada173] mb-6 font-['thirsty-rough-two']"
+                style={{ fontWeight: 800, fontStyle: "normal" }}
+              >
+                The Zahir&apos;s Founding Donors Circle
+              </h2>
+              <p className="text-2xl text-[#ada173] mb-8 font-medium font-['Baskerville']">
+                We offer our eternal thanks to the following supporters who have
+                helped launch The Zahir.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="flex items-center text-2xl text-[#ada173] font-medium font-['Baskerville']">
+                  <svg
+                    className="w-6 h-6 mr-3 shrink-0"
+                    fill="#ada173"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span>Leonard Hough and Jeanie Ockenden</span>
+                </div>
+              </div>
+            </div>
           </div>
         </main>
       </div>
