@@ -89,18 +89,6 @@ export async function POST(request: NextRequest) {
           },
           optional: true,
         },
-        {
-          key: "mailing_address",
-          label: {
-            type: "custom",
-            custom: "Mailing address (optional, for a thank-you card)",
-          },
-          type: "text",
-          text: {
-            maximum_length: 255,
-          },
-          optional: true,
-        },
       ];
     }
 
