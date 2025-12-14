@@ -192,7 +192,7 @@ export default function Team() {
                     Jessica Brynn Cohen
                   </h3>
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-                    Actor
+                    Actor, Musician
                   </p>
                   <p
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
@@ -277,7 +277,7 @@ export default function Team() {
                     Hope Irish
                   </h3>
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-                    Actor
+                    Actor, Musician
                   </p>
                   <p
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
@@ -333,7 +333,7 @@ export default function Team() {
                     Michelle Keffer
                   </h3>
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-                    Actor
+                    Actor, Producer, Writer, Emcee
                   </p>
                   <p
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
@@ -400,7 +400,7 @@ export default function Team() {
                     Shannon McCormick
                   </h3>
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-                    Actor
+                    Actor, Writer, Director
                   </p>
                   <p
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
@@ -499,7 +499,7 @@ export default function Team() {
                     Justin Smith
                   </h3>
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-                    Actor
+                    Actor, Musician
                   </p>
                   <p
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
@@ -574,7 +574,7 @@ export default function Team() {
                     Rachel West
                   </h3>
                   <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
-                    Actor
+                    Actor, Writer, Content Creator
                   </p>
                   <p
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
@@ -603,6 +603,33 @@ export default function Team() {
                       @diaryofaluckygirl
                     </a>
                     .
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/img/company/brian-wittenbrook.jpg"
+                    alt="Brian Wittenbrook"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Brian Wittenbrook
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor, Writer, Director
+                  </p>
+                  <p
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
+                    Brian Wittenbrook is a writer, actor, and director who often
+                    focuses on comedies about power with a touch of the absurd.
+                    He is a regular participant in FronteraFest. Recently, he
+                    wrote and directed <i>Terror at Twenty-Eight Feet</i>,{" "}
+                    <i>Dance, Cupcake, Dance</i>, and <i>Cookie Cutter</i>. He
+                    directed <i>Brownies</i> for the 2024 TUBU Festival.
                   </p>
                 </div>
               </div>
