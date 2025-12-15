@@ -4,6 +4,25 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Gala Benefit | THE ZAHIR",
+  description:
+    "Step into an evening of elegant delights, live music, and conversation at The Zahir's Inaugural Gala Benefit at Hyde Park Theatre in Austin.",
+  openGraph: {
+    title: "Gala Benefit | THE ZAHIR",
+    description:
+      "Step into an evening of elegant delights, live music, and conversation at The Zahir's Inaugural Gala Benefit at Hyde Park Theatre in Austin.",
+    images: [
+      {
+        url: "/img/og/party-og.jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gala Benefit | THE ZAHIR",
+    description:
+      "Step into an evening of elegant delights, live music, and conversation at The Zahir's Inaugural Gala Benefit at Hyde Park Theatre in Austin.",
+    images: ["/img/og/party-og.jpg"],
+  },
 };
 
 export default function Party() {

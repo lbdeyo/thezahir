@@ -4,6 +4,25 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Support | THE ZAHIR",
+  description:
+    "The Zahir creates bold, intelligent, conversation-driven theater and storytelling in Austin—and your support helps this new company take root and thrive.",
+  openGraph: {
+    title: "Support | THE ZAHIR",
+    description:
+      "The Zahir creates bold, intelligent, conversation-driven theater and storytelling in Austin—and your support helps this new company take root and thrive.",
+    images: [
+      {
+        url: "/img/og/support-og.jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Support | THE ZAHIR",
+    description:
+      "The Zahir creates bold, intelligent, conversation-driven theater and storytelling in Austin—and your support helps this new company take root and thrive.",
+    images: ["/img/og/support-og.jpg"],
+  },
 };
 
 export default function Support() {

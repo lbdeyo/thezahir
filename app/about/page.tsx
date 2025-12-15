@@ -3,6 +3,25 @@ import Navigation from "../components/Navigation";
 import Image from "next/image";
 export const metadata: Metadata = {
   title: "About | THE ZAHIR",
+  description:
+    "In Jorge Luis Borges's short story The Zahir, an ordinary object becomes an overwhelming force—a metaphor for obsession, attention, and the narrowing of the human world.",
+  openGraph: {
+    title: "About | THE ZAHIR",
+    description:
+      "In Jorge Luis Borges's short story The Zahir, an ordinary object becomes an overwhelming force—a metaphor for obsession, attention, and the narrowing of the human world.",
+    images: [
+      {
+        url: "/img/og/about-og.jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About | THE ZAHIR",
+    description:
+      "In Jorge Luis Borges's short story The Zahir, an ordinary object becomes an overwhelming force—a metaphor for obsession, attention, and the narrowing of the human world.",
+    images: ["/img/og/about-og.jpg"],
+  },
 };
 
 export default function About() {

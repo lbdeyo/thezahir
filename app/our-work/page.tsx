@@ -4,6 +4,25 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Our Work | THE ZAHIR",
+  description:
+    "The Zahir creates original theater, film, and storytelling projects designed to spark conversation in an age that often discourages it.",
+  openGraph: {
+    title: "Our Work | THE ZAHIR",
+    description:
+      "The Zahir creates original theater, film, and storytelling projects designed to spark conversation in an age that often discourages it.",
+    images: [
+      {
+        url: "/img/og/our-work-og.jpg",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Our Work | THE ZAHIR",
+    description:
+      "The Zahir creates original theater, film, and storytelling projects designed to spark conversation in an age that often discourages it.",
+    images: ["/img/og/our-work-og.jpg"],
+  },
 };
 
 export default function OurWork() {
