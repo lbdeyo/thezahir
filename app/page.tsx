@@ -58,6 +58,21 @@ export default function Home() {
             <p className="text-2xl sm:text-3xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
+            <div className="mb-6">
+              <a
+                href="/party"
+                className="block bg-black text-[#ada173] font-bold px-8 py-4 rounded-lg text-2xl text-center font-['Baskerville'] border-2 border-transparent hover:bg-[#ada173] hover:text-black hover:border-black transition-colors shadow-lg"
+                style={{ letterSpacing: "0.02em" }}
+              >
+                {" "}
+                Join us for{" "}
+                <span style={{ color: "white" }}>
+                  The Zahir&apos;s Inaugural Gala Benefit{" "}
+                </span>
+                <br />
+                January 6, 2026 at Hyde Park Theatre
+              </a>
+            </div>
             <CoinVideo />
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
