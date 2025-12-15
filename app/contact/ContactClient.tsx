@@ -3,7 +3,7 @@
 import Navigation from "../components/Navigation";
 import { useState, FormEvent } from "react";
 
-export default function ContactPageClient() {
+export default function ContactClient() {
   const [status, setStatus] = useState<
     "idle" | "submitting" | "success" | "error"
   >("idle");
