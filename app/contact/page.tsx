@@ -1,7 +1,12 @@
 "use client";
 
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import { useState, FormEvent } from "react";
+
+export const metadata: Metadata = {
+  title: "Contact | THE ZAHIR",
+};
 
 export default function Contact() {
   const [status, setStatus] = useState<

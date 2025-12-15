@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
 import CoinVideo from "./components/CoinVideo";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Home | THE ZAHIR",
+};
 
 export default function Home() {
   return (

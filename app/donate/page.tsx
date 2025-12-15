@@ -1,9 +1,14 @@
 "use client";
 
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import { useState, useEffect, Suspense } from "react";
 import { startCheckout } from "../lib/startCheckout";
 import { useSearchParams } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Donate | THE ZAHIR",
+};
 
 // Monthly Membership Tiers (Live Mode Price IDs)
 // If paymentLink is provided, it will be used instead of creating a Checkout Session

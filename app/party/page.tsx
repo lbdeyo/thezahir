@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Gala Benefit | THE ZAHIR",
+};
 
 export default function Party() {
   return (

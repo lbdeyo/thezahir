@@ -1,9 +1,14 @@
 "use client";
 
+import type { Metadata } from "next";
 import Navigation from "../components/Navigation";
 import { useEffect, useState, Suspense } from "react";
 import { startCheckout } from "../lib/startCheckout";
 import { useSearchParams } from "next/navigation";
+
+export const metadata: Metadata = {
+  title: "Founding Donors Circle | THE ZAHIR",
+};
 
 // Custom Donation Price ID (Live Mode) - same as used on donate page
 const CUSTOM_DONATION_PRICE_ID = "price_1Sa06yDPFz6EvGtXw9IY9cob";
