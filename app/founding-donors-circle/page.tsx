@@ -101,7 +101,7 @@ function FoundingDonorsCircleContent() {
       >
         <div className="max-w-5xl mx-auto h-full relative">
           <div
-            className="absolute top-0.left-4 sm:left-8"
+            className="absolute top-0 left-4 sm:left-8"
             style={{
               width: "1px",
               height: "100vh",
@@ -243,12 +243,12 @@ function FoundingDonorsCircleContent() {
             </p>
 
             <h3
-              className="text-2xl sm:text-3xl md:text-2xl text.black mb-4 font-['Baskerville']"
+              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Founding Donor Benefits
             </h3>
-            <p className="text-2xl text-black mb-6 font-medium.font-['Baskerville']">
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               All Founding Donors receive:
             </p>
             <ul className="text-2xl text-black mb-6 font-medium font-['Baskerville'] list-disc list-inside space-y-2">
@@ -296,7 +296,7 @@ function FoundingDonorsCircleContent() {
                 helped launch The Zahir.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div className="flex items-center text-2xl text-[#ada173] font-medium.font-['Baskerville']">
+                <div className="flex items-center text-2xl text-[#ada173] font-medium font-['Baskerville']">
                   <svg
                     className="w-6 h-6 mr-3 shrink-0"
                     fill="#ada173"
@@ -358,7 +358,7 @@ function LoadingFallback() {
         <Navigation />
         <main className="w-full px-4 sm:px-8 pt-0 pb-12 relative">
           <div
-            className="px-4 sm:px-12 pt-4 pb-6.relative"
+            className="px-4 sm:px-12 pt-4 pb-6 relative"
             style={{
               background: "rgba(173, 161, 115, 0.90)",
             }}
