@@ -346,6 +346,17 @@ function FoundingDonorsCircleContent() {
                   </svg>
                   <span>Joe and Bev Hanlon</span>
                 </div>
+                <div className="flex items-center text-2xl text-[#ada173] font-medium font-['Baskerville']">
+                  <svg
+                    className="w-6 h-6 mr-3 shrink-0"
+                    fill="#ada173"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span>Anonymous</span>
+                </div>
               </div>
             </div>
           </div>
