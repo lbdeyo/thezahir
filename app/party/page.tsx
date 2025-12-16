@@ -79,7 +79,10 @@ export default function Party() {
               Join us
             </h1>
             <p className="text-2xl sm:text-4xl pt-3 text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
-              For <strong>The Zahir&apos;s Inaugural Gala Benefit</strong>
+              <strong>
+                {" "}
+                <em>For</em> The Zahir&apos;s Inaugural Gala Benefit
+              </strong>
             </p>
             <Image
               src="/img/party1/champagne-coin.jpg"
