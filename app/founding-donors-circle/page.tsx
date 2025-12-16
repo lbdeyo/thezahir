@@ -151,9 +151,13 @@ function FoundingDonorsCircleContent() {
               Your support at this early stage plays a direct role in building
               The Zahir&apos;s future.
             </p>
+            <p className="text-xl sm:text-2xl text-black font-medium font-['Baskerville'] leading-relaxed">
+              The Zahir Productions is a 501(c)(3) tax-exempt organization. All
+              donations are tax-deductible to the full extent permitted by law.
+            </p>
 
             <h3
-              className="text-2xl sm:text-3xl md:text-2xl text-black mb-6 font-['Baskerville']"
+              className="text-2xl sm:text-3xl md:text-2xl text-black mt-4 k mb-6 font-['Baskerville']"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Join the Circle
