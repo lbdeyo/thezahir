@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Footer from "./components/Footer";
+import HubSpotTracker from "./components/HubSpotTracker";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,10 +49,17 @@ export default function RootLayout({
             gtag('config', 'G-BL44TBHWS7');
           `}
         </Script>
+        {/* HubSpot Embed Code */}
+        <Script
+          id="hs-script-loader"
+          src="//js-na2.hs-scripts.com/244639378.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <HubSpotTracker />
         {children}
         <Footer />
       </body>
