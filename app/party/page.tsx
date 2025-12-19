@@ -78,19 +78,12 @@ export default function Party() {
             >
               Join us
             </h1>
-            <p className="text-2xl sm:text-4xl pt-3 text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
+            <p className="text-2xl sm:text-4xl pt-3 text-black mb-4 sm:mb-6 font-medium font-['Baskerville']">
               <strong>
                 {" "}
                 <em>For</em> The Zahir&apos;s Inaugural Gala Benefit
               </strong>
             </p>
-            <Image
-              src="/img/party1/champagne-coin.jpg"
-              alt="Party"
-              width={1000}
-              height={1000}
-              className="w-full h-auto object-cover rounded"
-            />
           </div>
           <div
             className="px-4 sm:px-12 py-6"
@@ -120,6 +113,13 @@ export default function Party() {
                 Get Tickets
               </a>
             </div>
+            <Image
+              src="/img/party1/champagne-coin.jpg"
+              alt="Party"
+              width={1000}
+              height={1000}
+              className="w-full h-auto object-cover rounded"
+            />
           </div>
           <div
             className="px-4 sm:px-12 pb-1 "
