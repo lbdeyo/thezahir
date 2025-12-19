@@ -90,7 +90,7 @@ export default function Party() {
             style={{ background: "rgba(0,0,0,0.8)" }}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
-              January 6, 2026 • Hyde Park Theatre • Austin, TX
+              Tuesday, January 6, 2026 • Hyde Park Theatre • Austin, TX
             </h2>
             <p className="text-2xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
               Step into an evening of elegant delights, where the clink of
