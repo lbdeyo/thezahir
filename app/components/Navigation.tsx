@@ -85,6 +85,12 @@ export default function Navigation() {
                   className="px-3 py-1.5 bg-black border border-[#ada173] text-[#ada173] text-sm font-['Baskerville'] placeholder:text-[#ada173]/90 focus:outline-none focus:border-[#ada173] focus:ring-1 focus:ring-[#ada173] disabled:opacity-50"
                   style={{ minWidth: "180px" }}
                 />
+                <input
+                  type="hidden"
+                  name="newsletter_subscriber"
+                  value="true"
+                />
+
                 <button
                   type="submit"
                   disabled={mailingListStatus === "submitting"}
