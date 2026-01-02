@@ -104,6 +104,10 @@ export default function About() {
               storytelling is still one of the most powerful tools for widening
               perception and renewing human connection.
             </p>
+            <p className="text-2xl text-black mb-6 font-bold font-['Baskerville']">
+              The Zahir's mission is to create obsession-worthy theater that
+              draws people out of isolation and back into conversation.
+            </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               We are committed to producing original work, paying artists
               fairly, and building a sustainable creative home in Austin. Though
