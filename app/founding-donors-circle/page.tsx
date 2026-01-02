@@ -7,9 +7,6 @@ import { useSearchParams } from "next/navigation";
 
 // Custom Donation Price ID (Live Mode) - same as used on donate page
 const CUSTOM_DONATION_PRICE_ID = "price_1Sa06yDPFz6EvGtXw9IY9cob";
-// HubSpot form URL for custom donations
-const CUSTOM_DONATION_PAYMENT_LINK =
-  "https://share-na2.hsforms.com/1X1CSNHXFQCG52rrx72_Pgw41ngya";
 
 const FOUNDING_DONOR_TIERS = [
   {
@@ -57,12 +54,6 @@ function FoundingDonorsCircleContent() {
   }, [searchParams]);
 
   const handleDonation = (amount: number) => {
-    // Use HubSpot form if available, otherwise use Stripe Checkout
-    if (CUSTOM_DONATION_PAYMENT_LINK) {
-      window.location.href = CUSTOM_DONATION_PAYMENT_LINK;
-      return;
-    }
-
     const baseUrl = window.location.origin;
     startCheckout(
       CUSTOM_DONATION_PRICE_ID,
@@ -80,12 +71,6 @@ function FoundingDonorsCircleContent() {
       alert(
         "Please enter a minimum donation of $250 to join the Founding Donors Circle"
       );
-      return;
-    }
-
-    // Use HubSpot form if available, otherwise use Stripe Checkout
-    if (CUSTOM_DONATION_PAYMENT_LINK) {
-      window.location.href = CUSTOM_DONATION_PAYMENT_LINK;
       return;
     }
 

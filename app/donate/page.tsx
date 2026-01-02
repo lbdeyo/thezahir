@@ -67,9 +67,6 @@ const ONE_TIME_DONATIONS = [
 
 // Custom Donation Price ID (Live Mode)
 const CUSTOM_DONATION_PRICE_ID = "price_1Sa06yDPFz6EvGtXw9IY9cob";
-// HubSpot form URL for custom donations
-const CUSTOM_DONATION_PAYMENT_LINK =
-  "https://share-na2.hsforms.com/1X1CSNHXFQCG52rrx72_Pgw41ngya";
 
 function DonateContent() {
   const searchParams = useSearchParams();
@@ -91,12 +88,6 @@ function DonateContent() {
     const amount = parseFloat(customAmount);
     if (isNaN(amount) || amount < 5) {
       alert("Please enter a minimum donation of $5");
-      return;
-    }
-
-    // Use HubSpot form if available, otherwise use Stripe Checkout
-    if (CUSTOM_DONATION_PAYMENT_LINK) {
-      window.location.href = CUSTOM_DONATION_PAYMENT_LINK;
       return;
     }
 
