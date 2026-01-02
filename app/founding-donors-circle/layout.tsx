@@ -23,4 +23,11 @@ export const metadata: Metadata = {
   },
 };
 
+export default function FoundingDonorsCircleLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}
 
