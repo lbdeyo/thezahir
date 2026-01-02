@@ -57,6 +57,12 @@ function FoundingDonorsCircleContent() {
   }, [searchParams]);
 
   const handleDonation = (amount: number) => {
+    // Use HubSpot form if available, otherwise use Stripe Checkout
+    if (CUSTOM_DONATION_PAYMENT_LINK) {
+      window.location.href = CUSTOM_DONATION_PAYMENT_LINK;
+      return;
+    }
+
     const baseUrl = window.location.origin;
     startCheckout(
       CUSTOM_DONATION_PRICE_ID,
