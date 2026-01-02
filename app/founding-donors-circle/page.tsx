@@ -14,24 +14,28 @@ const FOUNDING_DONOR_TIERS = [
     amountValue: 250,
     label: "Give $250",
     tier: "Founding Donor (Entry Level)",
+    paymentLink: "https://share-na2.hsforms.com/1CpJYp-IMSbmwstGz-Z3JWg41ngya",
   },
   {
     amount: "$500",
     amountValue: 500,
     label: "Give $500",
     tier: "Founding Donor",
+    paymentLink: "https://share-na2.hsforms.com/19Dck0buoTOu-RHiHkXYLSA41ngya",
   },
   {
     amount: "$1,000",
     amountValue: 1000,
     label: "Give $1,000",
     tier: "Founding Donor",
+    paymentLink: "https://share-na2.hsforms.com/1CuU3_M3WTS6LOp3ZufMEsg41ngya",
   },
   {
     amount: "$2,500",
     amountValue: 2500,
     label: "Give $2,500",
     tier: "Leadership Founding Donor",
+    paymentLink: "https://share-na2.hsforms.com/1BmSo2WuZSBOqajIHqTo70Q41ngya",
   },
 ];
 
@@ -168,7 +172,14 @@ function FoundingDonorsCircleContent() {
               {FOUNDING_DONOR_TIERS.map((tier) => (
                 <button
                   key={tier.amountValue}
-                  onClick={() => handleDonation(tier.amountValue)}
+                  onClick={() => {
+                    // Use Payment Link if available, otherwise use Stripe Checkout
+                    if (tier.paymentLink) {
+                      window.location.href = tier.paymentLink;
+                    } else {
+                      handleDonation(tier.amountValue);
+                    }
+                  }}
                   className="bg-black text-[#ada173] border-2 border-[#ada173] px-8 py-6 rounded font-semibold hover:bg-white hover:text-black transition-colors font-['Baskerville'] text-left"
                 >
                   <div className="text-xl font-bold mb-1">{tier.label}</div>
