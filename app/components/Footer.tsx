@@ -6,7 +6,7 @@ export default function Footer() {
           <p className="text-[#ada173] font-['Baskerville'] text-base text-left mb-2">
             © {new Date().getFullYear()} The Zahir. Original theater, film, and
             storytelling. The Zahir Productions is a 501(c)(3) tax-exempt
-            organization.
+            organization. EIN: 41-2685482
           </p>
           <p className="text-[#ada173] font-['Baskerville'] text-sm text-left opacity-80"></p>
         </div>
