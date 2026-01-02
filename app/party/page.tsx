@@ -100,7 +100,7 @@ export default function Party() {
               champagne glasses mingles with lively conversation and laughter.
               Enjoy handcrafted refreshments and delectable bites as you mingle
               with friends and creators in the warm, inviting atmosphere of Hyde
-              Park Theatre.
+              Park Theatre. Attire: dressy, but not necessarily formal.
             </p>
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
               The Program
