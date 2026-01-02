@@ -13,35 +13,35 @@ const MEMBERSHIP_TIERS = [
     price: "$5",
     priceId: "price_1SZzqwDPFz6EvGtX59K3i39M",
     description: "Support our mission with a monthly contribution",
-    paymentLink: "https://buy.stripe.com/5kQ8wPdZu9OJ8XabCgg3607",
+    paymentLink: "https://share-na2.hsforms.com/1vu1HM6rRRj2KijLox0ojCQ41ngya",
   },
   {
     name: "Supporter of The Zahir",
     price: "$10",
     priceId: "price_1SZztVDPFz6EvGtXpRo59YuH",
     description: "Help us create meaningful theater and storytelling",
-    paymentLink: "https://buy.stripe.com/5kQaEX4oUd0V0qE49Og3606",
+    paymentLink: "https://share-na2.hsforms.com/1bzHh2MZ8QM6QJMKqKzbAZQ41ngya",
   },
   {
     name: "Patron of The Zahir",
     price: "$25",
     priceId: "price_1SZzuiDPFz6EvGtXYESbd263",
     description: "Sustain our artistic endeavors with your generous support",
-    paymentLink: "https://buy.stripe.com/00w14ncVq7GB8XafSwg3605",
+    paymentLink: "https://share-na2.hsforms.com/1V88b1LFXQ4e6HlYSgsp_kA41ngya",
   },
   {
     name: "Champion of The Zahir",
     price: "$50",
     priceId: "price_1SZzvNDPFz6EvGtXP9Oj7yiW",
     description: "Make a significant impact on our creative projects",
-    paymentLink: "https://buy.stripe.com/eVq7sL4oUf931uI5dSg3604",
+    paymentLink: "https://share-na2.hsforms.com/13Hb7dLFETouzVG1mdxOGVQ41ngya",
   },
   {
     name: "Producer Circle",
     price: "$100",
     priceId: "price_1SZzvpDPFz6EvGtXtxEB39Fo",
     description: "Join our exclusive circle of major supporters",
-    paymentLink: "https://buy.stripe.com/5kQ9AT4oUbWR5KY6hWg3603",
+    paymentLink: "https://share-na2.hsforms.com/1QX8kkO8JR4WWEPaPnpTisw41ngya",
   },
 ];
 
@@ -51,22 +51,25 @@ const ONE_TIME_DONATIONS = [
   {
     amount: "$25",
     priceId: "price_1Sa00IDPFz6EvGtXu5s0eTXy",
-    paymentLink: "https://donate.stripe.com/28E8wP3kQ2mh7T6gWAg3602",
+    paymentLink: "https://share-na2.hsforms.com/1tXiU9w7wRDaS9XYWqI_A8Q41ngya",
   },
   {
     amount: "$50",
     priceId: "price_1Sa00vDPFz6EvGtX4rfNTebc",
-    paymentLink: "https://donate.stripe.com/14A00j8Fa8KF0qEcGkg3601",
+    paymentLink: "https://share-na2.hsforms.com/1mAcbUptcSE-7hbbTEreLNw41ngya",
   },
   {
     amount: "$100",
     priceId: "price_1Sa01HDPFz6EvGtXJdOXyDsY",
-    paymentLink: "https://donate.stripe.com/5kQ28r8Fa4up0qE9u8g3600",
+    paymentLink: "https://share-na2.hsforms.com/18-d73wuwSDeTRmr3HKiv6A41ngya",
   },
 ];
 
 // Custom Donation Price ID (Live Mode)
 const CUSTOM_DONATION_PRICE_ID = "price_1Sa06yDPFz6EvGtXw9IY9cob";
+// HubSpot form URL for custom donations
+const CUSTOM_DONATION_PAYMENT_LINK =
+  "https://share-na2.hsforms.com/1X1CSNHXFQCG52rrx72_Pgw41ngya";
 
 function DonateContent() {
   const searchParams = useSearchParams();
@@ -88,6 +91,12 @@ function DonateContent() {
     const amount = parseFloat(customAmount);
     if (isNaN(amount) || amount < 5) {
       alert("Please enter a minimum donation of $5");
+      return;
+    }
+
+    // Use HubSpot form if available, otherwise use Stripe Checkout
+    if (CUSTOM_DONATION_PAYMENT_LINK) {
+      window.location.href = CUSTOM_DONATION_PAYMENT_LINK;
       return;
     }
 
