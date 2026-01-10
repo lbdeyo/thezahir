@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/img/og/founding-donors-og.jpg",
+        width: 3224,
+        height: 1908,
+        alt: "Founding Donors Circle | THE ZAHIR",
       },
     ],
   },

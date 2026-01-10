@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://thezahir.org"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.the-zahir.org"
   ),
   title: "| THE ZAHIR |",
   description: "A dramatic arts company",
