@@ -72,7 +72,7 @@ export default function Support() {
             }}
           >
             <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']"
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Why We Exist
@@ -97,7 +97,7 @@ export default function Support() {
             </p>
 
             <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Why Your Support Matters Now
@@ -123,7 +123,7 @@ export default function Support() {
             </p>
 
             <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               What You Help Us Create
@@ -162,7 +162,7 @@ export default function Support() {
             </p>
 
             <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Your Impact
@@ -186,7 +186,7 @@ export default function Support() {
             </p>
 
             <h2
-              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 font-['thirsty-rough-two']"
+              className="text-3xl sm:text-4xl md:text-[2.5rem] text-black mb-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Join Us

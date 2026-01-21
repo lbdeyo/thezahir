@@ -55,7 +55,7 @@ export default function Home() {
             id="gradient-start"
           >
             <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 font-['thirsty-rough-two']"
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               A dramatic arts company
