@@ -92,3 +92,14 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/* Photo slider - fade on desktop, instant on mobile */
+.photo-slider-image {
+  transition: opacity 600ms ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .photo-slider-image {
+    transition: none;
+  }
+}

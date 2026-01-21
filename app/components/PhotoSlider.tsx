@@ -38,36 +38,52 @@ export default function PhotoSlider() {
   const [shuffledPhotos, setShuffledPhotos] = useState<string[]>([]);
   const [nextIndex, setNextIndex] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  // Initialize with shuffled photos on mount
+  // Initialize with shuffled photos on mount and detect mobile
   useEffect(() => {
     const shuffled = shuffleArray(PHOTOS);
     setShuffledPhotos(shuffled);
     if (shuffled.length > 1) {
       setNextIndex(1);
     }
+    
+    // Detect mobile on mount
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   useEffect(() => {
     if (shuffledPhotos.length === 0) return;
 
     const interval = setInterval(() => {
-      // Start transition - fade out current, fade in next
-      setIsTransitioning(true);
-      
-      // After transition completes, update indices
-      setTimeout(() => {
+      if (isMobile) {
+        // On mobile: instant change, no transition
         setCurrentIndex((prev) => {
           const newIndex = (prev + 1) % shuffledPhotos.length;
           setNextIndex((newIndex + 1) % shuffledPhotos.length);
           return newIndex;
         });
-        setIsTransitioning(false);
-      }, 600); // Match transition duration
+      } else {
+        // On desktop: fade transition
+        setIsTransitioning(true);
+        setTimeout(() => {
+          setCurrentIndex((prev) => {
+            const newIndex = (prev + 1) % shuffledPhotos.length;
+            setNextIndex((newIndex + 1) % shuffledPhotos.length);
+            return newIndex;
+          });
+          setIsTransitioning(false);
+        }, 600); // Match transition duration
+      }
     }, 4000); // 4 seconds per photo
 
     return () => clearInterval(interval);
-  }, [shuffledPhotos.length]);
+  }, [shuffledPhotos.length, isMobile]);
 
   if (shuffledPhotos.length === 0) {
     return null;
@@ -80,24 +96,24 @@ export default function PhotoSlider() {
     <div className="w-full mb-6">
       <div className="rounded overflow-hidden border-4 border-black">
         <div className="relative w-full aspect-video">
-          {/* Current image - fades out during transition */}
+          {/* Current image - fades out during transition on desktop, instant on mobile */}
           <Image
             key={`current-${currentIndex}`}
             src={currentPhoto}
             alt="Party photo"
             fill
-            className={`object-cover transition-opacity duration-[600ms] ${
+            className={`object-cover photo-slider-image ${
               isTransitioning ? "opacity-0" : "opacity-100"
             }`}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
           />
-          {/* Next image - fades in during transition */}
+          {/* Next image - fades in during transition on desktop, instant on mobile */}
           <Image
             key={`next-${nextIndex}`}
             src={nextPhoto}
             alt="Party photo"
             fill
-            className={`object-cover transition-opacity duration-[600ms] absolute inset-0 ${
+            className={`object-cover photo-slider-image absolute inset-0 ${
               isTransitioning ? "opacity-100" : "opacity-0"
             }`}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
