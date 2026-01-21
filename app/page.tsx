@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
-import CoinVideo from "./components/CoinVideo";
+import PhotoSlider from "./components/PhotoSlider";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -78,7 +78,7 @@ export default function Home() {
                 January 6, 2026 at Hyde Park Theatre
               </a>
             </div>
-            <CoinVideo />
+            <PhotoSlider />
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects that bring people together for meaningful conversation.
