@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
 import PhotoSlider from "./components/PhotoSlider";
+import GiveGabButton from "./components/GiveGabButton";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -60,9 +61,18 @@ export default function Home() {
             >
               A dramatic arts company
             </h1>
-            <p className="text-2xl sm:text-3xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
+            <p className="text-2xl sm:text-3xl text-black mb-4 sm:mb-6 font-semibold font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
+            <div className="mb-6 px-4 sm:px-6 py-4 bg-black/20 rounded-lg border-2 border-black/30">
+              <h2 className="text-2xl sm:text-3xl text-black mb-3 font-bold font-['Baskerville']">
+                Amplify Austin Day Early Giving is here.
+              </h2>
+              <p className="text-xl sm:text-2xl text-black mb-4 font-medium font-['Baskerville']">
+                Every gift helps us turn new theater into lived experience.
+              </p>
+              <GiveGabButton />
+            </div>
             <div className="mb-6 hidden">
               <a
                 href="/party"
