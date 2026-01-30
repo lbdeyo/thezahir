@@ -110,14 +110,14 @@ export default function OurWork() {
                     thriller based on the{" "}
                     <a
                       href="https://ai-2027.com"
-                      className="font-bold hover:underline transition-all text-[#E6AD06]"
+                      className="font-bold hover:underline transition-all text-[#490f0f]"
                     >
                       A.I. 2027
                     </a>{" "}
                     paper.{" "}
                     <a
                       href="https://oversight-play.com"
-                      className="font-bold hover:underline transition-all text-[#E6AD06]"
+                      className="font-bold hover:underline transition-all text-[#490f0f]"
                     >
                       Oversight-Play.com
                     </a>

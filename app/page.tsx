@@ -64,15 +64,30 @@ export default function Home() {
             <p className="text-2xl sm:text-3xl text-black mb-4 sm:mb-6 font-semibold font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
-            <div className="mb-6 px-4 sm:px-6 py-4 bg-black/20 rounded-lg border-2 border-black/30">
-              <h2 className="text-2xl sm:text-3xl text-black mb-3 font-bold font-['Baskerville']">
-                Amplify Austin Day Early Giving is here.
-              </h2>
-              <p className="text-xl sm:text-2xl text-black mb-4 font-medium font-['Baskerville']">
-                Every gift helps us turn new theater into lived experience.
-              </p>
-              <GiveGabButton />
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
+              <div className="flex-1 min-w-0 bg-black rounded-lg border-2 border-black/30 p-4 sm:px-8 sm:py-6 text-white flex items-center justify-center text-center">
+                <p className="text-2xl sm:text-3xl text-white font-medium font-['Baskerville']">
+                  Alert:{" "}
+                  <a
+                    href="/our-work"
+                    className="font-bold hover:underline transition-all text-[#E6AD06]"
+                  >
+                    Oversight
+                  </a>{" "}
+                  is coming.{" "}
+                </p>
+              </div>
+              <div className="flex-1 min-w-0 px-4 sm:px-6 py-4 bg-black/20 rounded-lg border-2 border-black/30">
+                <h2 className="text-2xl sm:text-3xl text-black mb-1 font-bold font-['Baskerville']">
+                  Amplify Austin Day Early Giving is here.
+                </h2>
+                <p className="text-xl sm:text-2xl text-black mb-4 font-medium font-['Baskerville']">
+                  Every gift helps us turn new theater into lived experience.
+                </p>
+                <GiveGabButton />
+              </div>
             </div>
+
             <div className="mb-6 hidden">
               <a
                 href="/party"
