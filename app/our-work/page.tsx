@@ -77,6 +77,54 @@ export default function OurWork() {
             >
               Our Work
             </h1>
+            <div className="bg-black text-white p-6 rounded-lg mb-6">
+              <p className="text-2xl text-white font-medium font-['Baskerville'] mb-2">
+                The Zahir is very proud to announce its inaugural production:
+                L.B. Deyo&apos;s{" "}
+              </p>
+              <h2 className="text-6xl sm:text-7xl font-bold text-white mb-2 display-heading">
+                Oversight
+              </h2>
+
+              <div className="flex flex-col sm:flex-row sm:gap-8 sm:items-start">
+                <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0">
+                  <a
+                    href="https://oversight-play.com"
+                    className="block rounded overflow-hidden border border-[#ada173] hover:opacity-95 transition-opacity"
+                  >
+                    <Image
+                      src="/img/oversight/Oversight-dates-1.jpg"
+                      alt="Oversight — The new play from The Zahir, July 30–August 22, 2026"
+                      width={1200}
+                      height={630}
+                      className="w-full h-auto object-cover"
+                    />
+                  </a>
+                </div>
+                <div className="sm:w-1/2 min-w-0">
+                  <p className="text-2xl text-white font-medium font-['Baskerville']">
+                    <strong>
+                      July 30–August 22, 2026<br></br> Hyde Park Theatre.
+                    </strong>
+                    <br></br> A tense, fast-paced political and technological
+                    thriller based on the{" "}
+                    <a
+                      href="https://ai-2027.com"
+                      className="font-bold hover:underline transition-all text-[#E6AD06]"
+                    >
+                      A.I. 2027
+                    </a>{" "}
+                    paper.{" "}
+                    <a
+                      href="https://oversight-play.com"
+                      className="font-bold hover:underline transition-all text-[#E6AD06]"
+                    >
+                      Oversight-Play.com
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects designed to spark conversation in an age that often
@@ -98,56 +146,34 @@ export default function OurWork() {
               perception, and the strangeness of being alive right now.
             </p>
             <div className="bg-black text-white p-6 rounded-lg mb-6">
-              <h2 className="text-xl sm:text-2xl font-semibold text-white mb-6 font-['Baskerville']">
-                We&apos;re currently in early development on two new plays:
+              <p className="text-2xl text-white font-medium font-['Baskerville'] mb-2">
+                We&apos;re in early development on Noah Masterson&apos;s play{" "}
+              </p>
+              <h2 className="text-6xl sm:text-7xl font-semibold text-white mb-6 display-heading">
+                The Egg
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-6">
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 font-['Baskerville']">
-                    <i>Oversight</i> by L.B. Deyo
-                  </h3>
-                  <Image
-                    src="/img/oversight/oversight-preview.jpg"
-                    alt="Oversight"
-                    width={1000}
-                    height={1000}
-                    className="w-full h-auto object-cover rounded border"
-                    style={{ borderColor: "#ada173" }}
-                  />
-                  <p className="text-2xl text-white font-medium font-['Baskerville'] mt-4">
-                    A tense, fast-paced political and technological thriller
-                    based on the{" "}
-                    <a
-                      href="https://ai-2027.com"
-                      className="font-bold hover:underline transition-all text-[#E6AD06]"
-                    >
-                      A.I. 2027
-                    </a>{" "}
-                    paper. We plan a table reading for January 2026.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 font-['Baskerville']">
-                    <i>The Egg</i> by Noah Masterson
-                  </h3>
+              <div className="mb-6 flex flex-col sm:flex-row sm:gap-8 sm:items-start">
+                <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0">
                   <Image
                     src="/img/the-egg/egg-preview.jpg"
-                    alt="Oversight"
+                    alt="The Egg"
                     width={1000}
                     height={1000}
                     className="w-full h-auto object-cover rounded border"
                     style={{ borderColor: "#ada173" }}
                   />
-                  <p className="text-2xl text-white font-medium font-['Baskerville'] mt-4">
+                </div>
+                <div className="sm:w-1/2 min-w-0">
+                  <p className="text-2xl text-white font-medium font-['Baskerville']">
                     A surreal, darkly comic exploration of belief,
-                    responsibility, and transformation.A reading is planned for
+                    responsibility, and transformation. A reading is planned for
                     2026. Learn more at{" "}
                     <i>
                       <a
                         href="https://theegg.noahmasterson.com"
                         className="font-bold hover:underline transition-all text-[#E6AD06]"
                       >
-                        The Egg's website.
+                        The Egg&apos;s website.
                       </a>
                     </i>
                   </p>
