@@ -128,9 +128,10 @@ export default function Home() {
               connection in an increasingly disconnected world.
             </p>
             <p className="text-2xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
-              As a newly founded company, we are actively developing our
-              inaugural projects and collaborations. Upcoming announcements will
-              appear here.{" "}
+              Our inaugural production, <i>Oversight</i>, runs July 30–August
+              22, 2026 at Hyde Park Theatre. We are also developing other
+              projects and collaborations; upcoming announcements will appear
+              here.{" "}
               <a
                 href="/our-work"
                 className="hover:underline font-bold text-[#E6AD06]"

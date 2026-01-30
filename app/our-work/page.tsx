@@ -104,20 +104,20 @@ export default function OurWork() {
                 <div className="sm:w-1/2 min-w-0">
                   <p className="text-2xl text-white font-medium font-['Baskerville']">
                     <strong>
-                      July 30–August 22, 2026<br></br> Hyde Park Theatre.
+                      July 30–August 22, 2026<br></br> Hyde Park Theatre
                     </strong>
                     <br></br> A tense, fast-paced political and technological
                     thriller based on the{" "}
                     <a
                       href="https://ai-2027.com"
-                      className="font-bold hover:underline transition-all text-[#490f0f]"
+                      className="font-bold hover:underline transition-all text-[#E6AD06]"
                     >
                       A.I. 2027
                     </a>{" "}
                     paper.{" "}
                     <a
                       href="https://oversight-play.com"
-                      className="font-bold hover:underline transition-all text-[#490f0f]"
+                      className="font-bold hover:underline transition-all text-[#E6AD06]"
                     >
                       Oversight-Play.com
                     </a>
@@ -193,7 +193,7 @@ export default function OurWork() {
             </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Upcoming announcements will appear here as these projects move
-              forward. We invite you to follow along as The Zahir’s inaugural
+              forward. We invite you to follow along as The Zahir's inaugural
               work takes shape.
             </p>
           </div>
