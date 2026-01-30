@@ -65,7 +65,13 @@ export default function Home() {
               Promoting conversation in a disconnected age
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
-              <div className="flex-1 min-w-0 bg-black rounded-lg border-2 border-black/30 p-4 sm:px-8 sm:py-6 text-white flex items-center justify-center text-center">
+              <div
+                className="flex-1 min-w-0 rounded-lg border-2 border-black/30 p-4 sm:px-8 sm:py-6 text-white flex items-center justify-center text-center bg-cover bg-center"
+                style={{
+                  backgroundImage:
+                    "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/oversight/oversight-callout-bg.jpg')",
+                }}
+              >
                 <p className="text-2xl sm:text-3xl text-white font-medium font-['Baskerville']">
                   Alert:{" "}
                   <a
