@@ -91,6 +91,7 @@ export default function OurWork() {
                   <a
                     href="https://oversight-play.com"
                     className="block rounded overflow-hidden border border-[#ada173] hover:opacity-95 transition-opacity"
+                    aria-label="Oversight — The new play from The Zahir, July 30–August 22, 2026"
                   >
                     <Image
                       src="/img/oversight/Oversight-dates-1.jpg"
@@ -106,15 +107,8 @@ export default function OurWork() {
                     <strong>
                       July 30–August 22, 2026<br></br> Hyde Park Theatre
                     </strong>
-                    <br></br> A tense, fast-paced political and technological
-                    thriller based on the{" "}
-                    <a
-                      href="https://ai-2027.com"
-                      className="font-bold hover:underline transition-all text-[#E6AD06]"
-                    >
-                      A.I. 2027
-                    </a>{" "}
-                    paper.{" "}
+                    <br></br> A tense, fast-paced political and psychological
+                    thriller.{" "}
                     <a
                       href="https://oversight-play.com"
                       className="font-bold hover:underline transition-all text-[#E6AD06]"
@@ -193,8 +187,8 @@ export default function OurWork() {
             </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               Upcoming announcements will appear here as these projects move
-              forward. We invite you to follow along as The Zahir's inaugural
-              work takes shape.
+              forward. We invite you to follow along as The Zahir&apos;s
+              inaugural work takes shape.
             </p>
           </div>
         </main>
