@@ -77,12 +77,12 @@ export default function OurWork() {
             >
               Our Work
             </h1>
-            <div className="bg-black text-white p-6 rounded-lg mb-6">
-              <p className="text-2xl text-white font-medium font-['Baskerville'] mb-2">
+            <div className="bg-black text-[#ada173] p-6 rounded-lg mb-6">
+              <p className="text-2xl text-[#ada173] font-medium font-['Baskerville'] mb-2">
                 The Zahir is very proud to announce its inaugural production:
                 L.B. Deyo&apos;s{" "}
               </p>
-              <h2 className="text-6xl sm:text-7xl font-bold text-white mb-2 display-heading">
+              <h2 className="text-6xl sm:text-7xl font-bold text-[#ada173] mb-2 display-heading">
                 Oversight
               </h2>
 
@@ -102,7 +102,7 @@ export default function OurWork() {
                   </a>
                 </div>
                 <div className="sm:w-1/2 min-w-0">
-                  <p className="text-2xl text-white font-medium font-['Baskerville']">
+                  <p className="text-2xl text-[#ada173] font-medium font-['Baskerville']">
                     <strong>
                       July 30–August 22, 2026<br></br> Hyde Park Theatre
                     </strong>
@@ -145,11 +145,11 @@ export default function OurWork() {
               mixed-media storytelling experiments that explore connection,
               perception, and the strangeness of being alive right now.
             </p>
-            <div className="bg-black text-white p-6 rounded-lg mb-6">
-              <p className="text-2xl text-white font-medium font-['Baskerville'] mb-2">
+            <div className="bg-black text-[#ada173] p-6 rounded-lg mb-6">
+              <p className="text-2xl text-[#ada173] font-medium font-['Baskerville'] mb-2">
                 We&apos;re in early development on Noah Masterson&apos;s play{" "}
               </p>
-              <h2 className="text-6xl sm:text-7xl font-semibold text-white mb-6 display-heading">
+              <h2 className="text-6xl sm:text-7xl font-semibold text-[#ada173] mb-6 display-heading">
                 The Egg
               </h2>
               <div className="mb-6 flex flex-col sm:flex-row sm:gap-8 sm:items-start">
@@ -164,7 +164,7 @@ export default function OurWork() {
                   />
                 </div>
                 <div className="sm:w-1/2 min-w-0">
-                  <p className="text-2xl text-white font-medium font-['Baskerville']">
+                  <p className="text-2xl text-[#ada173] font-medium font-['Baskerville']">
                     A surreal, darkly comic exploration of belief,
                     responsibility, and transformation. A reading is planned for
                     2026. Learn more at{" "}
