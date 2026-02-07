@@ -75,8 +75,9 @@ async function buildDonorPayloadFromSession(
       const pi = await stripe.paymentIntents.retrieve(paymentIntentId, {
         expand: ["charges.data.payment_method_details"],
       });
-      const charge = pi.charges?.data?.[0];
-      const pm = charge?.payment_method_details as { card?: { last4?: string; brand?: string } } | undefined;
+      const expanded = pi as unknown as { charges?: { data?: Array<{ payment_method_details?: { card?: { last4?: string; brand?: string } } }> } };
+      const charge = expanded.charges?.data?.[0];
+      const pm = charge?.payment_method_details;
       if (pm?.card) {
         last4 = pm.card.last4 ?? null;
         brand = pm.card.brand ?? null;
