@@ -167,8 +167,9 @@ async function handleCheckoutSessionCompleted(
 }
 
 async function handleInvoicePaid(stripe: Stripe, invoice: Stripe.Invoice, eventId: string): Promise<void> {
-  const subscriptionId = typeof invoice.subscription === "string" ? invoice.subscription : invoice.subscription?.id;
-  const customerId = typeof invoice.customer === "string" ? invoice.customer : invoice.customer?.id;
+  const inv = invoice as unknown as { subscription?: string | { id: string }; customer?: string | { id: string } };
+  const subscriptionId = typeof inv.subscription === "string" ? inv.subscription : inv.subscription?.id;
+  const customerId = typeof inv.customer === "string" ? inv.customer : inv.customer?.id;
   let email = invoice.customer_email ?? "";
   let name: string | null = null;
 
@@ -250,8 +251,9 @@ async function handleInvoicePaymentFailed(
   invoice: Stripe.Invoice,
   eventId: string
 ): Promise<void> {
+  const inv = invoice as unknown as { customer?: string | { id: string }; subscription?: string | { id: string } };
   let email: string | undefined;
-  const customerId = typeof invoice.customer === "string" ? invoice.customer : invoice.customer?.id;
+  const customerId = typeof inv.customer === "string" ? inv.customer : inv.customer?.id;
   if (customerId) {
     try {
       const customer = await stripe.customers.retrieve(customerId);
@@ -263,7 +265,7 @@ async function handleInvoicePaymentFailed(
 
   await sendAdminFailureNotification(eventId, "payment_failed", {
     customerId: customerId ?? undefined,
-    subscriptionId: typeof invoice.subscription === "string" ? invoice.subscription : invoice.subscription?.id,
+    subscriptionId: typeof inv.subscription === "string" ? inv.subscription : inv.subscription?.id,
     invoiceId: invoice.id,
     email,
   });
