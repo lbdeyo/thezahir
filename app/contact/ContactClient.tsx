@@ -49,7 +49,7 @@ export default function ContactClient() {
   };
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     setFormData({
       ...formData,
@@ -206,5 +206,3 @@ export default function ContactClient() {
     </div>
   );
 }
-
-

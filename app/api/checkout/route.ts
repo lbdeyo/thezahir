@@ -25,6 +25,26 @@ const CUSTOM_DONATION_PRICE_ID = "price_1Sa06yDPFz6EvGtXw9IY9cob";
 
 const ENV = process.env.VERCEL_ENV === "production" ? "prod" : "dev";
 
+// Tier labels for metadata (donation_type, tier, source). Used by webhook for emails.
+const SUBSCRIPTION_TIERS: Record<string, string> = {
+  [SUBSCRIPTION_PRICE_IDS[0]]: "5",
+  [SUBSCRIPTION_PRICE_IDS[1]]: "10",
+  [SUBSCRIPTION_PRICE_IDS[2]]: "25",
+  [SUBSCRIPTION_PRICE_IDS[3]]: "50",
+  [SUBSCRIPTION_PRICE_IDS[4]]: "100",
+};
+const ONE_TIME_TIERS: Record<string, string> = {
+  [ONE_TIME_PRICE_IDS[0]]: "25",
+  [ONE_TIME_PRICE_IDS[1]]: "50",
+  [ONE_TIME_PRICE_IDS[2]]: "100",
+};
+
+function getTier(priceId: string, isSubscription: boolean, isCustomDonation: boolean): string {
+  if (isCustomDonation) return "custom";
+  if (isSubscription) return SUBSCRIPTION_TIERS[priceId] ?? "unknown";
+  return ONE_TIME_TIERS[priceId] ?? "custom";
+}
+
 export async function POST(request: NextRequest) {
   try {
     if (!process.env.STRIPE_SECRET_KEY) {
@@ -52,12 +72,13 @@ export async function POST(request: NextRequest) {
     // Guard: subscription flow may ONLY use allowlisted subscription prices
     if (isSubscription) {
       const donationType = "monthly";
+      const tier = getTier(priceId, true, false);
       const sessionParams = buildSubscriptionSessionParams(
         successUrl,
         cancelUrl,
         priceId,
         quantity,
-        metadata,
+        { ...metadata, tier },
         donationType
       );
       const session = await stripe.checkout.sessions.create(sessionParams);
@@ -90,12 +111,13 @@ export async function POST(request: NextRequest) {
     }
 
     const donationType = "one_time";
+    const tier = getTier(priceId, false, isCustomDonation);
     const sessionParams = buildOneTimeSessionParams(
       successUrl,
       cancelUrl,
       priceId,
       quantity,
-      metadata,
+      { ...metadata, tier },
       isCustomDonation,
       donationType
     );
