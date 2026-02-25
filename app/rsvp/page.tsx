@@ -17,7 +17,10 @@ export default function RsvpPage() {
             className="px-4 sm:px-12 pt-4 pb-12 flex-1 relative"
             style={{ background: "rgba(173, 161, 115, 0.90)" }}
           >
-            <h1 className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-6 pt-4 display-heading" style={{ fontWeight: 800, fontStyle: "normal" }}>
+            <h1
+              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-6 pt-4 display-heading"
+              style={{ fontWeight: 800, fontStyle: "normal" }}
+            >
               R.S.V.P.
             </h1>
             <Script
