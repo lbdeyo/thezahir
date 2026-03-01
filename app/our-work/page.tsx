@@ -94,7 +94,7 @@ export default function OurWork() {
                     aria-label="Oversight — The new play from The Zahir, July 30–August 22, 2026"
                   >
                     <Image
-                      src="/img/oversight/Oversight-dates-1.jpg"
+                      src="/img/oversight/Oversight-dates-30.jpg"
                       alt="Oversight — The new play from The Zahir, July 30–August 22, 2026"
                       width={1200}
                       height={630}
@@ -141,7 +141,8 @@ export default function OurWork() {
             </p>
             <div className="bg-black text-[#ada173] p-6 rounded-lg mb-6">
               <p className="text-2xl text-[#ada173] font-medium font-['Baskerville'] mb-2">
-                We&apos;re in early development on Noah Masterson&apos;s play{" "}
+                We&apos;re in early development on Noah Masterson&apos;s
+                play{" "}
               </p>
               <h2 className="text-6xl sm:text-7xl font-semibold text-[#ada173] mb-6 display-heading">
                 The Egg
