@@ -453,6 +453,34 @@ export default function Team() {
                     from the Austin Critics Table.
                   </p>
                 </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/img/company/michael-morse.jpg"
+                    alt="Michael Morse"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Michael Morse
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor, Musician, Artist/Designer
+                  </p>
+                  <p
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
+                    Michael Morse is an actor, musician, and multidisciplinary
+                    artist/designer based in Austin, TX. He grew up in New York
+                    City where he studied drama and improv comedy. In Austin, he
+                    has had the honor of working with multiple theatre companies
+                    including Austin Shakespeare and The Filigree Theatre. He
+                    has played music at historic venues and displayed art at
+                    expos and galleries around the world.
+                  </p>
+                </div>
 
                 {/* Member 4 */}
                 <div className="flex flex-col items-center text-center">
