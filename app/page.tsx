@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
 import PhotoSlider from "./components/PhotoSlider";
-import GiveGabButton from "./components/GiveGabButton";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -82,15 +81,6 @@ export default function Home() {
                   </a>{" "}
                   is coming.{" "}
                 </p>
-              </div>
-              <div className="flex-1 min-w-0 px-4 sm:px-6 py-4 bg-black/20 rounded-lg border-2 border-black/30">
-                <h2 className="text-2xl sm:text-3xl text-black mb-1 font-bold font-['Baskerville']">
-                  Amplify Austin Day is here.
-                </h2>
-                <p className="text-xl sm:text-2xl text-black mb-4 font-medium font-['Baskerville']">
-                  Every gift helps us turn new theater into lived experience.
-                </p>
-                <GiveGabButton />
               </div>
             </div>
 
