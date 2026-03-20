@@ -150,32 +150,69 @@ export default function OurWork() {
               <div className="mb-6 flex flex-col sm:flex-row sm:gap-8 sm:items-start">
                 <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0">
                   <Image
-                    src="/img/the-egg/egg-preview.jpg"
+                    src="/img/the-egg/white-egg.png"
                     alt="The Egg"
                     width={1000}
                     height={1000}
-                    className="w-full h-auto object-cover rounded border"
-                    style={{ borderColor: "#ada173" }}
+                    className="w-full h-auto object-cover"
                   />
                 </div>
                 <div className="sm:w-1/2 min-w-0">
                   <p className="text-2xl text-[#ada173] font-medium font-['Baskerville']">
-                    A surreal, darkly comic exploration of belief,
-                    responsibility, and transformation. A reading is planned for
-                    2026. Learn more at{" "}
+                    <strong>October 29 - November 21, 2026</strong> <br></br>
+                    <strong>The Rosette</strong> <br></br> A surreal dark
+                    comedy. <br></br>
                     <i>
                       <a
-                        href="https://theegg.noahmasterson.com"
+                        href="https://the-egg-play.com"
                         className="font-bold hover:underline transition-all text-[#E6AD06]"
                       >
-                        The Egg&apos;s website.
+                        The-Egg-Play.com
                       </a>
                     </i>
                   </p>
                 </div>
               </div>
             </div>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+            <div className="bg-black text-[#ada173] p-6 rounded-lg mb-6">
+              <p className="text-2xl text-[#ada173] font-medium font-['Baskerville'] mb-2">
+                Announcing{" "}
+              </p>
+              <h2 className="text-6xl sm:text-7xl font-semibold text-[#ada173] mb-6 display-heading">
+                The Zahir Nights
+              </h2>
+              <div className="mb-6 flex flex-col sm:flex-row sm:gap-8 sm:items-start">
+                <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0 flex justify-center sm:justify-start">
+                  <Image
+                    src="/img/zahir-nights/zahir-nights-logo.jpg"
+                    alt="The Zahir Nights"
+                    width={1000}
+                    height={1000}
+                    unoptimized
+                    className="w-3/4 max-w-full h-auto object-cover rounded overflow-hidden"
+                  />
+                </div>
+                <div className="sm:w-1/2 min-w-0">
+                  <p className="text-2xl text-[#ada173] font-medium font-['Baskerville']">
+                    A series of benefit performances featuring short plays,
+                    monologues, and other entertainment. <br></br>Our first
+                    Zahir Nights performance will be in{" "}
+                    <a
+                      href="https://austin.nerdnite.com"
+                      className="font-bold hover:underline transition-all text-[#E6AD06]"
+                    >
+                      Nerd Nite Austin
+                    </a>{" "}
+                    on May 28, 2026 at Barrel &lsquo;o Fun. <br></br>It will
+                    feature a lecture on the history of theater and two short
+                    plays: <i>God of Sun and Light</i> by Brian Wittenbrook and{" "}
+                    <i>Beggars When They Die</i> by L.B. Deyo. Starring Zashir
+                    company members Laura D&apos;Eramo and Shannon McCormick.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville'] hidden">
               We also plan to bring{" "}
               <a
                 href="https://apprehensionplay.com"
