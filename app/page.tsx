@@ -83,26 +83,6 @@ export default function Home() {
                 </p>
               </div>
             </div>
-            <div className="mb-6 px-4 sm:px-6 py-4 bg-black/20 rounded-lg border-2 border-black/30">
-              <h2 className="text-2xl sm:text-3xl text-black mb-1 font-bold font-['Baskerville']">
-                Table Read: <i>The Egg</i>, by Noah Masterson
-              </h2>
-              <p className="text-xl sm:text-2xl text-black mb-2 font-medium font-['Baskerville']">
-                March 18th at 5 p.m. in ATX Theatre&apos;s Affordable Creative
-                Space, downtown.
-              </p>
-              <p className="text-xl sm:text-2xl text-black font-medium font-['Baskerville']">
-                There is limited seating, so please RSVP to member David Ritch{" "}
-                <a
-                  href="mailto:davidritch99@outlook.com"
-                  className="font-bold hover:underline transition-all text-[#490f0f]"
-                >
-                  HERE
-                </a>
-                .
-              </p>
-            </div>
-
             <div className="mb-6 hidden">
               <a
                 href="/party"
