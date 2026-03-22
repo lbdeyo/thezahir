@@ -90,7 +90,7 @@ export default function OurWork() {
                 <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0">
                   <a
                     href="https://oversight-play.com"
-                    className="block rounded overflow-hidden border border-[#ada173] hover:opacity-95 transition-opacity"
+                    className="block rounded overflow-hidden hover:opacity-95 transition-opacity"
                     aria-label="Oversight — The new play from The Zahir, July 30–August 22, 2026"
                   >
                     <Image
