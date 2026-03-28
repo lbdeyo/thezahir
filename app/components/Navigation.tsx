@@ -136,6 +136,9 @@ export default function Navigation() {
               <Link href="/about" className="hover:underline">
                 about
               </Link>
+              <Link href="/love" className="hover:underline">
+                love
+              </Link>
               <Link href="/support" className="hover:underline">
                 support
               </Link>
@@ -202,6 +205,13 @@ export default function Navigation() {
                     onClick={toggleMenu}
                   >
                     about
+                  </Link>
+                  <Link
+                    href="/love"
+                    className="hover:underline"
+                    onClick={toggleMenu}
+                  >
+                    love
                   </Link>
                   <Link
                     href="/support"
