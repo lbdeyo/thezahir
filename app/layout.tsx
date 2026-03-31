@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="min-h-full bg-[#0a0a0a]">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zgf1kpm.css" />
         <Script
@@ -60,7 +60,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-full bg-[#0a0a0a]`}
       >
         <HubSpotTracker />
         {children}

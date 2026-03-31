@@ -1,7 +1,12 @@
 @import "tailwindcss";
 
-:root {
+html {
   color-scheme: dark;
+  /* Literal fill: avoids any var()/browser theme quirks painting white behind the page */
+  background-color: #0a0a0a;
+}
+
+:root {
   --background: #0a0a0a;
   --foreground: #ededed;
 }
@@ -14,7 +19,7 @@
 }
 
 body {
-  background: var(--background);
+  background-color: #0a0a0a;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -36,39 +41,27 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* Rotated background image */
+/* Rotated background image
+   - z-index 0 (not -1): stays above html/body fill without relying on negative stacking.
+   - attachment scroll only: `fixed` + `transform` on the same pseudo fails in Safari/WebKit. */
 .bg-rotated {
   position: relative;
+  isolation: isolate;
+  z-index: 0;
 }
 
 .bg-rotated::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('/img/blackhole-bg.jpg');
+  inset: 0;
+  z-index: 0;
+  background-image: url("/img/blackhole-bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   transform: rotate(180deg);
-  z-index: -1;
-}
-
-@media (min-width: 640px) {
-  .bg-rotated::before {
-    background-attachment: fixed;
-    /* Constrain to viewport dimensions to prevent scaling degradation on long pages */
-    /* Since background-attachment is fixed, we only need to cover the viewport */
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    right: auto;
-    bottom: auto;
-  }
+  pointer-events: none;
 }
 
 /* Center last item in 2-column grid when it's alone (odd number of items) */
