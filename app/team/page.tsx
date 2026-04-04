@@ -71,7 +71,6 @@ export default function Team() {
                 Board of Directors
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-                {/* Member 1 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/lb-pipe-cropped.jpg"
@@ -105,7 +104,6 @@ export default function Team() {
                   </p>
                 </div>
 
-                {/* Member 2 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/noah-beach-headshot.jpg"
@@ -135,7 +133,6 @@ export default function Team() {
                   </p>
                 </div>
 
-                {/* Member 3 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/chad-portrait.jpg"
@@ -178,7 +175,6 @@ export default function Team() {
                 The Company
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
-                {/* Member 3 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/jessica-cohen-portrait.jpg"
@@ -226,6 +222,36 @@ export default function Team() {
                       @jessa.cohen
                     </a>
                     .
+                  </p>
+                </div>
+                <div className="flex flex-col items-center text-center">
+                  <Image
+                    src="/img/company/daisy.jpg"
+                    alt="Daisy Day"
+                    width={144}
+                    height={144}
+                    className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
+                    style={{ background: "#ddd" }}
+                  />
+                  <h3 className="text-2xl font-bold text-black mb-1 font-['Baskerville']">
+                    Daisy Day
+                  </h3>
+                  <p className="text-xl text-black mb-2 font-medium font-['Baskerville']">
+                    Actor
+                  </p>
+                  <p
+                    className="text-[1.375rem] text-left text-black font-['Baskerville']"
+                    style={{ textWrap: "pretty" }}
+                  >
+                    Daisy Day (she/her) is an Austin-based actor with a passion
+                    for connecting the audience with a character through detailed
+                    analysis, research, and role preparation. Her aspiration is to
+                    shapeshift to the point that the audience may not recognize
+                    she is the same person from her different roles. She is
+                    particularly drawn to complex characters in drama and is
+                    moved by science-fiction genres. Though new to acting, she
+                    brings a unique background to her craft as an engineer by
+                    training, and technical conference speaker and moderator.
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
@@ -349,7 +375,6 @@ export default function Team() {
                     <i>Natalie George Productions Cabaret</i>.
                   </p>
                 </div>
-                {/* Member 2 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/danu-portrait.jpg"
@@ -384,7 +409,6 @@ export default function Team() {
                     troupe The Latino Comedy Project.
                   </p>
                 </div>
-                {/* Member 1 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/shannon-mccormick.jpg"
@@ -481,8 +505,6 @@ export default function Team() {
                     expos and galleries around the world.
                   </p>
                 </div>
-
-                {/* Member 4 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/david-ritch.jpg"
@@ -546,7 +568,6 @@ export default function Team() {
                     10th Anniversary production of <i>Parade</i>.
                   </p>
                 </div>
-                {/* Member 4 */}
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/werzner.jpg"
@@ -592,7 +613,7 @@ export default function Team() {
                 <div className="flex flex-col items-center text-center">
                   <Image
                     src="/img/company/RachelWestHeadshot.jpg"
-                    alt="Brent Werzner"
+                    alt="Rachel West"
                     width={144}
                     height={144}
                     className="w-36 h-36 object-cover rounded-full mb-4 border-4 border-black shadow-md"
