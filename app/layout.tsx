@@ -24,10 +24,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "| THE ZAHIR |",
     description: "A dramatic arts company",
-    images: [
-      { url: "/img/crazy-apprehension.jpg" },
-      { url: "/img/zahir-logo.svg" },
-    ],
+    images: [{ url: "/img/og/zahir-og.jpg" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/img/og/zahir-og.jpg"],
   },
 };
 

@@ -9,18 +9,12 @@ export const metadata: Metadata = {
     title: "Love | THE ZAHIR",
     description:
       "Love is at the heart of The Zahir: connection, community, and the stories that bring us back to one another.",
-    images: [
-      {
-        url: "/img/og/about-og.jpg",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Love | THE ZAHIR",
     description:
       "Love is at the heart of The Zahir: connection, community, and the stories that bring us back to one another.",
-    images: ["/img/og/about-og.jpg"],
   },
 };
 
