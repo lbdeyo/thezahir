@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Navigation from "./components/Navigation";
-import PhotoSlider from "./components/PhotoSlider";
 import Image from "next/image";
 
 export const metadata: Metadata = {
@@ -98,7 +97,21 @@ export default function Home() {
                 January 6, 2026 at Hyde Park Theatre
               </a>
             </div>
-            <PhotoSlider />
+            {/* PhotoSlider temporarily replaced with featured video */}
+            <div className="w-full mb-6">
+              <div className="rounded overflow-hidden border-4 border-black">
+                <div className="relative w-full aspect-video">
+                  <iframe
+                    className="absolute inset-0 h-full w-full"
+                    src="https://www.youtube.com/embed/qSPlg1qkSA4"
+                    title="The Zahir on YouTube"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    referrerPolicy="strict-origin-when-cross-origin"
+                  />
+                </div>
+              </div>
+            </div>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
               projects that bring people together for meaningful conversation.
