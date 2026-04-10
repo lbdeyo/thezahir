@@ -119,6 +119,37 @@ export default function Love() {
             >
               Love
             </h1>
+            <section className="max-w-3xl mb-10 font-['Baskerville'] text-black">
+              <h2 className="text-2xl sm:text-3xl mb-3 display-heading">
+                What we&apos;re watching
+              </h2>
+              <p className="text-lg sm:text-xl leading-relaxed mb-3">
+                Review: <em>The Fire Raisers</em> from{" "}
+                <a
+                  href="https://hiddenroomtheatre.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#490f0f] hover:underline transition-all"
+                >
+                  The Hidden Room
+                </a>
+              </p>
+              <p className="text-lg sm:text-xl leading-relaxed">
+                If satire is a meal, Max Frisch&apos;s <em>The Fire Eaters</em>{" "}
+                is a particularly hot and mouthwatering one. Director Beth Burns
+                has taken Frisch&apos;s recipe and cooked up the perfect blend of
+                delectability and presentation. The comedy savors of deep absurdist wit,
+                the metaphor is irresistible, and the blend of music and light
+                create a classical atmosphere. Among the standout performers
+                from an outstanding cast were the charming one-man band Michael
+                Ferstenfeld, the always-delightful Kelly Hasandras, and a
+                wickedly confounded Robert Matney. Get there and see for
+                yourself.
+              </p>
+            </section>
+            <h2 className="text-2xl sm:text-3xl mb-4 display-heading text-black">
+              Some of our very favorites
+            </h2>
             <ul className="m-0 grid max-w-3xl list-none grid-cols-1 gap-3 p-0 font-medium font-['Baskerville'] text-lg text-black sm:grid-cols-2 sm:gap-x-10 sm:text-xl">
               {LOVE_LINKS.map(({ label, href }) => (
                 <li key={href}>
