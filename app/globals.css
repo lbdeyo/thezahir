@@ -73,11 +73,11 @@ body {
   }
 }
 
-/* Display heading font - Farmhand Regular */
+/* Display heading font - Adobe Typekit hackney */
 .display-heading {
-  font-family: "farmhand", "farmhand-regular", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "hackney", sans-serif;
+  font-weight: 700 !important;
+  font-style: normal !important;
 }
 
 /* Photo slider - fade on desktop, instant on mobile */

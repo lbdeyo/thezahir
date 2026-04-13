@@ -142,7 +142,7 @@ function FoundingDonorsCircleContent() {
             }}
           >
             <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 display-heading"
+              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Founding Donors Circle
@@ -456,7 +456,7 @@ function LoadingFallback() {
             }}
           >
             <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 display-heading"
+              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Founding Donors Circle

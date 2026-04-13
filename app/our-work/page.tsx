@@ -66,7 +66,7 @@ export default function OurWork() {
             }}
           >
             <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-2 pt-4 display-heading"
+              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Our Work
@@ -76,7 +76,7 @@ export default function OurWork() {
                 The Zahir is very proud to announce its inaugural production:
                 L.B. Deyo&apos;s{" "}
               </p>
-              <h2 className="text-6xl sm:text-7xl font-bold text-[#ada173] mb-2 display-heading">
+              <h2 className="text-6xl sm:text-7xl lg:text-[5.5rem] text-[#ada173] mb-2 display-heading">
                 Oversight
               </h2>
 
@@ -138,7 +138,7 @@ export default function OurWork() {
                 We&apos;re in early development on Noah Masterson&apos;s
                 play{" "}
               </p>
-              <h2 className="text-6xl sm:text-7xl font-semibold text-[#ada173] mb-6 display-heading">
+              <h2 className="text-6xl sm:text-7xl lg:text-[5.5rem] text-[#ada173] mb-6 display-heading">
                 The Egg
               </h2>
               <div className="mb-6 flex flex-col sm:flex-row sm:gap-8 sm:items-start">
@@ -172,7 +172,7 @@ export default function OurWork() {
               <p className="text-2xl text-[#ada173] font-medium font-['Baskerville'] mb-2">
                 Announcing{" "}
               </p>
-              <h2 className="text-6xl sm:text-7xl font-semibold text-[#ada173] mb-6 display-heading">
+              <h2 className="text-6xl sm:text-7xl lg:text-[5.5rem] text-[#ada173] mb-6 display-heading">
                 The Zahir Nights
               </h2>
               <div className="mb-6 flex flex-col sm:flex-row sm:gap-8 sm:items-start">

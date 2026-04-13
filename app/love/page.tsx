@@ -108,13 +108,13 @@ export default function Love() {
             }}
           >
             <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] text-black mb-8 pt-4 display-heading"
+              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-8 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
             >
               Love
             </h1>
             <section className="max-w-3xl mb-10 font-['Baskerville'] text-black">
-              <h2 className="text-2xl sm:text-3xl mb-3 display-heading">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-3 display-heading">
                 What we&apos;re watching
               </h2>
               <p className="text-lg sm:text-xl leading-relaxed mb-3">
@@ -141,7 +141,7 @@ export default function Love() {
                 yourself.
               </p>
             </section>
-            <h2 className="text-2xl sm:text-3xl mb-4 display-heading text-black">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-4 display-heading text-black">
               Some of our very favorites
             </h2>
             <ul className="m-0 grid max-w-3xl list-none grid-cols-1 gap-3 p-0 font-medium font-['Baskerville'] text-lg text-black sm:grid-cols-2 sm:gap-x-10 sm:text-xl">
