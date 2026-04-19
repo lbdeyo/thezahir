@@ -117,29 +117,58 @@ export default function Love() {
               <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-3 display-heading">
                 What we&apos;re watching
               </h2>
-              <p className="text-lg sm:text-xl leading-relaxed mb-3">
-                Review: <em>The Fire Raisers</em> from{" "}
-                <a
-                  href="https://hiddenroomtheatre.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#490f0f] hover:underline transition-all"
-                >
-                  The Hidden Room
-                </a>
-              </p>
-              <p className="text-lg sm:text-xl leading-relaxed">
-                If satire is a meal, Max Frisch&apos;s <em>The Fire Eaters</em>{" "}
-                is a particularly hot and mouthwatering one. Director Beth Burns
-                has taken Frisch&apos;s recipe and cooked up the perfect blend of
-                delectability and presentation. The comedy savors of deep absurdist wit,
-                the metaphor is irresistible, and the blend of music and light
-                create a classical atmosphere. Among the standout performers
-                from an outstanding cast were the charming one-man band Michael
-                Ferstenfeld, the always-delightful Kelly Hasandras, and a
-                wickedly confounded Robert Matney. Get there and see for
-                yourself.
-              </p>
+              <div className="mb-10">
+                <p className="text-lg sm:text-xl leading-relaxed mb-3">
+                  Review: <em>Take Care of My Friend</em> by Kathleen Fletcher (
+                  <a
+                    href="https://www.filigreetheatre.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#490f0f] hover:underline transition-all"
+                  >
+                    The Filigree Theatre
+                  </a>
+                  )
+                </p>
+                <p className="text-lg sm:text-xl leading-relaxed">
+                  If you have tears, prepare to shed them. This is theater at
+                  its most naked, its most vulnerable, and its most honest.
+                  Playwright and star Kathleen Fletcher is the Virgil guiding us
+                  through her personal hell of mental illness. The sights and
+                  sounds are brutal, nightmarish. But the humor, charm, warmth
+                  and courage that have allowed her to survive are also our own
+                  port in the storm. Fletcher and her electrifying cast,
+                  including the always outstanding Rachel West (a Zahir Company
+                  member, to our great pride), ensure that there are laughs and
+                  joy along with the sorrow. Through April 25th at Hyde Park
+                  Theatre.
+                </p>
+              </div>
+              <div>
+                <p className="text-lg sm:text-xl leading-relaxed mb-3">
+                  Review: <em>The Fire Raisers</em> from{" "}
+                  <a
+                    href="https://hiddenroomtheatre.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#490f0f] hover:underline transition-all"
+                  >
+                    The Hidden Room
+                  </a>
+                </p>
+                <p className="text-lg sm:text-xl leading-relaxed">
+                  If satire is a meal, Max Frisch&apos;s <em>The Fire Eaters</em>{" "}
+                  is a particularly hot and mouthwatering one. Director Beth Burns
+                  has taken Frisch&apos;s recipe and cooked up the perfect blend
+                  of delectability and presentation. The comedy savors of deep
+                  absurdist wit, the metaphor is irresistible, and the blend of
+                  music and light create a classical atmosphere. Among the
+                  standout performers from an outstanding cast were the charming
+                  one-man band Michael Ferstenfeld, the always-delightful Kelly
+                  Hasandras, and a wickedly confounded Robert Matney. Get there
+                  and see for yourself.
+                </p>
+              </div>
             </section>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl mb-4 display-heading text-black">
               Some of our very favorites
