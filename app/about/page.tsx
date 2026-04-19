@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { siteOgImages, siteTwitterImages } from "@/app/lib/siteOg";
 import Navigation from "../components/Navigation";
 import Image from "next/image";
 export const metadata: Metadata = {
@@ -9,12 +10,14 @@ export const metadata: Metadata = {
     title: "About | THE ZAHIR",
     description:
       "In Jorge Luis Borges's short story The Zahir, an ordinary object becomes an overwhelming force—a metaphor for obsession, attention, and the narrowing of the human world.",
+    images: siteOgImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "About | THE ZAHIR",
     description:
       "In Jorge Luis Borges's short story The Zahir, an ordinary object becomes an overwhelming force—a metaphor for obsession, attention, and the narrowing of the human world.",
+    images: siteTwitterImages,
   },
 };
 

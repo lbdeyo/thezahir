@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { siteOgImages, siteTwitterImages } from "@/app/lib/siteOg";
 import Navigation from "../components/Navigation";
 import Image from "next/image";
 
@@ -10,12 +11,14 @@ export const metadata: Metadata = {
     title: "Our Work | THE ZAHIR",
     description:
       "The Zahir creates original theater, film, and storytelling projects designed to spark conversation in an age that often discourages it.",
+    images: siteOgImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "Our Work | THE ZAHIR",
     description:
       "The Zahir creates original theater, film, and storytelling projects designed to spark conversation in an age that often discourages it.",
+    images: siteTwitterImages,
   },
 };
 

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { siteOgImages, siteTwitterImages } from "@/app/lib/siteOg";
 import Navigation from "../components/Navigation";
 
 export const metadata: Metadata = {
@@ -9,12 +10,14 @@ export const metadata: Metadata = {
     title: "Love | THE ZAHIR",
     description:
       "Love is at the heart of The Zahir: connection, community, and the stories that bring us back to one another.",
+    images: siteOgImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "Love | THE ZAHIR",
     description:
       "Love is at the heart of The Zahir: connection, community, and the stories that bring us back to one another.",
+    images: siteTwitterImages,
   },
 };
 
@@ -157,16 +160,17 @@ export default function Love() {
                   </a>
                 </p>
                 <p className="text-lg sm:text-xl leading-relaxed">
-                  If satire is a meal, Max Frisch&apos;s <em>The Fire Eaters</em>{" "}
-                  is a particularly hot and mouthwatering one. Director Beth Burns
-                  has taken Frisch&apos;s recipe and cooked up the perfect blend
-                  of delectability and presentation. The comedy savors of deep
-                  absurdist wit, the metaphor is irresistible, and the blend of
-                  music and light create a classical atmosphere. Among the
-                  standout performers from an outstanding cast were the charming
-                  one-man band Michael Ferstenfeld, the always-delightful Kelly
-                  Hasandras, and a wickedly confounded Robert Matney. Get there
-                  and see for yourself.
+                  If satire is a meal, Max Frisch&apos;s{" "}
+                  <em>The Fire Eaters</em> is a particularly hot and
+                  mouthwatering one. Director Beth Burns has taken Frisch&apos;s
+                  recipe and cooked up the perfect blend of delectability and
+                  presentation. The comedy savors of deep absurdist wit, the
+                  metaphor is irresistible, and the blend of music and light
+                  create a classical atmosphere. Among the standout performers
+                  from an outstanding cast were the charming one-man band
+                  Michael Ferstenfeld, the always-delightful Kelly Hasandras,
+                  and a wickedly confounded Robert Matney. Get there and see for
+                  yourself.
                 </p>
               </div>
             </section>

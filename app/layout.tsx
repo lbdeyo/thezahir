@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import { siteOgImages, siteTwitterImages } from "@/app/lib/siteOg";
 import "./globals.css";
 import Footer from "./components/Footer";
 import HubSpotTracker from "./components/HubSpotTracker";
@@ -24,11 +25,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "| THE ZAHIR |",
     description: "A dramatic arts company",
-    images: [{ url: "/img/og/zahir-og.jpg" }],
+    images: siteOgImages,
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/img/og/zahir-og.jpg"],
+    images: siteTwitterImages,
   },
 };
 
