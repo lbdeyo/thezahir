@@ -41,9 +41,7 @@ body {
   filter: brightness(0) invert(1);
 }
 
-/* Rotated background image
-   - z-index 0 (not -1): stays above html/body fill without relying on negative stacking.
-   - attachment scroll only: `fixed` + `transform` on the same pseudo fails in Safari/WebKit. */
+/* Global repeating background tile */
 .bg-rotated {
   position: relative;
   isolation: isolate;
@@ -55,12 +53,11 @@ body {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background-image: url("/img/coral-mm-gradient.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("/img/repeater.jpg");
+  background-size: 500px auto;
+  background-position: top left;
+  background-repeat: repeat;
   background-attachment: scroll;
-  transform: rotate(180deg);
   pointer-events: none;
 }
 

@@ -49,7 +49,7 @@ export default function Home() {
           <div
             className="px-4 sm:px-12 pt-4 pb-6 relative"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
             id="gradient-start"
           >
@@ -151,7 +151,7 @@ export default function Home() {
           <div
             className="px-4 sm:px-12 py-6 pb-16"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-black font-['Baskerville'] mb-6">

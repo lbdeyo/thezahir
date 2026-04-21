@@ -52,7 +52,7 @@ export default function Navigation() {
       <div className="px-4 sm:px-8 mx-auto max-w-5xl">
         <div
           className={`w-full py-4 sm:py-6 ${
-            isMenuOpen ? "bg-black" : "bg-black/80"
+            isMenuOpen ? "bg-black" : "bg-black/90"
           }`}
           style={{ boxShadow: "0 10px 25px rgba(0, 0, 0, 0.5)" }}
         >

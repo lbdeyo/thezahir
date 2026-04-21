@@ -65,7 +65,7 @@ export default function Party() {
           <div
             className="px-4 sm:px-12 pt-4 pb-3 relative"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
             id="gradient-start"
           >
@@ -190,7 +190,7 @@ export default function Party() {
           <div
             className="px-4 sm:px-12 pb-1 "
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
           ></div>
         </main>

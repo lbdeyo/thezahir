@@ -146,7 +146,7 @@ function DonateContent() {
           <div
             className="px-4 sm:px-12 pt-4 pb-6 relative"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
           >
             <h1
@@ -214,7 +214,7 @@ function DonateContent() {
           <div
             className="px-4 sm:px-12 py-6"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-black mb-6 font-['Baskerville']">
@@ -301,7 +301,7 @@ function LoadingFallback() {
           <div
             className="px-4 sm:px-12 pt-4 pb-6 relative"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
           >
             <h1

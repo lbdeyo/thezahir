@@ -99,7 +99,7 @@ export default function Contact() {
           <div
             className="px-4 sm:px-12 pt-4 pb-12 flex-1 relative"
             style={{
-              background: "rgba(173, 161, 115, 0.90)",
+              background: "rgba(173, 161, 115, 0.95)",
             }}
           >
             <h1
