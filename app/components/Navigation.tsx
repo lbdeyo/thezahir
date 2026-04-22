@@ -74,6 +74,7 @@ export default function Navigation() {
               <form
                 onSubmit={handleMailingListSubmit}
                 className="hidden sm:flex items-center gap-2"
+                suppressHydrationWarning
               >
                 <input
                   type="email"
@@ -163,6 +164,7 @@ export default function Navigation() {
                 <form
                   onSubmit={handleMailingListSubmit}
                   className="flex flex-col gap-2 mb-4"
+                  suppressHydrationWarning
                 >
                   <input
                     type="email"
