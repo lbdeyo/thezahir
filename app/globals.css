@@ -70,10 +70,17 @@ body {
   }
 }
 
-/* Display heading font - Adobe Typekit hackney */
+/* Display heading font - Adobe Typekit Capitol */
 .display-heading {
-  font-family: "hackney", sans-serif;
-  font-weight: 700 !important;
+  font-family: "capitol", sans-serif;
+  font-weight: 500 !important;
+  font-style: normal !important;
+}
+
+/* Optional lighter Capitol variant for testing */
+.display-heading-light {
+  font-family: "capitol", sans-serif;
+  font-weight: 300 !important;
   font-style: normal !important;
 }
 
