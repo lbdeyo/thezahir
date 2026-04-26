@@ -54,7 +54,7 @@ body {
   inset: 0;
   z-index: 0;
   background-image: url("/img/repeater.jpg");
-  background-size: 500px auto;
+  background-size: 250px auto;
   background-position: top left;
   background-repeat: repeat;
   background-attachment: scroll;
