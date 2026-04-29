@@ -203,7 +203,7 @@ export default function OurWork() {
                     on May 28, 2026 at Barrel &lsquo;o Fun. <br></br>It will
                     feature a lecture on the history of theater and two short
                     plays: <i>God of Sun and Light</i> by Brian Wittenbrook and{" "}
-                    <i>Beggars When They Die</i> by L.B. Deyo. Starring Zashir
+                    <i>Beggars When They Die</i> by L.B. Deyo. Starring Zahir
                     company members Laura D&apos;Eramo and Shannon McCormick.
                   </p>
                 </div>
