@@ -26,6 +26,7 @@ const LOVE_LINKS: { label: string; href: string }[] = [
   { label: "CTX Live Theatre", href: "https://ctxlivetheatre.com/" },
   { label: "Graham Reynolds", href: "https://www.grahamreynolds.com/" },
   { label: "Hyde Park Theatre", href: "https://www.hydeparktheatre.org/" },
+  { label: "Inverse Theater", href: "https://inversetheater.org/" },
   { label: "Rude Mechs", href: "https://rudemechs.com/" },
   {
     label: "Salvage Vanguard Theater",
