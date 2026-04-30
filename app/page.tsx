@@ -64,24 +64,42 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
               <div
-                className="flex-1 min-w-0 rounded-lg border-2 border-black/30 p-4 sm:px-8 sm:py-6 text-[#ada173] flex items-center justify-center text-center bg-cover bg-center"
+                className="flex-1 min-w-0 rounded-lg border-2 border-black/30 p-4 sm:px-8 sm:py-6 text-[#ada173] flex flex-col items-center justify-center text-center bg-cover bg-center"
                 style={{
                   backgroundImage:
                     "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/img/oversight/oversight-callout-bg.jpg')",
                 }}
               >
                 <p className="text-2xl sm:text-3xl text-[#ada173] font-medium font-['Baskerville']">
-                  Alert:{" "}
+                  The Zahir needs your help to launch its autumn production:
+                  Noah Masterson’s <i>THE EGG</i>.{" "}
                   <a
-                    href="/our-work"
+                    href="https://seedandspark.com/fund/the-egg-a-play"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="font-bold hover:underline transition-all text-[#E6AD06]"
                   >
-                    Oversight
-                  </a>{" "}
-                  is coming.{" "}
+                    Support it on Seed &amp; Spark
+                  </a>
+                  .{" "}
                 </p>
+                <div className="w-full mt-5">
+                  <div className="rounded overflow-hidden border-4 border-black">
+                    <div className="relative w-full aspect-video">
+                      <iframe
+                        className="absolute inset-0 h-full w-full"
+                        src="https://www.youtube.com/embed/e5HnMOaWHGc"
+                        title="THE EGG campaign announcement"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                        referrerPolicy="strict-origin-when-cross-origin"
+                      />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+
             <div className="mb-6 hidden">
               <a
                 href="/party"
@@ -96,21 +114,6 @@ export default function Home() {
                 <br />
                 January 6, 2026 at Hyde Park Theatre
               </a>
-            </div>
-            {/* PhotoSlider temporarily replaced with featured video */}
-            <div className="w-full mb-6">
-              <div className="rounded overflow-hidden border-4 border-black">
-                <div className="relative w-full aspect-video">
-                  <iframe
-                    className="absolute inset-0 h-full w-full"
-                    src="https://www.youtube.com/embed/qSPlg1qkSA4"
-                    title="The Zahir on YouTube"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowFullScreen
-                    referrerPolicy="strict-origin-when-cross-origin"
-                  />
-                </div>
-              </div>
             </div>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               The Zahir creates original theater, film, and storytelling
