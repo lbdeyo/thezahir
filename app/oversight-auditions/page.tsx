@@ -111,19 +111,6 @@ export default function OversightAuditionsPage() {
               </h2>
               <ul className="mb-6 list-disc list-outside marker:text-black pl-6 sm:pl-7 space-y-4">
                 <li>
-                  <strong>Secretary of State</strong> (40s-70s ). A seasoned,
-                  sarcastic political figure.{" "}
-                  <a
-                    className="text-[#490f0f] hover:underline transition-all font-bold"
-                    href="/docs/oversight-secretary-of-state-sides.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Download sides
-                  </a>
-                  .
-                </li>
-                <li>
                   <strong>General Stossen</strong> (60s). Chairman of the Joint
                   Chiefs. Gruff, blunt, and pragmatic.{" "}
                   <a
