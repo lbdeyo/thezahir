@@ -115,7 +115,7 @@ export default function OversightAuditionsPage() {
                   Chiefs. Gruff, blunt, and pragmatic.{" "}
                   <a
                     className="text-[#490f0f] hover:underline transition-all font-bold"
-                    href="/docs/oversight-general-stossen-sides.pdf"
+                    href="/docs/oversight-stossen-sides.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
