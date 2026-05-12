@@ -142,7 +142,7 @@ export default function OversightAuditionsPage() {
               </h2>
               <p className="mb-6">
                 Please submit a video audition, using the highlighted portions
-                of the sides, to{" "}
+                of the linked sides, to{" "}
                 <a
                   href="mailto:lb@the-zahir.org"
                   className="text-[#490f0f] hover:underline transition-all font-bold"
