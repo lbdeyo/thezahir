@@ -144,10 +144,10 @@ export default function OversightAuditionsPage() {
                 Please submit a video audition, using the highlighted portions
                 of the sides, to{" "}
                 <a
-                  href="mailto:lb@thezahir.org"
+                  href="mailto:lb@the-zahir.org"
                   className="text-[#490f0f] hover:underline transition-all font-bold"
                 >
-                  lb@thezahir.org
+                  lb@the-zahir.org
                 </a>
                 . Please include a headshot and resume.
               </p>
