@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import Navigation from "./components/Navigation";
 import Image from "next/image";
+import Link from "next/link";
+import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
   title: "Home | THE ZAHIR",
@@ -53,6 +54,27 @@ export default function Home() {
             }}
             id="gradient-start"
           >
+            <div
+              className="mb-6 mt-2 rounded-lg border-2 border-[#490f0f] bg-black/10 px-4 py-3 sm:px-5 sm:py-4 font-['Baskerville'] text-lg sm:text-xl text-black"
+              role="status"
+            >
+              <p className="font-semibold">
+                Now auditioning —{" "}
+                <Link
+                  href="/oversight-auditions"
+                  className="text-[#490f0f] font-bold hover:underline transition-all"
+                >
+                  Oversight Auditions
+                </Link>
+                {" · "}
+                <Link
+                  href="/egg-auditions"
+                  className="text-[#490f0f] font-bold hover:underline transition-all"
+                >
+                  THE EGG Auditions
+                </Link>
+              </p>
+            </div>
             <h1
               className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
