@@ -555,17 +555,14 @@ export default function Team() {
                     className="text-[1.375rem] text-left text-black font-['Baskerville']"
                     style={{ textWrap: "pretty" }}
                   >
-                    Justin Smith is an actor and musician who&apos;s been a
-                    member of Austin&apos;s creative community for 15(ish)
-                    years. Justin moved to Austin from Memphis and since has
-                    been featured on various Austin records over his tenure as a
-                    bass player, songwriter and singer. As an actor
-                    Justin&apos;s recent stage credits include Austin
-                    Shakespeare&apos;s <i>Jane Eyre</i>, Jarrot
-                    Productions&apos; <i>Dial M for Murder</i> and Ground Floor
-                    Theatre&apos;s Texas premier of <i>Amy and The Orphans</i>.
-                    He will next appear back at Ground Floor Theatre for their
-                    10th Anniversary production of <i>Parade</i>.
+                    Justin G. Smith is an actor and musician originally from
+                    Memphis, Tennessee. A longtime performer within
+                    Austin&apos;s creative community, he has spent over a
+                    decade appearing on regional stages and recordings and has
+                    toured nationally and internationally as a musician. Recent
+                    theatre credits include productions with Dirty Gold, Ground
+                    Floor Theatre, Jarrott Productions, and more. Justin is most
+                    drawn to grounded, character driven stories.
                   </p>
                 </div>
                 <div className="flex flex-col items-center text-center">
