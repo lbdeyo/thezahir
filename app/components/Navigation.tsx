@@ -132,7 +132,7 @@ export default function Navigation() {
             {/* Desktop navigation */}
             <nav className="hidden sm:flex gap-8 text-[#ada173] text-lg font-semibold font-['Baskerville'] mt-4">
               <Link href="/our-work" className="hover:underline">
-                our work
+                work
               </Link>
               <Link href="/about" className="hover:underline">
                 about
@@ -199,7 +199,7 @@ export default function Navigation() {
                     className="hover:underline"
                     onClick={toggleMenu}
                   >
-                    our work
+                    work
                   </Link>
                   <Link
                     href="/about"

@@ -123,19 +123,6 @@ export default function OversightAuditionsPage() {
                   </a>
                   .
                 </li>
-                <li>
-                  <strong>Ofelia Cromwell</strong> (Female, 40s-70s). The
-                  stenographer. Patriotic and proud of her long service.{" "}
-                  <a
-                    className="text-[#490f0f] hover:underline transition-all font-bold"
-                    href="/docs/oversight-ofelia-cromwell-sides.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Download sides
-                  </a>
-                  .
-                </li>
               </ul>
               <h2 className="mb-4 text-2xl sm:text-4xl lg:text-5xl display-heading">
                 Instructions
