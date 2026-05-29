@@ -61,13 +61,6 @@ export default function Home() {
               <p className="font-semibold">
                 Now auditioning —{" "}
                 <Link
-                  href="/oversight-auditions"
-                  className="text-[#490f0f] font-bold hover:underline transition-all"
-                >
-                  Oversight Auditions
-                </Link>
-                {" · "}
-                <Link
                   href="/egg-auditions"
                   className="text-[#490f0f] font-bold hover:underline transition-all"
                 >
@@ -94,7 +87,7 @@ export default function Home() {
               >
                 <p className="text-2xl sm:text-3xl text-[#ada173] font-medium font-['Baskerville']">
                   The Zahir needs your help to launch its autumn production:
-                  Noah Masterson’s <i>THE EGG</i>.{" "}
+                  Noah Masterson&apos;s <i>THE EGG</i>.{" "}
                   <a
                     href="https://seedandspark.com/fund/the-egg-a-play"
                     target="_blank"
