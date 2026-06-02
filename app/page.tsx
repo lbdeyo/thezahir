@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
@@ -54,20 +53,6 @@ export default function Home() {
             }}
             id="gradient-start"
           >
-            <div
-              className="mb-6 mt-2 rounded-lg border-2 border-[#490f0f] bg-black/10 px-4 py-3 sm:px-5 sm:py-4 font-['Baskerville'] text-lg sm:text-xl text-black"
-              role="status"
-            >
-              <p className="font-semibold">
-                Now auditioning —{" "}
-                <Link
-                  href="/egg-auditions"
-                  className="text-[#490f0f] font-bold hover:underline transition-all"
-                >
-                  THE EGG Auditions
-                </Link>
-              </p>
-            </div>
             <h1
               className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
               style={{ fontWeight: 800, fontStyle: "normal" }}
@@ -86,25 +71,25 @@ export default function Home() {
                 }}
               >
                 <p className="text-2xl sm:text-3xl text-[#ada173] font-medium font-['Baskerville']">
-                  The Zahir needs your help to launch its autumn production:
-                  Noah Masterson&apos;s <i>THE EGG</i>.{" "}
+                  <i>Oversight</i> is coming July 30–August 22 at Austin&apos;s
+                  Hyde Park Theatre.{" "}
                   <a
-                    href="https://seedandspark.com/fund/the-egg-a-play"
+                    href="https://tickets.atxtheatre.org/events/oversight"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="font-bold hover:underline transition-all text-[#E6AD06]"
                   >
-                    Support it on Seed &amp; Spark
+                    Tickets are on sale now
                   </a>
-                  .{" "}
+                  .
                 </p>
                 <div className="w-full mt-5">
                   <div className="rounded overflow-hidden border-4 border-black">
                     <div className="relative w-full aspect-video">
                       <iframe
                         className="absolute inset-0 h-full w-full"
-                        src="https://www.youtube.com/embed/e5HnMOaWHGc"
-                        title="THE EGG campaign announcement"
+                        src="https://www.youtube.com/embed/qSPlg1qkSA4"
+                        title="Oversight promo video"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowFullScreen
                         referrerPolicy="strict-origin-when-cross-origin"

@@ -21,15 +21,6 @@ export const metadata: Metadata = {
   },
 };
 
-function Divider() {
-  return (
-    <hr
-      className="my-8 border-0 border-t border-black/40"
-      aria-hidden="true"
-    />
-  );
-}
-
 export default function EggAuditionsPage() {
   return (
     <div className="min-h-screen font-sans bg-attachment-responsive bg-rotated relative">
@@ -81,40 +72,9 @@ export default function EggAuditionsPage() {
               THE EGG Auditions
             </h1>
 
-            <div className="max-w-3xl font-['Baskerville'] text-black text-lg sm:text-xl leading-relaxed">
-              <p className="text-2xl sm:text-3xl display-heading">
-                Sunday, June 21st
-              </p>
-              <p className="mt-2 text-xl sm:text-2xl">1:00pm - 4:00pm</p>
-
-              <Divider />
-
-              <p className="font-semibold">Central Christian Church</p>
-              <p className="mt-2">ATX Theatre [Room 220]</p>
-              <p className="mt-2">1110 Guadalupe St, 78701</p>
-
-              <Divider />
-
-              <p>
-                Seeking Actors with talents including, but not limited to:
-              </p>
-              <p className="mt-4">
-                Mime, Dance, Movement, Existential Dread, Intensity,
-                Incorrigibility, Insanity
-              </p>
-
-              <Divider />
-
-              <p>
-                To RSVP, email{" "}
-                <a
-                  href="mailto:davidritch.creative@outlook.com"
-                  className="text-[#490f0f] hover:underline transition-all font-bold"
-                >
-                  davidritch.creative@outlook.com
-                </a>
-              </p>
-            </div>
+            <p className="max-w-3xl font-['Baskerville'] text-black text-lg sm:text-xl leading-relaxed">
+              Auditions are now closed.
+            </p>
           </div>
         </main>
       </div>
