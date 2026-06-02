@@ -192,19 +192,7 @@ export default function OurWork() {
                 <div className="sm:w-1/2 min-w-0">
                   <p className="text-2xl text-[#ada173] font-medium font-['Baskerville']">
                     A series of benefit performances featuring short plays,
-                    monologues, and other entertainment. <br></br>Our first
-                    Zahir Nights performance will be in{" "}
-                    <a
-                      href="https://austin.nerdnite.com"
-                      className="font-bold hover:underline transition-all text-[#E6AD06]"
-                    >
-                      Nerd Nite Austin
-                    </a>{" "}
-                    on May 28, 2026 at Barrel &lsquo;o Fun. <br></br>It will
-                    feature a lecture on the history of theater and two short
-                    plays: <i>God of Sun and Light</i> by Brian Wittenbrook and{" "}
-                    <i>Beggars When They Die</i> by L.B. Deyo. Starring Zahir
-                    company members Laura D&apos;Eramo and Shannon McCormick.
+                    monologues, and other entertainment.
                   </p>
                 </div>
               </div>
