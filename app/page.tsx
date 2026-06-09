@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import Navigation from "./components/Navigation";
 
 export const metadata: Metadata = {
@@ -103,6 +104,24 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div
+              className="mb-6 rounded-lg border-2 border-[#490f0f] bg-black/10 px-4 py-3 sm:px-5 sm:py-4 font-['Baskerville'] text-lg sm:text-xl text-black"
+              role="status"
+            >
+              <p className="font-semibold">
+                Zahir Nights presents a free staged reading of{" "}
+                <i>The American Revolution</i> by Kirk Wood Bromley — Sunday,
+                Nov. 1 at the French Legation.{" "}
+                <Link
+                  href="/american-revolution"
+                  className="text-[#490f0f] font-bold hover:underline transition-all"
+                >
+                  Learn more
+                </Link>
+                .
+              </p>
             </div>
 
             <div className="mb-6 hidden">

@@ -192,7 +192,16 @@ export default function OurWork() {
                 <div className="sm:w-1/2 min-w-0">
                   <p className="text-2xl text-[#ada173] font-medium font-['Baskerville']">
                     A series of benefit performances featuring short plays,
-                    monologues, and other entertainment.
+                    monologues, and other entertainment. <br></br>Up next: a
+                    free staged reading of <i>The American Revolution</i> by
+                    Kirk Wood Bromley, Sunday, Nov. 1 at the French Legation.{" "}
+                    <a
+                      href="/american-revolution"
+                      className="font-bold hover:underline transition-all text-[#E6AD06]"
+                    >
+                      Learn more
+                    </a>
+                    .
                   </p>
                 </div>
               </div>
