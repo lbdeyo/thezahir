@@ -62,6 +62,11 @@ export default function Home() {
             <p className="text-2xl sm:text-3xl text-black mb-4 sm:mb-6 font-semibold font-['Baskerville']">
               Promoting conversation in a disconnected age
             </p>
+            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+              <strong>News:</strong> Zahir Artistic Director wins Austin
+              Theatre Critics Award for Outstanding Original Script for Holi
+              Shamoli&apos;s 2025 production of <i>Apprehension</i>.
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
               <div
                 className="flex-1 min-w-0 rounded-lg border-2 border-black/30 p-4 sm:px-8 sm:py-6 text-[#ada173] flex flex-col items-center justify-center text-center bg-cover bg-center"
