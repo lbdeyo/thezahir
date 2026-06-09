@@ -63,8 +63,8 @@ export default function Home() {
               Promoting conversation in a disconnected age
             </p>
             <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              <strong>News:</strong> Zahir Artistic Director wins Austin
-              Theatre Critics Award for Outstanding Original Script for Holi
+              <strong>News:</strong> Zahir Artistic Director wins Austin Theatre
+              Critics Award for Outstanding Original Script for Holi
               Shamoli&apos;s 2025 production of <i>Apprehension</i>.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
