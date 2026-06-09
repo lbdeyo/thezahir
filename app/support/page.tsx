@@ -207,7 +207,7 @@ export default function Support() {
             </div>
             <div className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
               <Link
-                href="/founding-donors-circle"
+                href="/donate#founding-donors-circle"
                 className="font-bold hover:underline transition-all text-[#490f0f]"
               >
                 → Join the Founding Donors Circle

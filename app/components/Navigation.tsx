@@ -140,12 +140,11 @@ export default function Navigation() {
               <Link href="/love" className="hover:underline">
                 love
               </Link>
+              {/* Temporarily hidden
               <Link href="/support" className="hover:underline">
                 support
               </Link>
-              <Link href="/founding-donors-circle" className="hover:underline">
-                founding donors
-              </Link>
+              */}
               <Link href="/contact" className="hover:underline">
                 contact
               </Link>
@@ -215,6 +214,7 @@ export default function Navigation() {
                   >
                     love
                   </Link>
+                  {/* Temporarily hidden
                   <Link
                     href="/support"
                     className="hover:underline"
@@ -222,13 +222,7 @@ export default function Navigation() {
                   >
                     support
                   </Link>
-                  <Link
-                    href="/founding-donors-circle"
-                    className="hover:underline"
-                    onClick={toggleMenu}
-                  >
-                    founding donors
-                  </Link>
+                  */}
                   <Link
                     href="/contact"
                     className="hover:underline"
