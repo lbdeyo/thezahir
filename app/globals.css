@@ -31,6 +31,20 @@ body {
   }
 }
 
+/* Logo rendered in the brand accent color via mask (exact color match) */
+.logo-accent {
+  display: block;
+  aspect-ratio: 924.14 / 559.78; /* matches the SVG viewBox */
+  background-color: #e6ad06;
+  mask: url("/img/zahir-logo.svg") center / contain no-repeat;
+  -webkit-mask: url("/img/zahir-logo.svg") center / contain no-repeat;
+  transition: background-color 0.2s ease;
+}
+
+.logo-accent:hover {
+  background-color: #fff;
+}
+
 /* Logo tinting */
 .logo-tint {
   filter: brightness(0) saturate(100%) invert(68%) sepia(8%) saturate(1200%) hue-rotate(10deg) brightness(0.95);

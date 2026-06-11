@@ -179,409 +179,314 @@ function DonateContent() {
   };
 
   return (
-    <div className="min-h-screen font-sans bg-attachment-responsive bg-rotated relative">
-      {/* Vertical border lines */}
-      <div
-        className="fixed top-0 left-0 right-0 bottom-0 pointer-events-none"
-        style={{ zIndex: 100 }}
-      >
-        <div className="max-w-5xl mx-auto h-full relative">
-          <div
-            className="absolute top-0 left-4 sm:left-8"
-            style={{
-              width: "1px",
-              height: "100vh",
-              backgroundColor: "#ada173",
-              transform: "translateZ(0)",
-              WebkitTransform: "translateZ(0)",
-              willChange: "transform",
-              imageRendering: "crisp-edges",
-            }}
-          ></div>
-          <div
-            className="absolute top-0 right-4 sm:right-8"
-            style={{
-              width: "1px",
-              height: "100vh",
-              backgroundColor: "#ada173",
-              transform: "translateZ(0)",
-              WebkitTransform: "translateZ(0)",
-              willChange: "transform",
-              imageRendering: "crisp-edges",
-            }}
-          ></div>
-        </div>
-      </div>
+    <div className="min-h-screen bg-[#0a0a0a] font-sans text-white">
+      <Navigation />
 
-      <div className="max-w-5xl mx-auto relative z-10">
-        <Navigation />
-
-        {/* Main Content */}
-        <main className="w-full px-4 sm:px-8 pt-0 pb-12 relative">
-          <div
-            className="px-4 sm:px-12 pt-4 pb-6 relative"
-            style={{
-              background: "rgba(173, 161, 115, 0.95)",
-            }}
-          >
-            <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
-            >
-              Support The Zahir
-            </h1>
-            <p className="text-2xl sm:text-3xl text-black mb-6 sm:mb-8 font-medium font-['Baskerville']">
-              Help us create meaningful theater and storytelling
-            </p>
-            <p className="text-xl sm:text-2xl text-black font-medium font-['Baskerville'] leading-relaxed">
+      {/* Main Content */}
+      <main className="max-w-5xl mx-auto px-4 sm:px-8 pt-8 sm:pt-10 pb-20">
+        <section className="mb-16">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
+            Support The Zahir
+          </h1>
+          <div className="max-w-3xl space-y-5 text-lg text-neutral-300">
+            <p>Help us create meaningful theater and storytelling</p>
+            <p>
               The Zahir Productions is a 501(c)(3) tax-exempt organization. All
               donations are tax-deductible to the full extent permitted by law.
             </p>
           </div>
+        </section>
 
-          {/* Monthly Membership Tiers */}
-          <div
-            className="px-4 sm:px-12 py-6"
-            style={{ background: "rgba(0,0,0,0.9)" }}
-          >
-            <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
-              Monthly Membership Tiers
-            </h2>
-            <p className="text-xl text-[#ada173] mb-8 font-medium font-['Baskerville']">
-              Join our community of supporters with a recurring monthly donation
-            </p>
+        {/* Monthly Membership Tiers */}
+        <section className="mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+            Monthly Membership Tiers
+          </h2>
+          <p className="text-lg text-neutral-300 mb-8 max-w-3xl">
+            Join our community of supporters with a recurring monthly donation
+          </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {MEMBERSHIP_TIERS.map((tier) => (
-                <div
-                  key={tier.priceId}
-                  className="bg-black/90 border border-[#ada173]/40 p-6 rounded-lg"
-                >
-                  <h3 className="text-xl font-semibold text-[#ada173] mb-2 font-['Baskerville']">
-                    {tier.name}
-                  </h3>
-                  <p className="text-3xl font-bold text-[#ada173] mb-3 font-['Baskerville']">
-                    {tier.price}
-                    <span className="text-lg font-normal">/month</span>
-                  </p>
-                  <p className="text-base text-[#ada173]/80 mb-4 font-['Baskerville']">
-                    {tier.description}
-                  </p>
-                  <button
-                    onClick={() => {
-                      // Use Payment Link if available, otherwise use Checkout Session
-                      if (tier.paymentLink) {
-                        window.location.href = tier.paymentLink;
-                      } else {
-                        startCheckout(tier.priceId);
-                      }
-                    }}
-                    className="w-full bg-[#ada173] text-black px-6 py-3 rounded font-semibold hover:bg-[#ada173]/80 transition-colors font-['Baskerville']"
-                  >
-                    Join
-                  </button>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Fixed One-Time Donations */}
-          <div
-            className="px-4 sm:px-12 py-6"
-            style={{
-              background: "rgba(173, 161, 115, 0.95)",
-            }}
-          >
-            <h2 className="text-2xl sm:text-3xl font-semibold text-black mb-6 font-['Baskerville']">
-              One-Time Donations
-            </h2>
-            <p className="text-xl text-black mb-8 font-medium font-['Baskerville']">
-              Make a one-time contribution to support our work
-            </p>
-
-            <div className="flex flex-wrap gap-4 mb-8">
-              {ONE_TIME_DONATIONS.map((donation) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {MEMBERSHIP_TIERS.map((tier) => (
+              <div
+                key={tier.priceId}
+                className="rounded-lg border border-white/10 bg-black p-6"
+              >
+                <h3 className="text-xl font-bold text-white mb-2">
+                  {tier.name}
+                </h3>
+                <p className="text-3xl font-bold text-white mb-3">
+                  {tier.price}
+                  <span className="text-lg font-normal text-neutral-300">
+                    /month
+                  </span>
+                </p>
+                <p className="text-neutral-300 mb-5">{tier.description}</p>
                 <button
-                  key={donation.priceId}
                   onClick={() => {
                     // Use Payment Link if available, otherwise use Checkout Session
-                    if (donation.paymentLink) {
-                      window.location.href = donation.paymentLink;
+                    if (tier.paymentLink) {
+                      window.location.href = tier.paymentLink;
                     } else {
-                      startCheckout(donation.priceId);
+                      startCheckout(tier.priceId);
                     }
                   }}
-                  className="bg-black text-[#ada173] border-2 border-[#ada173] px-8 py-4 rounded font-semibold hover:bg-white hover:text-black transition-colors font-['Baskerville']"
+                  className="w-full bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
                 >
-                  Donate {donation.amount}
+                  Join
                 </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Custom Donation */}
-          <div
-            className="px-4 sm:px-12 py-6"
-            style={{ background: "rgba(0,0,0,0.8)" }}
-          >
-            <h2 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
-              Custom Donation Amount
-            </h2>
-            <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
-              Enter any amount you&apos;d like to donate (minimum $5)
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-              <div className="flex-1">
-                <label htmlFor="customAmount" className="sr-only">
-                  Custom donation amount
-                </label>
-                <div className="relative">
-                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#ada173] font-semibold">
-                    $
-                  </span>
-                  <input
-                    id="customAmount"
-                    type="number"
-                    min="5"
-                    step="0.01"
-                    value={customAmount}
-                    onChange={(e) => setCustomAmount(e.target.value)}
-                    placeholder="Enter amount"
-                    className="w-full bg-black border-2 border-[#ada173] text-[#ada173] px-8 py-4 rounded font-semibold focus:outline-none focus:ring-2 focus:ring-[#ada173] font-['Baskerville']"
-                  />
-                </div>
               </div>
-              <button
-                onClick={handleCustomDonation}
-                disabled={isProcessing || !customAmount}
-                className="bg-[#ada173] text-black px-8 py-4 rounded font-semibold hover:bg-[#ada173]/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed font-['Baskerville']"
-              >
-                {isProcessing ? "Processing..." : "Donate"}
-              </button>
-            </div>
+            ))}
           </div>
+        </section>
 
-          {/* Founding Donors Circle */}
-          <div
-            id="founding-donors-circle"
-            className="px-4 sm:px-12 pt-6 pb-12 relative"
-            style={{
-              background: "rgba(173, 161, 115, 0.95)",
-            }}
-          >
-            <h2
-              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
+        {/* Fixed One-Time Donations */}
+        <section className="mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+            One-Time Donations
+          </h2>
+          <p className="text-lg text-neutral-300 mb-8 max-w-3xl">
+            Make a one-time contribution to support our work
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            {ONE_TIME_DONATIONS.map((donation) => (
+              <button
+                key={donation.priceId}
+                onClick={() => {
+                  // Use Payment Link if available, otherwise use Checkout Session
+                  if (donation.paymentLink) {
+                    window.location.href = donation.paymentLink;
+                  } else {
+                    startCheckout(donation.priceId);
+                  }
+                }}
+                className="bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
+              >
+                Donate {donation.amount}
+              </button>
+            ))}
+          </div>
+        </section>
+
+        {/* Custom Donation */}
+        <section className="mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+            Custom Donation Amount
+          </h2>
+          <p className="text-lg text-neutral-300 mb-6 max-w-3xl">
+            Enter any amount you&apos;d like to donate (minimum $5)
+          </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 max-w-md">
+            <div className="flex-1">
+              <label htmlFor="customAmount" className="sr-only">
+                Custom donation amount
+              </label>
+              <div className="relative">
+                <span className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 font-semibold">
+                  $
+                </span>
+                <input
+                  id="customAmount"
+                  type="number"
+                  min="5"
+                  step="0.01"
+                  value={customAmount}
+                  onChange={(e) => setCustomAmount(e.target.value)}
+                  placeholder="Enter amount"
+                  className="w-full pl-8 pr-4 py-3 bg-transparent border border-white/25 text-white placeholder:text-white/50 focus:outline-none focus:border-[#e6ad06] focus:ring-1 focus:ring-[#e6ad06]"
+                />
+              </div>
+            </div>
+            <button
+              onClick={handleCustomDonation}
+              disabled={isProcessing || !customAmount}
+              className="bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              Founding Donors Circle
-            </h2>
-            <p className="text-2xl text-black mb-6 font-bold font-['Baskerville'] mt-4">
+              {isProcessing ? "Processing..." : "Donate"}
+            </button>
+          </div>
+        </section>
+
+        {/* Founding Donors Circle */}
+        <section id="founding-donors-circle">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
+            Founding Donors Circle
+          </h2>
+          <div className="max-w-3xl space-y-5 text-lg text-neutral-300 mb-8">
+            <p className="font-semibold text-white">
               Help launch a new home for bold, intelligent storytelling
             </p>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+            <p>
               Join the Founding Donors Circle by making a gift of $250 or more.
               Your support at this early stage plays a direct role in building
               The Zahir&apos;s future.
             </p>
+          </div>
 
-            <h3
-              className="text-2xl sm:text-3xl md:text-2xl text-black mt-4 mb-6 font-['Baskerville']"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
-            >
-              Join the Circle
-            </h3>
+          <h3 className="text-2xl font-bold text-white mb-6">
+            Join the Circle
+          </h3>
 
-            {/* Donation Buttons */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
-              {FOUNDING_DONOR_TIERS.map((tier) => (
-                <button
-                  key={tier.amountValue}
-                  onClick={() => {
-                    // Use Payment Link if available, otherwise use Stripe Checkout
-                    if (tier.paymentLink) {
-                      window.location.href = tier.paymentLink;
-                    } else {
-                      handleFoundingDonation(tier.amountValue);
-                    }
-                  }}
-                  className="bg-black text-[#ada173] border-2 border-[#ada173] px-8 py-6 rounded font-semibold hover:bg-white hover:text-black transition-colors font-['Baskerville'] text-left"
-                >
-                  <div className="text-xl font-bold mb-1">{tier.label}</div>
-                  <div className="text-base font-bold"> {tier.tier}</div>
-                </button>
-              ))}
-            </div>
-
-            {/* Custom Donation */}
-            <div
-              className="px-4 sm:px-12 py-6 mb-12"
-              style={{ background: "rgba(0,0,0,0.9)" }}
-            >
-              <h3 className="text-2xl sm:text-3xl font-semibold text-[#ada173] mb-6 font-['Baskerville']">
-                Custom Donation Amount
-              </h3>
-              <p className="text-xl text-[#ada173] mb-6 font-medium font-['Baskerville']">
-                Enter any amount you&apos;d like to donate (minimum $250 for
-                Founding Donor&apos;s Circle)
-              </p>
-
-              <div className="flex flex-col sm:flex-row gap-4 max-w-md">
-                <div className="flex-1">
-                  <label htmlFor="foundingCustomAmount" className="sr-only">
-                    Custom donation amount
-                  </label>
-                  <div className="relative">
-                    <span className="absolute left-4 top-1/2 -translate-y-1/2 text-[#ada173] font-semibold">
-                      $
-                    </span>
-                    <input
-                      id="foundingCustomAmount"
-                      type="number"
-                      min="250"
-                      step="0.01"
-                      value={foundingCustomAmount}
-                      onChange={(e) => setFoundingCustomAmount(e.target.value)}
-                      placeholder="Enter amount"
-                      className="w-full bg-black border-2 border-[#ada173] text-[#ada173] px-8 py-4 rounded font-semibold focus:outline-none focus:ring-2 focus:ring-[#ada173] font-['Baskerville']"
-                    />
-                  </div>
+          {/* Donation Buttons */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+            {FOUNDING_DONOR_TIERS.map((tier) => (
+              <button
+                key={tier.amountValue}
+                onClick={() => {
+                  // Use Payment Link if available, otherwise use Stripe Checkout
+                  if (tier.paymentLink) {
+                    window.location.href = tier.paymentLink;
+                  } else {
+                    handleFoundingDonation(tier.amountValue);
+                  }
+                }}
+                className="rounded-lg border border-[#e6ad06]/60 bg-black p-6 text-left hover:bg-white/5 transition-colors"
+              >
+                <div className="text-xl font-bold text-white mb-1">
+                  {tier.label}
                 </div>
-                <button
-                  onClick={handleFoundingCustomDonation}
-                  disabled={isFoundingProcessing || !foundingCustomAmount}
-                  style={{
-                    backgroundColor: "rgba(173, 161, 115, 1)",
-                  }}
-                  className="text-black px-8 py-4 rounded font-semibold hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed font-['Baskerville']"
-                >
-                  {isFoundingProcessing ? "Processing..." : "Donate"}
-                </button>
-              </div>
-            </div>
+                <div className="text-neutral-300"> {tier.tier}</div>
+              </button>
+            ))}
+          </div>
 
-            <h3
-              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
-            >
-              Why Your Gift Matters
+          {/* Custom Donation */}
+          <div className="rounded-lg border border-white/10 bg-white/5 p-6 mb-12">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              Custom Donation Amount
             </h3>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+            <p className="text-lg text-neutral-300 mb-6">
+              Enter any amount you&apos;d like to donate (minimum $250 for
+              Founding Donor&apos;s Circle)
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 max-w-md">
+              <div className="flex-1">
+                <label htmlFor="foundingCustomAmount" className="sr-only">
+                  Custom donation amount
+                </label>
+                <div className="relative">
+                  <span className="absolute left-4 top-1/2 -translate-y-1/2 text-white/50 font-semibold">
+                    $
+                  </span>
+                  <input
+                    id="foundingCustomAmount"
+                    type="number"
+                    min="250"
+                    step="0.01"
+                    value={foundingCustomAmount}
+                    onChange={(e) => setFoundingCustomAmount(e.target.value)}
+                    placeholder="Enter amount"
+                    className="w-full pl-8 pr-4 py-3 bg-transparent border border-white/25 text-white placeholder:text-white/50 focus:outline-none focus:border-[#e6ad06] focus:ring-1 focus:ring-[#e6ad06]"
+                  />
+                </div>
+              </div>
+              <button
+                onClick={handleFoundingCustomDonation}
+                disabled={isFoundingProcessing || !foundingCustomAmount}
+                className="bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isFoundingProcessing ? "Processing..." : "Donate"}
+              </button>
+            </div>
+          </div>
+
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Why Your Gift Matters
+          </h3>
+          <div className="max-w-3xl space-y-5 text-lg text-neutral-300 mb-10">
+            <p>
               The Zahir is a new Austin-based nonprofit dedicated to bold,
               conversation-driven storytelling. As we develop our next slate of
               plays, including <i>Oversight</i> and a remount of{" "}
               <i>Apprehension</i>, Founding Donors help us:
             </p>
-            <ul className="text-2xl text-black mb-6 font-medium font-['Baskerville'] list-disc list-inside space-y-2">
+            <ul className="list-disc list-inside space-y-2">
               <li>Fund readings, workshops, and rehearsals</li>
               <li>Pay artists fairly</li>
               <li>Build the infrastructure of a lasting arts organization</li>
             </ul>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+            <p>
               Your support now has outsize impact. You&apos;re helping establish
               an institution at its very beginning.
             </p>
+          </div>
 
-            <h3
-              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
-            >
-              Founding Donor Benefits
-            </h3>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              All Founding Donors receive:
-            </p>
-            <ul className="text-2xl text-black mb-6 font-medium font-['Baskerville'] list-disc list-inside space-y-2">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Founding Donor Benefits
+          </h3>
+          <div className="max-w-3xl space-y-5 text-lg text-neutral-300 mb-10">
+            <p>All Founding Donors receive:</p>
+            <ul className="list-disc list-inside space-y-2">
               <li>Recognition on our website</li>
               <li>Early access to tickets</li>
               <li>Behind-the-scenes updates</li>
               <li>Program acknowledgment for major productions</li>
             </ul>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              Higher giving simply deepens your impact.
-            </p>
+            <p>Higher giving simply deepens your impact.</p>
+          </div>
 
-            <h3
-              className="text-2xl sm:text-3xl md:text-2xl text-black mb-4 font-['Baskerville']"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
-            >
-              Be Part of the Beginning
-            </h3>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+          <h3 className="text-2xl font-bold text-white mb-4">
+            Be Part of the Beginning
+          </h3>
+          <div className="max-w-3xl space-y-5 text-lg text-neutral-300 mb-12">
+            <p>
               The Zahir is built on the belief that stories matter: stories that
               challenge certainty, spark conversation, and bring people
               together.
             </p>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
+            <p>
               By joining the Founding Donors Circle, you&apos;re helping create
               a new home for this work in Austin.
             </p>
-            <p className="text-2xl text-black mb-6 font-medium font-['Baskerville']">
-              Thank you for helping us build The Zahir.
-            </p>
+            <p>Thank you for helping us build The Zahir.</p>
+          </div>
 
-            {/* Founding Donors Section */}
-            <div
-              className="px-4 sm:px-12 py-8 mt-12"
-              style={{ background: "rgba(0,0,0,0.9)" }}
-            >
-              <h3
-                className="text-2xl sm:text-3xl md:text-2xl text-[#ada173] mb-6 font-['Baskerville']"
-                style={{ fontWeight: 800, fontStyle: "normal" }}
-              >
-                The Zahir&apos;s Founding Donors Circle
-              </h3>
-              <p className="text-2xl text-[#ada173] mb-8 font-medium font-['Baskerville']">
-                We offer our eternal thanks to the following supporters who have
-                helped launch The Zahir.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {FOUNDING_DONORS.map((name) => (
-                  <div
-                    key={name}
-                    className="flex items-center text-2xl text-[#ada173] font-medium font-['Baskerville']"
+          {/* Founding Donors Section */}
+          <div className="rounded-lg border border-white/10 bg-black p-6 sm:p-8">
+            <h3 className="text-2xl font-bold text-white mb-4">
+              The Zahir&apos;s Founding Donors Circle
+            </h3>
+            <p className="text-lg text-neutral-300 mb-8">
+              We offer our eternal thanks to the following supporters who have
+              helped launch The Zahir.
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {FOUNDING_DONORS.map((name) => (
+                <div
+                  key={name}
+                  className="flex items-center text-lg text-neutral-300"
+                >
+                  <svg
+                    className="w-5 h-5 mr-3 shrink-0"
+                    fill="#e6ad06"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    <svg
-                      className="w-6 h-6 mr-3 shrink-0"
-                      fill="#ada173"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                    </svg>
-                    <span>{name}</span>
-                  </div>
-                ))}
-              </div>
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                  <span>{name}</span>
+                </div>
+              ))}
             </div>
           </div>
-        </main>
-      </div>
+        </section>
+      </main>
     </div>
   );
 }
 
 function LoadingFallback() {
   return (
-    <div className="min-h-screen font-sans bg-attachment-responsive bg-rotated relative">
-      <div className="max-w-5xl mx-auto relative z-10">
-        <Navigation />
-        <main className="w-full px-4 sm:px-8 pt-0 pb-12 relative">
-          <div
-            className="px-4 sm:px-12 pt-4 pb-6 relative"
-            style={{
-              background: "rgba(173, 161, 115, 0.95)",
-            }}
-          >
-            <h1
-              className="text-4xl sm:text-5xl md:text-[3.75rem] lg:text-[4.5rem] text-black mb-2 pt-4 display-heading"
-              style={{ fontWeight: 800, fontStyle: "normal" }}
-            >
-              Support The Zahir
-            </h1>
-          </div>
-        </main>
-      </div>
+    <div className="min-h-screen bg-[#0a0a0a] font-sans text-white">
+      <Navigation />
+      <main className="max-w-5xl mx-auto px-4 sm:px-8 pt-8 sm:pt-10 pb-20">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight mb-8">
+          Support The Zahir
+        </h1>
+      </main>
     </div>
   );
 }
