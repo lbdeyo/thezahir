@@ -41,7 +41,6 @@ export default function RootLayout({
   return (
     <html lang="en" className="min-h-full bg-[#0a0a0a]">
       <head>
-        <link rel="stylesheet" href="https://use.typekit.net/zgf1kpm.css" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BL44TBHWS7"
           strategy="afterInteractive"

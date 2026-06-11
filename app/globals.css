@@ -24,13 +24,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Responsive background attachment - scroll on mobile, fixed on desktop */
-@media (min-width: 640px) {
-  .bg-attachment-responsive {
-    background-attachment: fixed !important;
-  }
-}
-
 /* Logo rendered in the brand accent color via mask (exact color match) */
 .logo-accent {
   display: block;
@@ -45,66 +38,11 @@ body {
   background-color: #fff;
 }
 
-/* Logo tinting */
-.logo-tint {
-  filter: brightness(0) saturate(100%) invert(68%) sepia(8%) saturate(1200%) hue-rotate(10deg) brightness(0.95);
-  transition: filter 0.2s ease;
-}
-
-.logo-tint:hover {
-  filter: brightness(0) invert(1);
-}
-
-/* Global repeating background tile */
-.bg-rotated {
-  position: relative;
-  isolation: isolate;
-  z-index: 0;
-}
-
-.bg-rotated::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  background-image: url("/img/repeater.jpg");
-  background-size: 250px auto;
-  background-position: top left;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  pointer-events: none;
-}
-
 /* Center last item in 2-column grid when it's alone (odd number of items) */
 @media (min-width: 640px) {
   .grid.grid-cols-1 > *:last-child:nth-child(odd) {
     grid-column: span 2;
     justify-self: center;
     max-width: 50%;
-  }
-}
-
-/* Display heading font - Adobe Typekit Capitol */
-.display-heading {
-  font-family: "capitol", sans-serif;
-  font-weight: 500 !important;
-  font-style: normal !important;
-}
-
-/* Optional lighter Capitol variant for testing */
-.display-heading-light {
-  font-family: "capitol", sans-serif;
-  font-weight: 300 !important;
-  font-style: normal !important;
-}
-
-/* Photo slider - fade on desktop, instant on mobile */
-.photo-slider-image {
-  transition: opacity 600ms ease-in-out;
-}
-
-@media (max-width: 768px) {
-  .photo-slider-image {
-    transition: none;
   }
 }
