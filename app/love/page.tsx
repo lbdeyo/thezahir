@@ -54,6 +54,7 @@ const LOVE_LINKS: { label: string; href: string }[] = [
     label: "Austin Creative Alliance",
     href: "https://www.austincreativealliance.org/",
   },
+  { label: "Austin Playhouse", href: "https://www.austinplayhouse.com/" },
   { label: "A3 Austin", href: "https://a3austin.org/" },
   { label: "Riches Art Gallery", href: "https://www.richesart.com/" },
   { label: "_OFCOLOR", href: "https://www.ofcolor.org/" },
@@ -80,6 +81,51 @@ export default function Love() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-6">
             What we&apos;re watching
           </h2>
+          <div className="mb-10 space-y-5 text-lg text-neutral-300">
+            <p>
+              Review: <em>Seared</em> by Theresa Rebeck (
+              <a
+                href="https://www.austinplayhouse.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Austin Playhouse
+              </a>
+              )
+            </p>
+            <p>
+              Funny, tense, fast-moving and sharply written, <em>Seared</em> is
+              a thoroughly entertaining delight. The performances are
+              outstanding, the direction is expert, and the fact that
+              they&apos;re cooking onstage adds a multisensory layer of fun.
+              Don&apos;t miss it. It runs through June 28th at Austin
+              Playhouse.
+            </p>
+          </div>
+          <div className="mb-10 space-y-5 text-lg text-neutral-300">
+            <p>
+              Review: <em>Wakey, Wakey</em> by Will Eno (
+              <a
+                href="https://www.hydeparktheatre.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Hyde Park Theatre
+              </a>
+              )
+            </p>
+            <p>
+              It&apos;s one thing to entertain an audience. It&apos;s something
+              else to mesmerize them, to transport them into a quasi-mystical
+              state. Will Eno&apos;s script was the perfect complement to the
+              gently bold performance of the great Ken Webster. And Rebecca
+              Robinson, as always, was irresistible. This run is over, but if
+              we&apos;re all very pushy we can make them bring it back again in
+              the future.
+            </p>
+          </div>
           <div className="mb-10 space-y-5 text-lg text-neutral-300">
             <p>
               Review: <em>Take Care of My Friend</em> by Kathleen Fletcher (
