@@ -48,8 +48,9 @@ export default function Team() {
               </p>
               <p className="text-lg text-neutral-300 text-left text-pretty">
                 The Zahir founder L.B. Deyo is a playwright whose play{" "}
-                <i>Apprehension</i> premiered at Hyde Park Theatre in 2025.
-                He is the author of several books, including, with David
+                <i>Apprehension</i> premiered at Hyde Park Theatre in 2025 and
+                won the 2026 Austin Theatre Critics Award for Outstanding
+                Original Script. He is the author of several books, including, with David
                 &quot;Lefty&quot; Leibowitz,{" "}
                 <i>
                   Invisible Frontier: Exploring the tunnels, ruins &
