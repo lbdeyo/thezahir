@@ -65,6 +65,10 @@ const LOVE_LINKS: { label: string; href: string }[] = [
   { label: "Austin Together", href: "https://www.austintogether.org/" },
   { label: "Imagine Art", href: "https://www.imagineart.net/" },
   { label: "ScriptWorks", href: "https://scriptworks.org/" },
+  {
+    label: "Summer Break Theatre",
+    href: "https://www.summerbreaktheatre.com/productions",
+  },
   { label: "TALA", href: "https://talarts.org/" },
 ];
 
