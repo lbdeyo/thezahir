@@ -97,35 +97,43 @@ export default function OurWork() {
         </p>
         <div className="rounded-lg border border-white/10 overflow-hidden bg-black p-6 sm:p-8 mb-8">
           <p className="text-lg text-neutral-300 mb-2">
-            We&apos;re in early development on Noah Masterson&apos;s
-            play{" "}
+            Coming this fall to The Rosette:
           </p>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6">
-            The Egg
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
+            THE EGG
           </h2>
+          <p className="text-lg text-neutral-300 mb-6">By Noah Masterson</p>
           <div className="flex flex-col sm:flex-row sm:gap-8 sm:items-start">
             <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0">
               <Image
                 src="/img/the-egg/white-egg.png"
-                alt="The Egg"
+                alt="THE EGG"
                 width={1000}
                 height={1000}
                 className="w-full h-auto object-cover rounded-lg"
               />
             </div>
-            <div className="sm:w-1/2 min-w-0">
-              <p className="text-lg text-neutral-300">
-                <strong>October 29 - November 21, 2026</strong> <br></br>
-                <strong>The Rosette</strong> <br></br> A surreal dark
-                comedy. <br></br>
-                <i>
-                  <a
-                    href="https://the-egg-play.com"
-                    className="font-semibold text-[#e6ad06] hover:underline"
-                  >
-                    The-Egg-Play.com
-                  </a>
-                </i>
+            <div className="sm:w-1/2 min-w-0 space-y-4 text-lg text-neutral-300">
+              <p>
+                <strong>
+                  October 29–November 21, 2026
+                  <br />
+                  The Rosette
+                </strong>
+              </p>
+              <p>
+                THE EGG is a one-of-a-kind theatrical experience featuring
+                freakish birdpeople, illegal surgery, and out-of-control
+                technology.
+              </p>
+              <p>
+                Information and tickets at{" "}
+                <a
+                  href="https://the-egg-play.com"
+                  className="font-semibold text-[#e6ad06] hover:underline"
+                >
+                  the-egg-play.com
+                </a>
               </p>
             </div>
           </div>

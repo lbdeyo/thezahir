@@ -443,7 +443,7 @@ export default function Team() {
                 State University, where he directed Ionesco&apos;s{" "}
                 <i>The Bald Soprano</i>. Recently, he directed in{" "}
                 <i>The Yolk</i> by Noah Masterson, a condensed version of{" "}
-                <i>The Egg</i>, for Frontera Fest. He also had his
+                <i>THE EGG</i>, for Frontera Fest. He also had his
                 ten-minute play <i>The Willow Tree</i> produced and
                 published by Script Works in their annual Out of Ink
                 showcase. He looks forward to pushing the boundaries of
