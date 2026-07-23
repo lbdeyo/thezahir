@@ -70,6 +70,7 @@ const LOVE_LINKS: { label: string; href: string }[] = [
     href: "https://www.summerbreaktheatre.com/productions",
   },
   { label: "TALA", href: "https://talarts.org/" },
+  { label: "to the stage!", href: "https://tothestage.substack.com/" },
 ];
 
 export default function Love() {
