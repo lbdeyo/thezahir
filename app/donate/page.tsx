@@ -100,6 +100,7 @@ const FOUNDING_DONOR_TIERS = [
 ];
 
 const FOUNDING_DONORS = [
+  "Aneesa Sheikh",
   "Leonard Hough and Jeanie Ockenden",
   "Christina Howe",
   "Noah and Jen Masterson",

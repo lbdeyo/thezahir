@@ -104,8 +104,7 @@ export default function Love() {
               a thoroughly entertaining delight. The performances are
               outstanding, the direction is expert, and the fact that
               they&apos;re cooking onstage adds a multisensory layer of fun.
-              Don&apos;t miss it. It runs through June 28th at Austin
-              Playhouse.
+              Don&apos;t miss it. It runs through June 28th at Austin Playhouse.
             </p>
           </div>
           <div className="mb-10 space-y-5 text-lg text-neutral-300">
@@ -145,17 +144,16 @@ export default function Love() {
               )
             </p>
             <p>
-              If you have tears, prepare to shed them. This is theater at
-              its most naked, its most vulnerable, and its most honest.
-              Playwright and star Kathleen Fletcher is the Virgil guiding us
-              through her personal hell of mental illness. The sights and
-              sounds are brutal, nightmarish. But the humor, charm, warmth
-              and courage that have allowed her to survive are also our own
-              port in the storm. Fletcher and her electrifying cast,
-              including the always outstanding Rachel West (a Zahir Company
-              member, to our great pride), ensure that there are laughs and
-              joy along with the sorrow. Through April 25th at Hyde Park
-              Theatre.
+              If you have tears, prepare to shed them. This is theater at its
+              most naked, its most vulnerable, and its most honest. Playwright
+              and star Kathleen Fletcher is the Virgil guiding us through her
+              personal hell of mental illness. The sights and sounds are brutal,
+              nightmarish. But the humor, charm, warmth and courage that have
+              allowed her to survive are also our own port in the storm.
+              Fletcher and her electrifying cast, including the always
+              outstanding Rachel West (a Zahir Company member, to our great
+              pride), ensure that there are laughs and joy along with the
+              sorrow. Through April 25th at Hyde Park Theatre.
             </p>
           </div>
           <div className="space-y-5 text-lg text-neutral-300">
@@ -171,17 +169,15 @@ export default function Love() {
               </a>
             </p>
             <p>
-              If satire is a meal, Max Frisch&apos;s{" "}
-              <em>The Fire Eaters</em> is a particularly hot and
-              mouthwatering one. Director Beth Burns has taken Frisch&apos;s
-              recipe and cooked up the perfect blend of delectability and
-              presentation. The comedy savors of deep absurdist wit, the
-              metaphor is irresistible, and the blend of music and light
-              create a classical atmosphere. Among the standout performers
-              from an outstanding cast were the charming one-man band
-              Michael Ferstenfeld, the always-delightful Kelly Hasandras,
-              and a wickedly confounded Robert Matney. Get there and see for
-              yourself.
+              If satire is a meal, Max Frisch&apos;s <em>The Fire Eaters</em> is
+              a particularly hot and mouthwatering one. Director Beth Burns has
+              taken Frisch&apos;s recipe and cooked up the perfect blend of
+              delectability and presentation. The comedy savors of deep
+              absurdist wit, the metaphor is irresistible, and the blend of
+              music and light create a classical atmosphere. Among the standout
+              performers from an outstanding cast were the charming one-man band
+              Michael Ferstenfeld, the always-delightful Kelly Hasandras, and a
+              wickedly confounded Robert Matney. Get there and see for yourself.
             </p>
           </div>
         </section>
