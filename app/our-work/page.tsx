@@ -33,6 +33,27 @@ export default function OurWork() {
           Our Work
         </h1>
 
+        <p className="text-lg text-neutral-300 mb-5 max-w-3xl">
+          The Zahir creates original theater, film, and storytelling
+          projects designed to spark conversation in an age that often
+          discourages it. We focus on new work—bold, intimate, and alive to
+          the anxieties and possibilities of modern life.
+        </p>
+        <p className="text-lg text-neutral-300 mb-5 max-w-3xl">
+          Our projects begin with a simple belief: that stories can pull
+          people back into the world. At a time when screens and feeds
+          narrow our attention, we make work that widens it. Our productions
+          invite audiences to gather, sit together in the dark, and
+          experience something shared—something that lingers long after the
+          final moment.
+        </p>
+        <p className="text-lg text-neutral-300 mb-8 max-w-3xl">
+          As a newly founded company, we are building our first slate of
+          productions. These include original plays, short films, and
+          mixed-media storytelling experiments that explore connection,
+          perception, and the strangeness of being alive right now.
+        </p>
+
         <div className="rounded-lg border border-white/10 overflow-hidden bg-black p-6 sm:p-8 mb-8">
           <p className="text-lg text-neutral-300 mb-2">
             The Zahir is very proud to announce its inaugural production:
@@ -75,26 +96,6 @@ export default function OurWork() {
             </div>
           </div>
         </div>
-        <p className="text-lg text-neutral-300 mb-5 max-w-3xl">
-          The Zahir creates original theater, film, and storytelling
-          projects designed to spark conversation in an age that often
-          discourages it. We focus on new work—bold, intimate, and alive to
-          the anxieties and possibilities of modern life.
-        </p>
-        <p className="text-lg text-neutral-300 mb-5 max-w-3xl">
-          Our projects begin with a simple belief: that stories can pull
-          people back into the world. At a time when screens and feeds
-          narrow our attention, we make work that widens it. Our productions
-          invite audiences to gather, sit together in the dark, and
-          experience something shared—something that lingers long after the
-          final moment.
-        </p>
-        <p className="text-lg text-neutral-300 mb-8 max-w-3xl">
-          As a newly founded company, we are building our first slate of
-          productions. These include original plays, short films, and
-          mixed-media storytelling experiments that explore connection,
-          perception, and the strangeness of being alive right now.
-        </p>
         <div className="rounded-lg border border-white/10 overflow-hidden bg-black p-6 sm:p-8 mb-8">
           <p className="text-lg text-neutral-300 mb-2">
             Coming this fall to The Rosette:
@@ -140,6 +141,66 @@ export default function OurWork() {
         </div>
         <div className="rounded-lg border border-white/10 overflow-hidden bg-black p-6 sm:p-8 mb-8">
           <p className="text-lg text-neutral-300 mb-2">
+            Zahir Nights presents a staged reading:
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-2">
+            The American Revolution
+          </h2>
+          <p className="text-lg text-neutral-300 mb-6">
+            By Kirk Wood Bromley
+          </p>
+          <div className="flex flex-col sm:flex-row sm:gap-8 sm:items-start">
+            <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0 flex justify-center sm:justify-start">
+              <Image
+                src="/img/amrev/crispus-attucks-amrev.png"
+                alt="The American Revolution — poster art"
+                width={1288}
+                height={1920}
+                className="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+            <div className="sm:w-1/2 min-w-0 space-y-4 text-lg text-neutral-300">
+              <p>
+                <strong>
+                  Sunday, November 1, 2026, 5:30–7:30 p.m.
+                  <br />
+                  The French Legation
+                  <br />
+                  802 San Marcos St
+                  <br />
+                  Austin, TX 78702
+                </strong>
+              </p>
+              <p>
+                The Zahir presents a verse play by Kirk Wood Bromley—a
+                hilarious patriotic parade following General George Washington
+                and the rambunctious Rebel Mess through the colonies, from
+                Redcoats and spies to Benedict Arnold and the fight for
+                independence.
+              </p>
+              <p>
+                <a
+                  href="https://tickets.atxtheatre.org/events/the-american-revolution-11-1-2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
+                >
+                  Get Tickets
+                </a>
+              </p>
+              <p>
+                <a
+                  href="/american-revolution"
+                  className="font-semibold text-[#e6ad06] hover:underline"
+                >
+                  Learn more →
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="rounded-lg border border-white/10 overflow-hidden bg-black p-6 sm:p-8 mb-8">
+          <p className="text-lg text-neutral-300 mb-2">
             Announcing{" "}
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6">
@@ -159,16 +220,7 @@ export default function OurWork() {
             <div className="sm:w-1/2 min-w-0">
               <p className="text-lg text-neutral-300">
                 A series of benefit performances featuring short plays,
-                monologues, and other entertainment. <br></br>Up next: a
-                free staged reading of <i>The American Revolution</i> by
-                Kirk Wood Bromley, Sunday, Nov. 1 at the French Legation.{" "}
-                <a
-                  href="/american-revolution"
-                  className="font-semibold text-[#e6ad06] hover:underline"
-                >
-                  Learn more
-                </a>
-                .
+                monologues, and other entertainment.
               </p>
             </div>
           </div>

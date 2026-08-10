@@ -36,12 +36,11 @@ export default function AmericanRevolutionPage() {
           <div className="rounded-lg border border-white/10 bg-black p-6 mb-8">
             <div className="mb-4 flex justify-center sm:justify-start">
               <Image
-                src="/img/zahir-nights/zahir-nights-logo.jpg"
-                alt="The Zahir Nights"
-                width={1000}
-                height={1000}
-                unoptimized
-                className="w-2/3 sm:w-1/2 max-w-full h-auto object-cover rounded overflow-hidden"
+                src="/img/amrev/crispus-attucks-amrev.png"
+                alt="The American Revolution — poster art"
+                width={1288}
+                height={1920}
+                className="w-2/3 sm:w-full max-w-full h-auto object-cover rounded-lg"
               />
             </div>
             <p className="text-lg font-semibold text-white mb-4">

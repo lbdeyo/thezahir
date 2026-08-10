@@ -128,7 +128,7 @@ function DonateContent() {
       alert("Thank you for your donation! Your payment was successful.");
     } else if (searchParams.get("canceled") === "true") {
       alert(
-        "Your donation was canceled. Please try again if you'd like to support us."
+        "Your donation was canceled. Please try again if you'd like to support us.",
       );
     }
   }, [searchParams]);
@@ -162,7 +162,7 @@ function DonateContent() {
     const amount = parseFloat(foundingCustomAmount);
     if (isNaN(amount) || amount < 250) {
       alert(
-        "Please enter a minimum donation of $250 to join the Founding Donors Circle"
+        "Please enter a minimum donation of $250 to join the Founding Donors Circle",
       );
       return;
     }

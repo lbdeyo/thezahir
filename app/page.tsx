@@ -35,7 +35,7 @@ export default function Home() {
         <section className="pb-16 sm:pb-24">
           <div className="flex items-center gap-4 mb-6">
             <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e6ad06] whitespace-nowrap">
-              Coming this summer
+              Now playing
             </h2>
             <div className="h-px flex-1 bg-[#e6ad06]/40" />
           </div>
