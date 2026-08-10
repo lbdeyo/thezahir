@@ -6,18 +6,18 @@ import Navigation from "../components/Navigation";
 export const metadata: Metadata = {
   title: "The American Revolution | THE ZAHIR",
   description:
-    "Zahir Nights presents a staged reading of The American Revolution, a verse play by Kirk Wood Bromley—Sunday, Nov. 1 at the French Legation in Austin. Free admission.",
+    "Zahir Nights presents a staged reading of The American Revolution, a verse play by Kirk Wood Bromley—Sunday, Nov. 1 at the French Legation in Austin.",
   openGraph: {
     title: "The American Revolution | THE ZAHIR",
     description:
-      "Zahir Nights presents a staged reading of The American Revolution, a verse play by Kirk Wood Bromley—Sunday, Nov. 1 at the French Legation in Austin. Free admission.",
+      "Zahir Nights presents a staged reading of The American Revolution, a verse play by Kirk Wood Bromley—Sunday, Nov. 1 at the French Legation in Austin.",
     images: siteOgImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "The American Revolution | THE ZAHIR",
     description:
-      "Zahir Nights presents a staged reading of The American Revolution, a verse play by Kirk Wood Bromley—Sunday, Nov. 1 at the French Legation in Austin. Free admission.",
+      "Zahir Nights presents a staged reading of The American Revolution, a verse play by Kirk Wood Bromley—Sunday, Nov. 1 at the French Legation in Austin.",
     images: siteTwitterImages,
   },
 };
@@ -73,7 +73,14 @@ export default function AmericanRevolutionPage() {
               </a>
             </p>
             <p className="text-neutral-300">
-              Admission: Free (suggested donation)
+              <a
+                href="https://tickets.atxtheatre.org/events/the-american-revolution-11-1-2026"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Get tickets
+              </a>
             </p>
           </div>
 

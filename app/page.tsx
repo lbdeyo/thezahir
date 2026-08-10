@@ -92,7 +92,7 @@ export default function Home() {
               production of <i>Apprehension</i>.
             </li>
             <li className="text-lg text-neutral-300">
-              Zahir Nights presents a free staged reading of{" "}
+              Zahir Nights presents a staged reading of{" "}
               <i>The American Revolution</i> by Kirk Wood Bromley at the French
               Legation.{" "}
               <Link
