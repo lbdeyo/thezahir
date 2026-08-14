@@ -64,7 +64,7 @@ export default function Home() {
                 company couldn&apos;t have hoped for a more powerful and
                 engrossing debut.&rdquo;
                 <footer className="mt-3 not-italic text-sm text-neutral-500">
-                  — Brian Paul Scipione, CTX Live Theatre
+                  — Brian Paul Scipione, <i>CTX Live Theatre</i>
                 </footer>
               </blockquote>
               <a
