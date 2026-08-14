@@ -57,6 +57,16 @@ export default function Home() {
               <p className="text-neutral-300">
                 July 30 – August 22 · Hyde Park Theatre, Austin
               </p>
+              <blockquote className="border-l-2 border-[#e6ad06]/60 pl-4 text-base italic leading-relaxed text-neutral-400">
+                &ldquo;Oversight is the very first production of the Zahir,
+                which includes many of the incredibly talented members from
+                Holi Shamoli&apos;s production of <i>Apprehension</i>, and the
+                company couldn&apos;t have hoped for a more powerful and
+                engrossing debut.&rdquo;
+                <footer className="mt-3 not-italic text-sm text-neutral-500">
+                  — Brian Paul Scipione, CTX Live Theatre
+                </footer>
+              </blockquote>
               <a
                 href="https://tickets.atxtheatre.org/events/oversight"
                 target="_blank"
