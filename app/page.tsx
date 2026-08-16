@@ -43,8 +43,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10">
             <div className="relative md:col-span-3 aspect-video md:aspect-auto md:min-h-[340px]">
               <Image
-                src="/img/oversight/oversight-home-card.jpg"
-                alt="Oversight — a congressional hearing scene"
+                src="/img/oversight/oversight-pic-new.jpg"
+                alt="Oversight — production photo"
                 fill
                 className="object-cover"
                 sizes="(min-width: 768px) 60vw, 100vw"
