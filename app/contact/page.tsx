@@ -35,27 +35,25 @@ export default function Contact() {
     setStatus("submitting");
 
     try {
-      if (subscribeToMailingList) {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: trimmedFormData.name,
-            email: trimmedFormData.email,
-            message: trimmedFormData.message,
-            subscribeToMailingList: true,
-          }),
-        });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          name: trimmedFormData.name,
+          email: trimmedFormData.email,
+          message: trimmedFormData.message,
+          subscribeToMailingList,
+        }),
+      });
 
-        const data = await response.json();
+      const data = await response.json();
 
-        if (!response.ok || !data.success) {
-          console.error("Mailing list subscription error:", data);
-          setStatus("error");
-          return;
-        }
+      if (!response.ok || !data.success) {
+        console.error("Contact form submission error:", data);
+        setStatus("error");
+        return;
       }
 
       setStatus("success");
@@ -101,6 +99,7 @@ export default function Contact() {
           onSubmit={handleSubmit}
           name="contact-form"
           id="contact-form"
+          data-hs-do-not-collect="true"
           className="max-w-3xl space-y-6"
         >
           <div>

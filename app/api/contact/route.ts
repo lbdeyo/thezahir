@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import { submitContactFormToHubSpot } from "@/app/lib/hubspot";
 
 export async function POST(request: NextRequest) {
   try {
@@ -9,7 +10,6 @@ export async function POST(request: NextRequest) {
     const trimmedEmail = typeof email === "string" ? email.trim() : "";
     const trimmedMessage = typeof message === "string" ? message.trim() : "";
 
-    // Validate required fields (reject whitespace-only values)
     if (!trimmedName || !trimmedEmail || !trimmedMessage) {
       return NextResponse.json(
         { error: "Missing required fields: name, email, message" },
@@ -17,8 +17,21 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Contact notifications are handled by HubSpot Collected Forms on the client.
-    // This route only processes optional Mailchimp subscriptions.
+    try {
+      await submitContactFormToHubSpot({
+        name: trimmedName,
+        email: trimmedEmail,
+        message: trimmedMessage,
+        subscribeToMailingList: Boolean(subscribeToMailingList),
+      });
+    } catch (hubspotError) {
+      console.error("HubSpot contact submission failed:", hubspotError);
+      return NextResponse.json(
+        { error: "Failed to deliver contact message" },
+        { status: 502 }
+      );
+    }
+
     let mailchimpSuccess = false;
     if (subscribeToMailingList && trimmedEmail) {
       try {
