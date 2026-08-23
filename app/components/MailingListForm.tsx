@@ -42,11 +42,15 @@ export default function MailingListForm() {
   return (
     <form
       onSubmit={handleSubmit}
+      name="mailing-list-form"
+      id="mailing-list-form"
+      data-hs-do-not-collect="true"
       className="flex flex-col sm:flex-row gap-2"
       suppressHydrationWarning
     >
       <input
         type="email"
+        name="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         placeholder="Email address"

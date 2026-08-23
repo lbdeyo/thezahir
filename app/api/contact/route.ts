@@ -7,8 +7,12 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { name, email, message, subscribeToMailingList } = body;
 
-    // Validate required fields
-    if (!name || !email || !message) {
+    const trimmedName = typeof name === "string" ? name.trim() : "";
+    const trimmedEmail = typeof email === "string" ? email.trim() : "";
+    const trimmedMessage = typeof message === "string" ? message.trim() : "";
+
+    // Validate required fields (reject whitespace-only values)
+    if (!trimmedName || !trimmedEmail || !trimmedMessage) {
       return NextResponse.json(
         { error: "Missing required fields: name, email, message" },
         { status: 400 }
@@ -17,9 +21,9 @@ export async function POST(request: NextRequest) {
 
     // Submit to Formspree
     const formspreeFormData = new FormData();
-    formspreeFormData.append("name", name);
-    formspreeFormData.append("email", email);
-    formspreeFormData.append("message", message);
+    formspreeFormData.append("name", trimmedName);
+    formspreeFormData.append("email", trimmedEmail);
+    formspreeFormData.append("message", trimmedMessage);
 
     const formspreeResponse = await fetch(FORMSPREE_ENDPOINT, {
       method: "POST",
@@ -41,7 +45,7 @@ export async function POST(request: NextRequest) {
 
     // If user wants to subscribe to mailing list, add them to MailChimp
     let mailchimpSuccess = false;
-    if (subscribeToMailingList && email) {
+    if (subscribeToMailingList && trimmedEmail) {
       try {
         const mailchimpApiKey = process.env.MAILCHIMP_API_KEY;
         const mailchimpAudienceId = process.env.MAILCHIMP_AUDIENCE_ID;
@@ -65,11 +69,11 @@ export async function POST(request: NextRequest) {
               "Content-Type": "application/json",
             },
             body: JSON.stringify({
-              email_address: email,
+              email_address: trimmedEmail,
               status: "subscribed",
               merge_fields: {
-                FNAME: name.split(" ")[0] || "",
-                LNAME: name.split(" ").slice(1).join(" ") || "",
+                FNAME: trimmedName.split(" ")[0] || "",
+                LNAME: trimmedName.split(" ").slice(1).join(" ") || "",
               },
             }),
           });

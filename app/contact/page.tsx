@@ -14,8 +14,24 @@ export default function Contact() {
   });
   const [subscribeToMailingList, setSubscribeToMailingList] = useState(false);
 
+  const trimmedFormData = {
+    name: formData.name.trim(),
+    email: formData.email.trim(),
+    message: formData.message.trim(),
+  };
+  const canSubmit =
+    trimmedFormData.name.length > 0 &&
+    trimmedFormData.email.length > 0 &&
+    trimmedFormData.message.length > 0;
+
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!canSubmit) {
+      e.currentTarget.reportValidity();
+      return;
+    }
+
     setStatus("submitting");
 
     try {
@@ -25,9 +41,9 @@ export default function Contact() {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          message: formData.message,
+          name: trimmedFormData.name,
+          email: trimmedFormData.email,
+          message: trimmedFormData.message,
           subscribeToMailingList: subscribeToMailingList,
         }),
       });
@@ -78,7 +94,13 @@ export default function Contact() {
           </div>
         )}
 
-        <form onSubmit={handleSubmit} className="max-w-3xl space-y-6">
+        <form
+          onSubmit={handleSubmit}
+          name="contact-form"
+          id="contact-form"
+          data-hs-do-not-collect="true"
+          className="max-w-3xl space-y-6"
+        >
           <div>
             <label htmlFor="name" className="block text-white font-semibold mb-2">
               Name
@@ -125,6 +147,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
+              minLength={1}
               rows={6}
               className="w-full px-4 py-3 bg-transparent border border-white/25 text-white placeholder:text-white/50 focus:outline-none focus:border-[#e6ad06] focus:ring-1 focus:ring-[#e6ad06] resize-vertical"
             />
@@ -154,7 +177,7 @@ export default function Contact() {
 
           <button
             type="submit"
-            disabled={status === "submitting"}
+            disabled={status === "submitting" || !canSubmit}
             className="bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === "submitting" ? "Sending..." : "Send"}
