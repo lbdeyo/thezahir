@@ -35,29 +35,32 @@ export default function Contact() {
     setStatus("submitting");
 
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: trimmedFormData.name,
-          email: trimmedFormData.email,
-          message: trimmedFormData.message,
-          subscribeToMailingList: subscribeToMailingList,
-        }),
-      });
+      if (subscribeToMailingList) {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: trimmedFormData.name,
+            email: trimmedFormData.email,
+            message: trimmedFormData.message,
+            subscribeToMailingList: true,
+          }),
+        });
 
-      const data = await response.json();
+        const data = await response.json();
 
-      if (response.ok && data.success) {
-        setStatus("success");
-        setFormData({ name: "", email: "", message: "" });
-        setSubscribeToMailingList(false);
-      } else {
-        console.error("Form submission error:", data);
-        setStatus("error");
+        if (!response.ok || !data.success) {
+          console.error("Mailing list subscription error:", data);
+          setStatus("error");
+          return;
+        }
       }
+
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+      setSubscribeToMailingList(false);
     } catch (error) {
       console.error("Form submission error:", error);
       setStatus("error");
@@ -98,7 +101,6 @@ export default function Contact() {
           onSubmit={handleSubmit}
           name="contact-form"
           id="contact-form"
-          data-hs-do-not-collect="true"
           className="max-w-3xl space-y-6"
         >
           <div>
