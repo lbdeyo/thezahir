@@ -31,58 +31,54 @@ export default function Home() {
           </Link>
         </section>
 
-        {/* Current production */}
+        {/* Coming soon */}
         <section className="pb-16 sm:pb-24">
           <div className="flex items-center gap-4 mb-6">
             <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e6ad06] whitespace-nowrap">
-              Now playing
+              Coming soon
             </h2>
             <div className="h-px flex-1 bg-[#e6ad06]/40" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10">
-            <div className="relative md:col-span-3 aspect-video md:aspect-auto md:min-h-[340px]">
+            <div className="relative md:col-span-3 aspect-square md:aspect-auto md:min-h-[340px] bg-black">
               <Image
-                src="/img/oversight/oversight-pic-new.jpg"
-                alt="Oversight — production photo"
+                src="/img/the-egg/white-egg.png"
+                alt="THE EGG"
                 fill
-                className="object-cover"
+                className="object-contain p-8 sm:p-12"
                 sizes="(min-width: 768px) 60vw, 100vw"
               />
             </div>
             <div className="md:col-span-2 bg-black p-8 sm:p-10 flex flex-col justify-center gap-4">
+              <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
+                By Noah Masterson
+              </p>
               <h3 className="text-4xl sm:text-5xl font-bold tracking-tight">
-                Oversight
+                THE EGG
               </h3>
               <p className="text-neutral-300">
-                July 30 – August 22 · Hyde Park Theatre, Austin
+                October 29 – November 21 · The Rosette
               </p>
-              <blockquote className="border-l-2 border-[#e6ad06]/60 pl-4 text-base italic leading-relaxed text-neutral-400">
-                &ldquo;Oversight is the very first production of the Zahir,
-                which includes many of the incredibly talented members from
-                Holi Shamoli&apos;s production of <i>Apprehension</i>, and the
-                company couldn&apos;t have hoped for a more powerful and
-                engrossing debut.&rdquo;
-                <footer className="mt-3 not-italic text-sm text-neutral-500">
-                  — Brian Paul Scipione, <i>CTX Live Theatre</i>
-                </footer>
-              </blockquote>
+              <p className="text-base leading-relaxed text-neutral-400">
+                THE EGG is a one-of-a-kind theatrical experience featuring
+                freakish birdpeople, illegal surgery, and out-of-control
+                technology.
+              </p>
               <a
-                href="https://tickets.atxtheatre.org/events/oversight"
+                href="https://the-egg-play.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block self-start bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
               >
-                Get Tickets
+                Learn more
               </a>
-              <a
-                href="https://www.youtube.com/watch?v=qSPlg1qkSA4"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/our-work"
                 className="font-semibold text-[#e6ad06] hover:underline"
               >
-                Watch the announcement →
-              </a>
+                See all our work →
+              </Link>
             </div>
           </div>
         </section>
