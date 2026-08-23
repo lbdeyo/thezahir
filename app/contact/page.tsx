@@ -1,6 +1,7 @@
 "use client";
 
 import Navigation from "../components/Navigation";
+import { getHubspotUtk } from "../lib/hubspot-cookie";
 import { useState, FormEvent } from "react";
 
 export default function Contact() {
@@ -45,6 +46,9 @@ export default function Contact() {
           email: trimmedFormData.email,
           message: trimmedFormData.message,
           subscribeToMailingList,
+          hubspotUtk: getHubspotUtk(),
+          pageUri:
+            typeof window !== "undefined" ? window.location.href : undefined,
         }),
       });
 
@@ -95,12 +99,12 @@ export default function Contact() {
           </div>
         )}
 
+        <div className="max-w-3xl">
         <form
           onSubmit={handleSubmit}
-          name="contact-form"
           id="contact-form"
           data-hs-do-not-collect="true"
-          className="max-w-3xl space-y-6"
+          className="space-y-6"
         >
           <div>
             <label htmlFor="name" className="block text-white font-semibold mb-2">
@@ -184,6 +188,7 @@ export default function Contact() {
             {status === "submitting" ? "Sending..." : "Send"}
           </button>
         </form>
+        </div>
       </main>
     </div>
   );

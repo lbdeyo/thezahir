@@ -1,99 +1,77 @@
 const HUBSPOT_PORTAL_ID = process.env.HUBSPOT_PORTAL_ID ?? "244639378";
-const HUBSPOT_REGION = process.env.HUBSPOT_REGION ?? "na2";
+const HUBSPOT_CONTACT_FORM_ID = process.env.HUBSPOT_CONTACT_FORM_ID;
+const HUBSPOT_FIELD_MESSAGE =
+  process.env.HUBSPOT_FIELD_MESSAGE ?? "message";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.the-zahir.org";
+
+const HUBSPOT_FORMS_API =
+  "https://api.hsforms.com/submissions/v3/integration/submit";
 
 type ContactSubmission = {
   name: string;
   email: string;
   message: string;
   subscribeToMailingList: boolean;
+  hubspotUtk?: string;
+  pageUri?: string;
 };
 
-async function getCollectedFormsToken(): Promise<number> {
-  const response = await fetch(
-    `https://forms-${HUBSPOT_REGION}.hscollectedforms.net/collected-forms/v1/config/json?portalId=${HUBSPOT_PORTAL_ID}&utk=`
-  );
-
-  if (!response.ok) {
-    throw new Error(
-      `Failed to load HubSpot collected-forms config (${response.status})`
-    );
-  }
-
-  const data = (await response.json()) as { token?: number };
-  if (typeof data.token !== "number") {
-    throw new Error("HubSpot collected-forms token missing from config");
-  }
-
-  return data.token;
+function splitName(fullName: string): { firstname: string; lastname: string } {
+  const parts = fullName.trim().split(/\s+/);
+  return {
+    firstname: parts[0] ?? "",
+    lastname: parts.slice(1).join(" "),
+  };
 }
 
 export async function submitContactFormToHubSpot(
   submission: ContactSubmission
 ): Promise<void> {
-  const token = await getCollectedFormsToken();
-  const fields = [
-    {
-      name: "email",
-      value: submission.email,
-      label: "Email",
-      type: "email",
-    },
-    {
-      name: "name",
-      value: submission.name,
-      label: "Name",
-      type: "text",
-    },
-    {
-      name: "message",
-      value: submission.message,
-      label: "Message",
-      type: "textarea",
-    },
+  if (!HUBSPOT_CONTACT_FORM_ID) {
+    throw new Error(
+      "HUBSPOT_CONTACT_FORM_ID is not configured. Create a native HubSpot contact form and set its GUID in environment variables."
+    );
+  }
+
+  const { firstname, lastname } = splitName(submission.name);
+  const fields: Array<{ name: string; value: string }> = [
+    { name: "email", value: submission.email },
+    { name: "firstname", value: firstname },
   ];
 
-  const contactFields: Record<string, string> = {
-    email: submission.email,
-    name: submission.name,
-    message: submission.message,
-  };
+  if (lastname) {
+    fields.push({ name: "lastname", value: lastname });
+  }
+
+  fields.push({ name: HUBSPOT_FIELD_MESSAGE, value: submission.message });
 
   if (submission.subscribeToMailingList) {
-    fields.push({
-      name: "newsletter_subscriber",
-      value: "true",
-      label: "Newsletter",
-      type: "hidden",
-    });
-    contactFields.newsletter_subscriber = "true";
+    fields.push({ name: "newsletter_subscriber", value: "true" });
+  }
+
+  const context: Record<string, string> = {
+    pageUri: submission.pageUri ?? `${SITE_URL}/contact`,
+    pageName: "Contact | THE ZAHIR",
+  };
+
+  if (submission.hubspotUtk) {
+    context.hutk = submission.hubspotUtk;
   }
 
   const response = await fetch(
-    `https://forms-${HUBSPOT_REGION}.hscollectedforms.net/collected-forms/submit/form`,
+    `${HUBSPOT_FORMS_API}/${HUBSPOT_PORTAL_ID}/${HUBSPOT_CONTACT_FORM_ID}`,
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        portalId: Number(HUBSPOT_PORTAL_ID),
-        formSelectorId: "contact-form",
-        formSelectorClasses: "max-w-3xl space-y-6",
-        pageUrl: `${SITE_URL}/contact`,
-        pageTitle: "Contact | THE ZAHIR",
-        token,
-        type: "SCRAPED",
-        version: "1.0",
-        fields,
-        contactFields,
-      }),
+      body: JSON.stringify({ fields, context }),
     }
   );
 
-  if (!response.ok && response.status !== 204) {
+  if (!response.ok) {
     const errorText = await response.text();
     throw new Error(
-      `HubSpot submission failed (${response.status}): ${errorText}`
+      `HubSpot form submission failed (${response.status}): ${errorText}`
     );
   }
 }

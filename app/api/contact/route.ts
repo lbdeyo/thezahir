@@ -4,7 +4,8 @@ import { submitContactFormToHubSpot } from "@/app/lib/hubspot";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, message, subscribeToMailingList } = body;
+    const { name, email, message, subscribeToMailingList, hubspotUtk, pageUri } =
+      body;
 
     const trimmedName = typeof name === "string" ? name.trim() : "";
     const trimmedEmail = typeof email === "string" ? email.trim() : "";
@@ -23,6 +24,14 @@ export async function POST(request: NextRequest) {
         email: trimmedEmail,
         message: trimmedMessage,
         subscribeToMailingList: Boolean(subscribeToMailingList),
+        hubspotUtk:
+          typeof hubspotUtk === "string" && hubspotUtk.trim()
+            ? hubspotUtk.trim()
+            : undefined,
+        pageUri:
+          typeof pageUri === "string" && pageUri.trim()
+            ? pageUri.trim()
+            : undefined,
       });
     } catch (hubspotError) {
       console.error("HubSpot contact submission failed:", hubspotError);
