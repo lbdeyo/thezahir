@@ -1,72 +1,41 @@
 import { NextRequest, NextResponse } from "next/server";
+import { submitFooterMailingListToHubSpot } from "@/app/lib/hubspot";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { email } = body;
+    const { email, pageUri } = body;
 
-    // Validate email
-    if (!email || !email.trim()) {
-      return NextResponse.json(
-        { error: "Email is required" },
-        { status: 400 }
-      );
+    const trimmedEmail = typeof email === "string" ? email.trim() : "";
+
+    if (!trimmedEmail) {
+      return NextResponse.json({ error: "Email is required" }, { status: 400 });
     }
 
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email.trim())) {
+    if (!emailRegex.test(trimmedEmail)) {
       return NextResponse.json(
         { error: "Invalid email address" },
         { status: 400 }
       );
     }
 
-    const mailchimpApiKey = process.env.MAILCHIMP_API_KEY;
-    const mailchimpAudienceId = process.env.MAILCHIMP_AUDIENCE_ID;
-
-    if (!mailchimpApiKey || !mailchimpAudienceId) {
-      console.error("MailChimp API key or Audience ID not configured");
+    try {
+      await submitFooterMailingListToHubSpot(
+        trimmedEmail,
+        typeof pageUri === "string" && pageUri.trim()
+          ? pageUri.trim()
+          : undefined
+      );
+    } catch (hubspotError) {
+      console.error("HubSpot mailing list submission failed:", hubspotError);
       return NextResponse.json(
-        { error: "Mailing list service not configured" },
-        { status: 500 }
+        { error: "Failed to subscribe to mailing list" },
+        { status: 502 }
       );
     }
 
-    // Extract datacenter from API key (format: key-datacenter)
-    const datacenter = mailchimpApiKey.split("-")[1];
-    const mailchimpUrl = `https://${datacenter}.api.mailchimp.com/3.0/lists/${mailchimpAudienceId}/members`;
-
-    // MailChimp uses Basic auth with any username and API key as password
-    const authString = Buffer.from(`anystring:${mailchimpApiKey}`).toString("base64");
-
-    const mailchimpResponse = await fetch(mailchimpUrl, {
-      method: "POST",
-      headers: {
-        Authorization: `Basic ${authString}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email_address: email.trim(),
-        status: "subscribed",
-      }),
-    });
-
-    if (mailchimpResponse.ok) {
-      return NextResponse.json({ success: true });
-    } else {
-      const errorData = await mailchimpResponse.json();
-      // If email already exists, that's okay - we consider it a success
-      if (errorData.title === "Member Exists") {
-        return NextResponse.json({ success: true });
-      } else {
-        console.error("MailChimp error:", errorData);
-        return NextResponse.json(
-          { error: "Failed to subscribe to mailing list" },
-          { status: 500 }
-        );
-      }
-    }
+    return NextResponse.json({ success: true });
   } catch (error) {
     console.error("Mailing list subscription error:", error);
     const errorMessage =
@@ -77,4 +46,3 @@ export async function POST(request: NextRequest) {
     );
   }
 }
-

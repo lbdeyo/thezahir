@@ -174,12 +174,6 @@ export default function Contact() {
             </label>
           </div>
 
-          <input
-            type="hidden"
-            name="newsletter_subscriber"
-            value={subscribeToMailingList.toString()}
-          />
-
           <button
             type="submit"
             disabled={status === "submitting" || !canSubmit}

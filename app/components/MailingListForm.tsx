@@ -18,7 +18,11 @@ export default function MailingListForm() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ email }),
+        body: JSON.stringify({
+          email,
+          pageUri:
+            typeof window !== "undefined" ? window.location.href : undefined,
+        }),
       });
 
       const data = await response.json();
