@@ -305,20 +305,43 @@ export default function Team() {
                 Danu Mara
               </h3>
               <p className="text-[#e6ad06] font-semibold mb-3">Actor</p>
-              <p className="text-lg text-neutral-300 text-left text-pretty">
-                Danu Mara is a voice-over and on-camera actor with over 20 years
-                of experience in commercials, animation, film, video games, and
-                eLearning. She voiced hundreds of characters for educational
-                software used nationwide and performed internationally in{" "}
-                <i>The Intergalactic Nemesis</i>, portraying a wide range of
-                humans, robots, and aliens. Her credits include roles in{" "}
-                <i>Flatland: The Movie</i> (alongside Martin Sheen and Kristen
-                Bell) and Rooster Teeth&apos;s <i>Lazer Team 2</i> and{" "}
-                <i>Nomad of Nowhere</i>. A Daytime Emmy nominee with a B.A. in
-                Drama from Texas Woman&apos;s University, Danu has also trained
-                at The Second City in Chicago and is a core member of the
-                acclaimed sketch troupe The Latino Comedy Project.
-              </p>
+              <div className="space-y-4 text-lg text-neutral-300 text-left text-pretty">
+                <p>
+                  Danu Mara is a voice-over, on-camera and stage actor with over
+                  25 years of experience in commercials, animation, film, video
+                  games, and eLearning. She voiced hundreds of characters for
+                  educational software used nationwide and performed
+                  internationally in <i>The Intergalactic Nemesis</i>. As a
+                  member of the acclaimed sketch comedy troupe, The Latino
+                  Comedy Project, she was nominated for a Daytime Emmy Award.
+                </p>
+                <p>
+                  Danu made her live theatrical comeback in Austin in Ground
+                  Floor Theatre&apos;s <i>I Wanna Be a F*cking Princess</i> for
+                  which the ensemble won B. Iden Payne and Austin Theatre
+                  Critic&apos;s Awards for acting. Danu played Rep. Erin Johnston
+                  (Madam Chair) in The Zahir&apos;s smash-hit{" "}
+                  <i>Oversight</i>, and played The Woman in the award-winning
+                  show <i>Apprehension</i>.
+                </p>
+                <p>
+                  With a B.A. in Theatre from Texas Woman&apos;s University,
+                  Danu has also trained at The Second City Training Center in
+                  Chicago, and is a recent graduate of The Robichaux Studio.
+                </p>
+                <p>
+                  Danu can also be heard singing with her women&apos;s choir,{" "}
+                  <i>Dissenting Harmony</i> and voicing brands around the world.
+                  More at{" "}
+                  <a
+                    href="https://www.danumara.com"
+                    className="font-semibold text-[#e6ad06] hover:underline"
+                  >
+                    DanuMara.com
+                  </a>
+                  .
+                </p>
+              </div>
             </div>
             <div className="flex flex-col items-center text-center">
               <Image
