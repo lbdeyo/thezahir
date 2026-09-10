@@ -93,11 +93,6 @@ export default function Home() {
           </div>
           <ul className="space-y-5">
             <li className="text-lg text-neutral-300">
-              Zahir Artistic Director wins Austin Theatre Critics Award for
-              Outstanding Original Script for Holi Shamoli&apos;s 2025
-              production of <i>Apprehension</i>.
-            </li>
-            <li className="text-lg text-neutral-300">
               Zahir Nights presents a staged reading of{" "}
               <i>The American Revolution</i> by Kirk Wood Bromley at the French
               Legation.{" "}
@@ -107,6 +102,18 @@ export default function Home() {
               >
                 Learn more
               </Link>
+              .
+            </li>
+            <li className="text-lg text-neutral-300">
+              Coming in March 2027: L.B. Deyo&apos;s <i>The Minotaur</i>.{" "}
+              <a
+                href="https://minotaur-play.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Learn more
+              </a>
               .
             </li>
           </ul>
