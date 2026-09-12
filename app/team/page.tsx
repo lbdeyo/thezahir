@@ -34,7 +34,7 @@ export default function Team() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8">
             <div className="flex flex-col items-center text-center">
               <Image
-                src="/img/company/lb-pipe-cropped.jpg"
+                src="/img/company/lb-portrait-new.jpg"
                 alt="L.B. Deyo"
                 width={144}
                 height={144}
