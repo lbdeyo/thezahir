@@ -40,17 +40,18 @@ export default function Home() {
             <div className="h-px flex-1 bg-[#e6ad06]/40" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10">
-            <div className="relative md:col-span-3 aspect-square md:aspect-auto md:min-h-[340px] bg-black">
+          <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10 bg-black">
+            <div className="md:col-span-3">
               <Image
-                src="/img/the-egg/white-egg.png"
+                src="/img/the-egg/noah-arm.jpg"
                 alt="THE EGG"
-                fill
-                className="object-contain p-8 sm:p-12"
+                width={1000}
+                height={1333}
+                className="w-full h-auto"
                 sizes="(min-width: 768px) 60vw, 100vw"
               />
             </div>
-            <div className="md:col-span-2 bg-black p-8 sm:p-10 flex flex-col justify-center gap-4">
+            <div className="md:col-span-2 p-8 sm:p-10 flex flex-col justify-center gap-4">
               <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
                 By Noah Masterson
               </p>

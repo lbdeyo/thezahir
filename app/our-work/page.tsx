@@ -65,10 +65,10 @@ export default function OurWork() {
           <div className="flex flex-col sm:flex-row sm:gap-8 sm:items-start">
             <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0">
               <Image
-                src="/img/the-egg/white-egg.png"
+                src="/img/the-egg/noah-arm.jpg"
                 alt="THE EGG"
                 width={1000}
-                height={1000}
+                height={1333}
                 className="w-full h-auto object-cover rounded-lg"
               />
             </div>
