@@ -7,25 +7,35 @@ import Navigation from "../components/Navigation";
 export const metadata: Metadata = {
   title: "Licensing | THE ZAHIR",
   description:
-    "License original plays by The Zahir, including Apprehension and Oversight by L.B. Deyo. Reasonable fees, synopses, press materials, and EPKs.",
+    "License original plays by The Zahir, including Apprehension and Oversight by L.B. Deyo and THE EGG by Noah Masterson. Reasonable fees, synopses, press materials, and EPKs.",
   openGraph: {
     title: "Licensing | THE ZAHIR",
     description:
-      "License original plays by The Zahir, including Apprehension and Oversight by L.B. Deyo. Reasonable fees, synopses, press materials, and EPKs.",
+      "License original plays by The Zahir, including Apprehension and Oversight by L.B. Deyo and THE EGG by Noah Masterson. Reasonable fees, synopses, press materials, and EPKs.",
     images: siteOgImages,
   },
   twitter: {
     card: "summary_large_image",
     title: "Licensing | THE ZAHIR",
     description:
-      "License original plays by The Zahir, including Apprehension and Oversight by L.B. Deyo. Reasonable fees, synopses, press materials, and EPKs.",
+      "License original plays by The Zahir, including Apprehension and Oversight by L.B. Deyo and THE EGG by Noah Masterson. Reasonable fees, synopses, press materials, and EPKs.",
     images: siteTwitterImages,
   },
 };
 
-const plays = [
+const plays: {
+  title: string;
+  italic?: boolean;
+  author: string;
+  note: string;
+  synopsis: string;
+  quotes: { text: string; attribution: string }[];
+  epkHref: string;
+  image: { src: string; alt: string; width: number; height: number };
+}[] = [
   {
     title: "Apprehension",
+    italic: true,
     author: "L.B. Deyo",
     note: "Winner — Outstanding Original Script, Austin Theatre Critics Awards 2025–2026",
     synopsis:
@@ -46,8 +56,9 @@ const plays = [
   },
   {
     title: "Oversight",
+    italic: true,
     author: "L.B. Deyo",
-    note: "Winner — Outstanding Original Script, Austin Theatre Critics Awards 2025–2026",
+    note: "",
     synopsis:
       "A secret commission. A ticking clock. A decision that can\u2019t be undone. Oversight is a fast-paced political and psychological thriller that traps its audience inside a closed committee hearing as lawmakers confront a consequential threat at the intersection of artificial intelligence and national security.",
     quotes: [
@@ -66,6 +77,21 @@ const plays = [
       alt: "Oversight — production photo",
       width: 1080,
       height: 566,
+    },
+  },
+  {
+    title: "THE EGG",
+    author: "Noah Masterson",
+    note: "",
+    synopsis:
+      "THE EGG is an absurdist dark comedy about technology gone very, very wrong. Three social misfits, each carrying bizarre, intimate secrets, must navigate love and friendship under a rigid surveillance state. It is about art in an age of algorithms, connection in a culture of isolation, and the sirens\u2019 call of digital immortality\u2014a one-of-a-kind theatrical experience featuring freakish birdpeople, illegal surgery, and out-of-control technology.",
+    quotes: [],
+    epkHref: "/docs/the-egg-epk.pdf",
+    image: {
+      src: "/img/the-egg/egg-preview.jpg",
+      alt: "THE EGG — poster art",
+      width: 1080,
+      height: 1350,
     },
   },
 ];
@@ -87,8 +113,8 @@ export default function LicensingPage() {
             your venue and production.
           </p>
           <p>
-            Each title below includes a synopsis, selected press quotes, and an
-            electronic press kit (EPK) with additional materials.
+            Each title below includes a synopsis and an electronic press kit
+            (EPK) with additional materials.
           </p>
         </div>
 
@@ -99,12 +125,16 @@ export default function LicensingPage() {
               className="rounded-lg border border-white/10 bg-black p-6 sm:p-8"
             >
               <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-1">
-                <i>{play.title}</i>
+                {play.italic ? <i>{play.title}</i> : play.title}
               </h2>
               <p className="text-neutral-400 mb-1">By {play.author}</p>
-              <p className="text-sm text-[#e6ad06] font-semibold mb-6">
-                {play.note}
-              </p>
+              {play.note ? (
+                <p className="text-sm text-[#e6ad06] font-semibold mb-6">
+                  {play.note}
+                </p>
+              ) : (
+                <div className="mb-6" />
+              )}
 
               <div className="flex flex-col sm:flex-row sm:gap-8 sm:items-start mb-8">
                 <div className="w-full sm:w-2/5 shrink-0 mb-6 sm:mb-0">
@@ -124,22 +154,26 @@ export default function LicensingPage() {
                 </div>
               </div>
 
-              <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-4">
-                Press
-              </h3>
-              <div className="space-y-4 mb-8">
-                {play.quotes.map((quote) => (
-                  <blockquote
-                    key={quote.attribution}
-                    className="border-l-2 border-[#e6ad06]/60 pl-4 text-base italic leading-relaxed text-neutral-400"
-                  >
-                    &ldquo;{quote.text}&rdquo;
-                    <footer className="mt-3 not-italic text-sm text-neutral-500">
-                      — {quote.attribution}
-                    </footer>
-                  </blockquote>
-                ))}
-              </div>
+              {play.quotes.length > 0 ? (
+                <>
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-neutral-500 mb-4">
+                    Press
+                  </h3>
+                  <div className="space-y-4 mb-8">
+                    {play.quotes.map((quote) => (
+                      <blockquote
+                        key={quote.attribution}
+                        className="border-l-2 border-[#e6ad06]/60 pl-4 text-base italic leading-relaxed text-neutral-400"
+                      >
+                        &ldquo;{quote.text}&rdquo;
+                        <footer className="mt-3 not-italic text-sm text-neutral-500">
+                          — {quote.attribution}
+                        </footer>
+                      </blockquote>
+                    ))}
+                  </div>
+                </>
+              ) : null}
 
               <a
                 href={play.epkHref}
