@@ -345,14 +345,11 @@ export default function Team() {
             </div>
             <div className="flex flex-col items-center text-center">
               <Image
-                src="/img/company/shannon-mccormick.jpg"
+                src="/img/company/shannon-headshot.jpg"
                 alt="Shannon McCormick"
                 width={144}
                 height={144}
                 className="w-36 h-36 object-cover rounded-lg mb-4"
-                style={{
-                  objectPosition: "center 55%",
-                }}
               />
               <h3 className="text-2xl sm:text-3xl font-bold tracking-tight mb-1">
                 Shannon McCormick
