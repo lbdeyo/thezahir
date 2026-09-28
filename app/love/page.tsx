@@ -88,6 +88,33 @@ export default function Love() {
           </h2>
           <div className="mb-10 space-y-5 text-lg text-neutral-300">
             <p>
+              Review: <em>She Kills Monsters</em>, by Qui Nguyen (
+              <a
+                href="https://www.stedwards.edu/academics/centers-institutes-arts/mary-moody-northen-theatre"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Mary Moody Northen Theatre
+              </a>
+              )
+            </p>
+            <p>
+              What a delight. Marcus McQuirter directs St. Edward&apos;s student
+              actors through this fast-paced and delicious work of highbrow
+              geekery about grief, coming of age, and the healing power of
+              Dungeons and Dragons. With standout performances from the two
+              leads (Victoria Turner and Harper Schreiner-Brown) and from a
+              stellar supporting cast (especially Aldo Hernandez Huerta as the
+              horny and lazy demon Orcus) this show had audiences cheering and
+              clapping from start to finish. The props, lights, costumes,
+              puppets, and fight choreography further elevated{" "}
+              <em>Monsters</em> into an over-the-top spectacle with a ridiculous
+              B-movie vibe (complete with a post-credits scene). Loved it!
+            </p>
+          </div>
+          <div className="mb-10 space-y-5 text-lg text-neutral-300">
+            <p>
               Review: <em>Seared</em> by Theresa Rebeck (
               <a
                 href="https://www.austinplayhouse.com/"
@@ -107,7 +134,7 @@ export default function Love() {
               Don&apos;t miss it. It runs through June 28th at Austin Playhouse.
             </p>
           </div>
-          <div className="mb-10 space-y-5 text-lg text-neutral-300">
+          <div className="space-y-5 text-lg text-neutral-300">
             <p>
               Review: <em>Wakey, Wakey</em> by Will Eno (
               <a
@@ -128,56 +155,6 @@ export default function Love() {
               Robinson, as always, was irresistible. This run is over, but if
               we&apos;re all very pushy we can make them bring it back again in
               the future.
-            </p>
-          </div>
-          <div className="mb-10 space-y-5 text-lg text-neutral-300">
-            <p>
-              Review: <em>Take Care of My Friend</em> by Kathleen Fletcher (
-              <a
-                href="https://www.filigreetheatre.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-[#e6ad06] hover:underline"
-              >
-                The Filigree Theatre
-              </a>
-              )
-            </p>
-            <p>
-              If you have tears, prepare to shed them. This is theater at its
-              most naked, its most vulnerable, and its most honest. Playwright
-              and star Kathleen Fletcher is the Virgil guiding us through her
-              personal hell of mental illness. The sights and sounds are brutal,
-              nightmarish. But the humor, charm, warmth and courage that have
-              allowed her to survive are also our own port in the storm.
-              Fletcher and her electrifying cast, including the always
-              outstanding Rachel West (a Zahir Company member, to our great
-              pride), ensure that there are laughs and joy along with the
-              sorrow. Through April 25th at Hyde Park Theatre.
-            </p>
-          </div>
-          <div className="space-y-5 text-lg text-neutral-300">
-            <p>
-              Review: <em>The Fire Raisers</em> from{" "}
-              <a
-                href="https://hiddenroomtheatre.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-[#e6ad06] hover:underline"
-              >
-                The Hidden Room
-              </a>
-            </p>
-            <p>
-              If satire is a meal, Max Frisch&apos;s <em>The Fire Eaters</em> is
-              a particularly hot and mouthwatering one. Director Beth Burns has
-              taken Frisch&apos;s recipe and cooked up the perfect blend of
-              delectability and presentation. The comedy savors of deep
-              absurdist wit, the metaphor is irresistible, and the blend of
-              music and light create a classical atmosphere. Among the standout
-              performers from an outstanding cast were the charming one-man band
-              Michael Ferstenfeld, the always-delightful Kelly Hasandras, and a
-              wickedly confounded Robert Matney. Get there and see for yourself.
             </p>
           </div>
         </section>
