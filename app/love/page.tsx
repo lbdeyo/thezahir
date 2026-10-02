@@ -88,6 +88,28 @@ export default function Love() {
           </h2>
           <div className="mb-10 space-y-5 text-lg text-neutral-300">
             <p>
+              Review: <em>The Making of a Great Moment</em>
+            </p>
+            <p>
+              Mixing the right cast and crew with the right script can be a
+              little like pairing nitric acid with glycerine. This month at{" "}
+              <a
+                href="https://www.hydeparktheatre.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Hyde Park Theatre
+              </a>
+              , Lee Eddy and Jeff Mills are performing Peter Sinn
+              Nachtrieb&apos;s <em>The Making of a Great Moment</em>, and the
+              resulting detonation can be heard and felt for many miles in
+              every direction. Get ready to laugh so hard you can&apos;t
+              breathe.
+            </p>
+          </div>
+          <div className="mb-10 space-y-5 text-lg text-neutral-300">
+            <p>
               Review: <em>She Kills Monsters</em>, by Qui Nguyen (
               <a
                 href="https://www.stedwards.edu/academics/centers-institutes-arts/mary-moody-northen-theatre"
