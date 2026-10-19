@@ -157,32 +157,6 @@ export default function OurWork() {
             </div>
           </div>
         </div>
-        <div className="rounded-lg border border-white/10 overflow-hidden bg-black p-6 sm:p-8 mb-8">
-          <p className="text-lg text-neutral-300 mb-2">
-            Announcing{" "}
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight mb-6">
-            The Zahir Nights
-          </h2>
-          <div className="flex flex-col sm:flex-row sm:gap-8 sm:items-start">
-            <div className="w-full sm:w-1/2 shrink-0 mb-4 sm:mb-0 flex justify-center sm:justify-start">
-              <Image
-                src="/img/zahir-nights/zahir-nights-logo.jpg"
-                alt="The Zahir Nights"
-                width={1000}
-                height={1000}
-                unoptimized
-                className="w-3/4 max-w-full h-auto object-cover rounded-lg overflow-hidden"
-              />
-            </div>
-            <div className="sm:w-1/2 min-w-0">
-              <p className="text-lg text-neutral-300">
-                A series of benefit performances featuring short plays,
-                monologues, and other entertainment.
-              </p>
-            </div>
-          </div>
-        </div>
         <p className="text-lg text-neutral-300 mb-5 max-w-3xl hidden">
           We also plan to bring{" "}
           <a
