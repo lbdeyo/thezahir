@@ -88,7 +88,20 @@ export default function Love() {
           </h2>
           <div className="mb-10 space-y-5 text-lg text-neutral-300">
             <p>
-              Review: <em>The Making of a Great Moment</em>
+              Review #1: <em>The Making of a Great Moment</em>, by Peter Sinn
+              Nachtrieb (
+              <a
+                href="https://www.hydeparktheatre.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Hyde Park Theatre
+              </a>
+              )
+              <span className="mt-2 block text-base text-neutral-400">
+                L.B. Deyo
+              </span>
             </p>
             <p>
               Mixing the right cast and crew with the right script can be a
@@ -110,6 +123,34 @@ export default function Love() {
           </div>
           <div className="mb-10 space-y-5 text-lg text-neutral-300">
             <p>
+              Review #2: <em>The Making of a Great Moment</em>, by Peter Sinn
+              Nachtrieb (
+              <a
+                href="https://www.hydeparktheatre.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#e6ad06] hover:underline"
+              >
+                Hyde Park Theatre
+              </a>
+              )
+              <span className="mt-2 block text-base text-neutral-400">
+                Noah Masterson
+              </span>
+            </p>
+            <p>
+              Two Canadian community-theater actors tour North America—by
+              bicycle—performing an absolute dog of a show, in miserable
+              venues, to single-digit audiences. Propelled by veteran Austin
+              actors Lee Eddy and Jeff Mills, the result is a
+              (bike)-tour-de-force. It veers hilariously from physical slapstick
+              (no one can pull a face like Lee Eddy) to much deeper territory.
+              Lee and Mills are especially magnificent when they switch
+              instantly between the show and the show-within-the-show.
+            </p>
+          </div>
+          <div className="mb-10 space-y-5 text-lg text-neutral-300">
+            <p>
               Review: <em>She Kills Monsters</em>, by Qui Nguyen (
               <a
                 href="https://www.stedwards.edu/academics/centers-institutes-arts/mary-moody-northen-theatre"
@@ -120,6 +161,9 @@ export default function Love() {
                 Mary Moody Northen Theatre
               </a>
               )
+              <span className="mt-2 block text-base text-neutral-400">
+                Noah Masterson
+              </span>
             </p>
             <p>
               What a delight. Marcus McQuirter directs St. Edward&apos;s student
@@ -147,6 +191,9 @@ export default function Love() {
                 Austin Playhouse
               </a>
               )
+              <span className="mt-2 block text-base text-neutral-400">
+                L.B. Deyo
+              </span>
             </p>
             <p>
               Funny, tense, fast-moving and sharply written, <em>Seared</em> is
@@ -168,6 +215,9 @@ export default function Love() {
                 Hyde Park Theatre
               </a>
               )
+              <span className="mt-2 block text-base text-neutral-400">
+                L.B. Deyo
+              </span>
             </p>
             <p>
               It&apos;s one thing to entertain an audience. It&apos;s something
