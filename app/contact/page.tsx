@@ -1,8 +1,12 @@
 "use client";
 
 import Navigation from "../components/Navigation";
+import { executeRecaptcha } from "../lib/recaptcha-client";
 import { getHubspotUtk } from "../lib/hubspot-cookie";
-import { useState, FormEvent } from "react";
+import Script from "next/script";
+import { useEffect, useState, FormEvent } from "react";
+
+const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY ?? "";
 
 export default function Contact() {
   const [status, setStatus] = useState<
@@ -14,28 +18,67 @@ export default function Contact() {
     message: "",
   });
   const [subscribeToMailingList, setSubscribeToMailingList] = useState(false);
+  const [recaptchaFailed, setRecaptchaFailed] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
 
   const trimmedFormData = {
     name: formData.name.trim(),
     email: formData.email.trim(),
     message: formData.message.trim(),
   };
+  const captchaConfigured = recaptchaSiteKey.length > 0;
+  const formAvailable =
+    captchaConfigured || process.env.NODE_ENV !== "production";
   const canSubmit =
     trimmedFormData.name.length > 0 &&
     trimmedFormData.email.length > 0 &&
-    trimmedFormData.message.length > 0;
+    trimmedFormData.message.length > 0 &&
+    formAvailable &&
+    !recaptchaFailed;
+
+  useEffect(() => {
+    if (!captchaConfigured) return;
+    document.documentElement.classList.add("recaptcha-badge-hidden");
+    return () => {
+      document.documentElement.classList.remove("recaptcha-badge-hidden");
+    };
+  }, [captchaConfigured]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!canSubmit) {
+      if (!formAvailable || recaptchaFailed) {
+        setErrorMessage(
+          recaptchaFailed
+            ? "reCAPTCHA failed to load. Refresh the page and try again."
+            : "This form is temporarily unavailable."
+        );
+        setStatus("error");
+      }
       e.currentTarget.reportValidity();
       return;
     }
 
+    setErrorMessage("");
     setStatus("submitting");
 
     try {
+      let recaptchaToken: string | undefined;
+      if (captchaConfigured) {
+        try {
+          recaptchaToken = await executeRecaptcha(recaptchaSiteKey);
+        } catch (recaptchaError) {
+          console.error("reCAPTCHA execute failed:", recaptchaError);
+          setRecaptchaFailed(true);
+          setErrorMessage(
+            "reCAPTCHA failed to load. Refresh the page and try again."
+          );
+          setStatus("error");
+          return;
+        }
+      }
+
       const response = await fetch("/api/contact", {
         method: "POST",
         headers: {
@@ -49,6 +92,7 @@ export default function Contact() {
           hubspotUtk: getHubspotUtk(),
           pageUri:
             typeof window !== "undefined" ? window.location.href : undefined,
+          recaptchaToken,
         }),
       });
 
@@ -56,6 +100,11 @@ export default function Contact() {
 
       if (!response.ok || !data.success) {
         console.error("Contact form submission error:", data);
+        setErrorMessage(
+          typeof data?.error === "string" && data.error
+            ? data.error
+            : "Something went wrong. Please try again or email us directly."
+        );
         setStatus("error");
         return;
       }
@@ -65,6 +114,9 @@ export default function Contact() {
       setSubscribeToMailingList(false);
     } catch (error) {
       console.error("Form submission error:", error);
+      setErrorMessage(
+        "Something went wrong. Please try again or email us directly."
+      );
       setStatus("error");
     }
   };
@@ -95,7 +147,8 @@ export default function Contact() {
 
         {status === "error" && (
           <div className="mb-6 rounded-lg border border-white/15 bg-white/5 px-5 py-4 text-neutral-200">
-            Something went wrong. Please try again or email us directly.
+            {errorMessage ||
+              "Something went wrong. Please try again or email us directly."}
           </div>
         )}
 
@@ -174,6 +227,18 @@ export default function Contact() {
             </label>
           </div>
 
+          {captchaConfigured ? (
+            <Script
+              src={`https://www.google.com/recaptcha/api.js?render=${recaptchaSiteKey}`}
+              strategy="afterInteractive"
+              onError={() => setRecaptchaFailed(true)}
+            />
+          ) : process.env.NODE_ENV === "production" ? (
+            <p className="text-sm text-neutral-300">
+              This form is temporarily unavailable.
+            </p>
+          ) : null}
+
           <button
             type="submit"
             disabled={status === "submitting" || !canSubmit}
@@ -181,6 +246,29 @@ export default function Contact() {
           >
             {status === "submitting" ? "Sending..." : "Send"}
           </button>
+          {captchaConfigured && (
+            <p className="text-xs leading-relaxed text-neutral-500">
+              This site is protected by reCAPTCHA and the Google{" "}
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                Privacy Policy
+              </a>{" "}
+              and{" "}
+              <a
+                href="https://policies.google.com/terms"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-neutral-300"
+              >
+                Terms of Service
+              </a>{" "}
+              apply.
+            </p>
+          )}
         </form>
         </div>
       </main>

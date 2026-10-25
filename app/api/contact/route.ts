@@ -1,11 +1,19 @@
 import { NextRequest, NextResponse } from "next/server";
 import { submitContactFormToHubSpot } from "@/app/lib/hubspot";
+import { remoteIpFromHeaders, verifyRecaptcha } from "@/app/lib/recaptcha";
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { name, email, message, subscribeToMailingList, hubspotUtk, pageUri } =
-      body;
+    const {
+      name,
+      email,
+      message,
+      subscribeToMailingList,
+      hubspotUtk,
+      pageUri,
+      recaptchaToken,
+    } = body;
 
     const trimmedName = typeof name === "string" ? name.trim() : "";
     const trimmedEmail = typeof email === "string" ? email.trim() : "";
@@ -15,6 +23,17 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         { error: "Missing required fields: name, email, message" },
         { status: 400 }
+      );
+    }
+
+    const captcha = await verifyRecaptcha(
+      recaptchaToken,
+      remoteIpFromHeaders(request.headers)
+    );
+    if (!captcha.ok) {
+      return NextResponse.json(
+        { error: captcha.error },
+        { status: captcha.status }
       );
     }
 

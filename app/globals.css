@@ -38,6 +38,11 @@ body {
   background-color: #fff;
 }
 
+/* v3 badge is hidden because the contact form shows the required notice. */
+.recaptcha-badge-hidden .grecaptcha-badge {
+  visibility: hidden;
+}
+
 /* Center last item in 2-column grid when it's alone (odd number of items) */
 @media (min-width: 640px) {
   .grid.grid-cols-1 > *:last-child:nth-child(odd) {
