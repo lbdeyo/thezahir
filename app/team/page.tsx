@@ -425,7 +425,7 @@ export default function Team() {
             </div>
             <div className="flex flex-col items-center text-center">
               <Image
-                src="/img/company/david-ritch.jpg"
+                src="/img/company/david-ritch.png"
                 alt="David Ritch"
                 width={144}
                 height={144}
