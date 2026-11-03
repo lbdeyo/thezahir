@@ -41,13 +41,12 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10 bg-black">
-            <div className="md:col-span-3">
+            <div className="md:col-span-3 relative aspect-[4/3] md:aspect-auto">
               <Image
-                src="/img/the-egg/noah-arm.jpg"
+                src="/img/the-egg/beau-paul.jpg"
                 alt="THE EGG"
-                width={1000}
-                height={1333}
-                className="w-full h-auto"
+                fill
+                className="object-cover object-[30%_center]"
                 sizes="(min-width: 768px) 60vw, 100vw"
               />
             </div>
@@ -94,11 +93,10 @@ export default function Home() {
           </div>
           <ul className="space-y-5">
             <li className="text-lg text-neutral-300">
-              Zahir Nights presents a staged reading of{" "}
-              <i>The American Revolution</i> by Kirk Wood Bromley at the French
-              Legation.{" "}
+              GivingTuesday is December 1. Help us raise $5,000 for original
+              theater.{" "}
               <Link
-                href="/american-revolution"
+                href="/giving-tuesday"
                 className="font-semibold text-[#e6ad06] hover:underline"
               >
                 Learn more
