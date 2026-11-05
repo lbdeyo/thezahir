@@ -31,73 +31,112 @@ export default function Home() {
           </Link>
         </section>
 
-        {/* Coming soon */}
+        {/* Now playing */}
         <section className="pb-16 sm:pb-24">
           <div className="flex items-center gap-4 mb-6">
             <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e6ad06] whitespace-nowrap">
-              Coming soon
+              Now playing
             </h2>
             <div className="h-px flex-1 bg-[#e6ad06]/40" />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10 bg-black">
-            <div className="md:col-span-3 relative aspect-[4/3] md:aspect-auto">
-              <Image
-                src="/img/the-egg/beau-paul.jpg"
-                alt="THE EGG"
-                fill
-                className="object-cover object-[30%_center]"
-                sizes="(min-width: 768px) 60vw, 100vw"
-              />
-            </div>
-            <div className="md:col-span-2 p-8 sm:p-10 flex flex-col justify-center gap-4">
-              <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
-                By Noah Masterson
-              </p>
-              <h3 className="text-4xl sm:text-5xl font-bold tracking-tight">
-                THE EGG
-              </h3>
-              <p className="text-neutral-300">
-                October 29 – November 21 · The Rosette
-              </p>
-              <p className="text-base leading-relaxed text-neutral-400">
-                THE EGG is a one-of-a-kind theatrical experience featuring
-                freakish birdpeople, illegal surgery, and out-of-control
-                technology.
-              </p>
-              <blockquote className="border-l-[3px] border-[#e6ad06] pl-4">
-                <p className="text-lg italic leading-snug text-white">
-                  &ldquo;What could be a cold and terrifying dystopia is still
-                  unnerving, but fairly hilarious in how the characters lean
-                  into the constant unexpected turns of Masterson&apos;s
-                  script.&rdquo;
+          <div className="space-y-8">
+            <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10 bg-black">
+              <div className="md:col-span-3 relative aspect-[4/3] md:aspect-auto">
+                <Image
+                  src="/img/the-egg/beau-paul.jpg"
+                  alt="THE EGG"
+                  fill
+                  className="object-cover object-[30%_center]"
+                  sizes="(min-width: 768px) 60vw, 100vw"
+                />
+              </div>
+              <div className="md:col-span-2 p-8 sm:p-10 flex flex-col justify-center gap-4">
+                <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
+                  By Noah Masterson
                 </p>
-                <footer className="mt-3 text-sm text-neutral-400">
-                  — Cat McCarrey,{" "}
-                  <a
-                    href="https://www.austinchronicle.com/arts/arts-reviews/technological-nightmares/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="italic hover:text-[#e6ad06]"
-                  >
-                    The Austin Chronicle
-                  </a>
-                </footer>
-              </blockquote>
-              <a
-                href="https://the-egg-play.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block self-start bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
-              >
-                Learn more
-              </a>
-              <Link
-                href="/our-work"
-                className="font-semibold text-[#e6ad06] hover:underline"
-              >
-                See all our work →
-              </Link>
+                <h3 className="text-4xl sm:text-5xl font-bold tracking-tight">
+                  THE EGG
+                </h3>
+                <p className="text-neutral-300">
+                  October 29 – November 21 · The Rosette
+                </p>
+                <p className="text-base leading-relaxed text-neutral-400">
+                  THE EGG is a one-of-a-kind theatrical experience featuring
+                  freakish birdpeople, illegal surgery, and out-of-control
+                  technology.
+                </p>
+                <blockquote className="border-l-[3px] border-[#e6ad06] pl-4">
+                  <p className="text-lg italic leading-snug text-white">
+                    &ldquo;What could be a cold and terrifying dystopia is still
+                    unnerving, but fairly hilarious in how the characters lean
+                    into the constant unexpected turns of Masterson&apos;s
+                    script.&rdquo;
+                  </p>
+                  <footer className="mt-3 text-sm text-neutral-400">
+                    — Cat McCarrey,{" "}
+                    <a
+                      href="https://www.austinchronicle.com/arts/arts-reviews/technological-nightmares/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="italic hover:text-[#e6ad06]"
+                    >
+                      The Austin Chronicle
+                    </a>
+                  </footer>
+                </blockquote>
+                <a
+                  href="https://the-egg-play.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block self-start bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
+                >
+                  Learn more
+                </a>
+                <Link
+                  href="/our-work"
+                  className="font-semibold text-[#e6ad06] hover:underline"
+                >
+                  See all our work →
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10 bg-black">
+              <div className="md:col-span-3 relative aspect-square md:aspect-auto md:min-h-[360px]">
+                <Image
+                  src="/img/minotaur/minotaur-reading.jpg"
+                  alt="A bronze bull, artwork for the staged reading of The Minotaur"
+                  fill
+                  className="object-cover object-[center_35%]"
+                  sizes="(min-width: 768px) 60vw, 100vw"
+                />
+              </div>
+              <div className="md:col-span-2 p-8 sm:p-10 flex flex-col justify-center gap-4">
+                <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
+                  Staged reading · By L.B. Deyo
+                </p>
+                <h3 className="text-4xl sm:text-5xl font-bold tracking-tight">
+                  The Minotaur
+                </h3>
+                <p className="text-neutral-300">
+                  November 11 · 8:00 PM · Found Sound
+                </p>
+                <p className="text-base leading-relaxed text-neutral-400">
+                  The Zahir will host a staged reading, directed by Elizabeth V.
+                  Newman of Filigree Theatre, of L.B. Deyo&apos;s new play.
+                  Scheduled to appear are Brent Werzner, Ryan Bradley and Meg
+                  Hobgood. Produced by Maggie Meador.
+                </p>
+                <a
+                  href="https://tickets.atxtheatre.org/events/minotaur-staged-reading-11-11-2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block self-start bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
+                >
+                  Get tickets
+                </a>
+              </div>
             </div>
           </div>
         </section>
