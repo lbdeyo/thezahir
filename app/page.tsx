@@ -65,6 +65,25 @@ export default function Home() {
                 freakish birdpeople, illegal surgery, and out-of-control
                 technology.
               </p>
+              <blockquote className="border-l-[3px] border-[#e6ad06] pl-4">
+                <p className="text-lg italic leading-snug text-white">
+                  &ldquo;What could be a cold and terrifying dystopia is still
+                  unnerving, but fairly hilarious in how the characters lean
+                  into the constant unexpected turns of Masterson&apos;s
+                  script.&rdquo;
+                </p>
+                <footer className="mt-3 text-sm text-neutral-400">
+                  — Cat McCarrey,{" "}
+                  <a
+                    href="https://www.austinchronicle.com/arts/arts-reviews/technological-nightmares/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="italic hover:text-[#e6ad06]"
+                  >
+                    The Austin Chronicle
+                  </a>
+                </footer>
+              </blockquote>
               <a
                 href="https://the-egg-play.com"
                 target="_blank"
@@ -79,6 +98,51 @@ export default function Home() {
               >
                 See all our work →
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Vote */}
+        <section className="pb-16 sm:pb-24">
+          <div className="flex items-center gap-4 mb-6">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.25em] text-[#e6ad06] whitespace-nowrap">
+              Vote
+            </h2>
+            <div className="h-px flex-1 bg-[#e6ad06]/40" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-5 overflow-hidden rounded-lg border border-white/10 bg-black">
+            <div className="md:col-span-3 relative aspect-[16/9] md:aspect-auto md:min-h-[320px]">
+              <Image
+                src="/img/oversight/oversight-pic-new.jpg"
+                alt="The cast of Oversight seated around a hearing table"
+                fill
+                className="object-cover object-center"
+                sizes="(min-width: 768px) 60vw, 100vw"
+              />
+            </div>
+            <div className="md:col-span-2 p-8 sm:p-10 flex flex-col justify-center gap-4">
+              <p className="text-sm uppercase tracking-[0.2em] text-neutral-400">
+                BroadwayWorld Austin Awards
+              </p>
+              <h3 className="text-4xl sm:text-5xl font-bold tracking-tight">
+                Oversight
+              </h3>
+              <p className="text-neutral-300">
+                Voting open through December 31
+              </p>
+              <p className="text-base leading-relaxed text-neutral-400">
+                The Zahir&apos;s inaugural production is nominated for Best
+                Play and more. Cast your vote.
+              </p>
+              <a
+                href="https://www.broadwayworld.com/austin/awards/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block self-start bg-[#e6ad06] px-7 py-3 font-bold uppercase tracking-wide text-black hover:bg-white transition-colors"
+              >
+                Vote now
+              </a>
             </div>
           </div>
         </section>
