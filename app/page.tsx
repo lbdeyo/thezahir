@@ -15,7 +15,7 @@ export default function Home() {
       <main className="max-w-5xl mx-auto px-4 sm:px-8">
         {/* Hero — the company's voice */}
         <section className="pt-8 sm:pt-10 pb-12 sm:pb-16">
-          <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.08] max-w-2xl">
+          <h1 className="text-[1.62rem] sm:text-[2.7rem] lg:text-[3.24rem] font-bold tracking-tight leading-[1.08] max-w-2xl">
             A dramatic arts company promoting{" "}
             <span className="text-[#e6ad06]">conversation</span> in a
             disconnected age.
