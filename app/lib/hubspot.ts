@@ -115,10 +115,10 @@ export async function submitFooterMailingListToHubSpot(
   email: string,
   pageUri?: string
 ): Promise<void> {
+  // Email-only signup. A placeholder first name such as "Mailing list" is
+  // split by HubSpot into first name "Mailing" and last name "List".
   const fields: HubSpotField[] = [
     { name: "email", value: email },
-    { name: "firstname", value: "Mailing list" },
-    { name: "lastname", value: "Signup" },
     {
       name: HUBSPOT_FIELD_MESSAGE,
       value: "Signed up via website footer.",
